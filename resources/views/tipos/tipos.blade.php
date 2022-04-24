@@ -20,11 +20,11 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <img class="logo" src="{{ asset('images/Logo.png')}}" >
+                        <img class="logo" src="{{ asset('images/Logo.png')}}" onclick="window.location='{{url("/") }}'">
                     </div>
                     <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a class="Navegacion" onclick="window.location='{{url("Consultoria") }}'">Consultoría</a></li>
+                    <li><a class="Navegacion" onclick="window.location='{{url("Consultoria") }}'">Consultoría</a></li>
                         <li><a class="Navegacion" onclick="window.location='{{url("Test") }}'">Test de Violencia</a></li>
                         <li><a class="Navegacion" onclick="window.location='{{url("TiposViolencia") }}'">Tipos de Violencia</a></li>
                         <li><a class="Navegacion" onclick="window.location='{{url("Denuncia") }}'">Realiza tu Denuncia</a></li>
@@ -38,13 +38,7 @@
                     <div id="Cuerpo">
                         <div class="row justify-content-end">
                             <div class="col-sm-6">
-                                <img class="titulop"id="Figura2" src="{{ asset('images/Titulo.png')}}" >
-                            </div>
-                            <div class="col-sm-6">
-                                <img class="img-responsive"id="Figura" src="{{ asset('images/Figura.png')}}" >
-                                <div class="efecto">
-                                <img class="img-responsive"id="Pizza" src="{{ asset('images/Triste.png')}}" >
-                                </div>
+                                <a>Tipos de Violencia</a>
                             </div>
                         </div>
                     </div>

@@ -13,6 +13,7 @@
 	margin-top: 5px;
     height: 55px;
     width: 110px;
+	cursor: pointer;
 }
 .logoGrande{
     height: 150px;
