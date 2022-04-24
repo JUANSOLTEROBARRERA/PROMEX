@@ -1,0 +1,329 @@
+/*Encabezado*/
+.Encabezado{
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
+}
+
+.logo{
+    height: 75px;
+    width: 200px;
+}
+.icon-bar{
+	background-color: #F8B500;
+}
+.Navegacion {
+    color: #F8B500;
+    margin: 10px;
+    padding-bottom: 5px;
+    font-size: 20px;
+	cursor:pointer;
+    
+}
+.Navegacion:hover{
+	display: inline-block;
+	border-bottom: solid;
+	border-radius: 5px;
+    border-width: 5px;
+    border-color: #F8B500;
+    color: #F8B500;
+    text-decoration: none;
+}
+
+#CerrarSesion{
+	background-color: #F8B500;
+	color: #ffffff;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 20px;
+    border-radius: 25px;
+    border:none;
+}
+
+.BotonHome{
+	padding-top: 10px;
+	float: right;
+	margin-bottom: 10px;
+	display: inline-block;
+	
+}
+
+.Home{
+	width: 70px;
+	height: 70px;
+	cursor:pointer;
+}
+/*********************************Cuerpo********************************/
+
+
+
+/* Cuerpo Home*/
+#Cuerpo{
+	background-color: #F1F1F1;
+	height: 1500px;
+}
+
+#Bienvenido{
+	font-size: 45px;
+	color: #5c636e;
+	padding-bottom: 25px;
+	padding-left: 40px;
+	padding-top: 50px;
+}
+#Frase{
+	padding-left: 40px;
+	font-size: 45px;
+	color:black;
+}
+#Pizza{
+	margin-top: 50px;
+	position: absolute;
+	border-radius: 15px;
+    width: 650px;
+    }
+
+#Figura{
+	position: absolute;
+}
+
+/*Cuerpo Demas*/
+.Titulo{
+	width: 500px;
+	font-size: 30px;
+	color:black;
+}
+.MenuIzq{
+	padding-top: 30px;
+	margin-left: 50px;
+}
+.PanelIzq{
+	position: relative;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
+	margin-top: 10px;
+	background-color: #FFFFFF;
+	height: 950px;
+	width: 300px;
+	text-align: center;
+}
+.PizzaPanel{
+	height: 150px;
+	width: 300px;
+	position: absolute;
+	left: 0;
+    bottom: 0;
+}
+
+/*Cuerpo promociones*/
+.TituloPromo::before{
+	content: "";
+  	width: 60%;
+	border-top-style: solid;
+    border-width: 1px;
+	position: relative;
+	display: block;
+	border-color: #5c636e;
+	margin-bottom: 10px;
+	left: 20%;
+	bottom: 97%;
+}
+.TituloPromo{
+	color: #F8B500;
+	font-size: 20px;
+	padding-top: 10px;
+	margin-bottom: 20px;
+}
+.TituloPromo::after{
+	padding: 3px;
+	content: "";
+  	width: 60%;
+	position: relative;
+	display: block;
+	border-bottom-style: solid;
+    border-width: 1px;
+	border-color: #5c636e;
+	left: 20%;
+}
+
+.CabezaTabla{
+	background-color: #5c636e;
+	color: #F1F1F1;
+}
+#TablaPromos{
+	margin-top: 100px;
+}
+
+.TituloPromoSolo{
+	color: #F8B500;
+	font-size: 20px;
+	
+}
+.EncabezadoCalendario{
+	color: #F1F1F1;
+	font-size: 20px;
+	font-weight: bold;
+	background-color: #81b214;
+	margin-left: 40px;
+	margin-right: 40px;
+}
+.LogoPanel{
+	width: 100px;
+	height: 100px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.Textbox{
+	color: #5c636e;
+	font-weight: bold;
+	width: 220px;
+	border-radius: 20px;
+	font-size: 14px;
+	padding: 6px;
+	border-color: #5c636e;
+	border-width: 2px;
+	border-style:solid;
+	margin-bottom: 7px;
+}
+.Combo{
+	color: #5c636e;
+	font-weight: bold;
+	width: 220px;
+	border-radius: 20px;
+	font-size: 14px;
+	border-color: #5c636e;
+	padding: 6px;
+	border-width: 2px;
+	border-style:solid;
+	margin-bottom: 7px;
+}
+#BotonPromo{
+	background-color: #F8B500;
+	color: #ffffff;
+    padding: 5px;
+	padding-left: 30px;
+	padding-right: 30px;
+    margin-top: 10px;
+    font-size: 20px;
+    border-radius: 25px;
+    border:none;
+
+}
+
+table tr:nth-child(even) td{
+    background-color: #ffffff;
+}
+.botonesPromo{
+	float: right;
+}
+.Calendario{
+	margin-left: 40px;
+	width: 220px;
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+.Tablascroll{
+	height: 500px;
+	overflow-y:scroll;
+	overflow-x: hidden;
+}
+.renglonTabla:hover{
+	cursor:pointer;
+	border-width: 2px;
+	border-style: solid;
+	border-color: #F8B500;
+}
+#Invicible{
+	background:transparent;
+	position:absolute;
+	border:none;
+	color:transparent;
+	width: 5px;
+	height: 20px;
+}
+#BotonTabla{
+	background-color: #F8B500;
+	color: #ffffff;
+	border-radius: 25px;
+    border:none;
+}
+/*Logn*/
+#PanelLogin{
+	border-width: 0;
+	border-bottom-width: 2px;
+}
+#Alerta{
+	padding: 50px;
+	font-size: 20px;
+	width: 450px;
+}
+#Confirmacion{
+	font-size: 20px;
+	width: 280px;
+}
+#BotonModal{
+	background-color: #F8B500;
+	color: #ffffff;
+    padding: 3px;
+	padding-left: 30px;
+	padding-right: 30px;
+    margin-top: 10px;
+    font-size: 16px;
+    border-radius: 25px;
+    border:none;
+
+}
+.renglonTabla2{
+	padding: 0px;
+}
+.renglonTabla2:hover{
+	cursor:pointer;
+	border-width: 2px;
+	border-style: solid;
+	border-color: #F8B500;
+}
+#mensaje{
+	padding-left: 48px;
+}
+.usuario1{
+	width: 50px;
+	height: 50px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.comp1pder{
+	position: relative;
+	width: 60px;
+	height: 60px;
+	left: 48px;
+	/*padding-left: 150px;*/
+	/*Display: inline-block;*/
+}
+.MenuDer{
+	padding-top: 30px;
+	margin-left: 530px;
+}
+.PanelDer{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 40px 0 rgba(0, 0, 0, 0.05);
+	margin-top: 10px;
+	background-color: #FFFFFF;
+	height: 380px;
+	width: 300px;
+	top: 160px;
+	left:450px;
+	border-radius: 26px;
+	overflow-y:scroll;
+	overflow-x:hidden;
+}
+.usuariopro{
+	padding-left: 48px;
+	display: inline;
+	color: black;
+}
+.lineaaa{
+	display: inline
+}
+.Titulo2{
+	margin-top: 50px;
+	width: 500px;
+	font-size: 20px;
+	color:black;
+}
+/*Pie de pagina*/

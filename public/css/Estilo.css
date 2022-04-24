@@ -1,0 +1,410 @@
+/*Encabezado*/
+.Encabezado{
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
+}
+.titulop{
+	margin-top: 100px;
+	margin-left: 50px;
+	height: 200px;
+    width: 650px;
+}
+.logo{
+	margin-top: 5px;
+    height: 55px;
+    width: 110px;
+}
+.logoGrande{
+    height: 150px;
+    width: 400px;
+	position: absolute;
+  	top: 10%;
+  	left: 35%;
+  	
+}
+.icon-bar{
+	background-color: #008F56;
+}
+.Navegacion {
+    color: #000000;
+    margin: 10px;
+    padding-bottom: 5px;
+    font-size: 20px;
+	cursor:pointer;
+    
+}
+.Navegacion:hover{
+	display: inline-block;
+	border-bottom: solid;
+	border-radius: 5px;
+    border-width: 5px;
+    border-color: #008F56;
+    color: #008F56;
+    text-decoration: none;
+}
+
+#CerrarSesion{
+	background-color: #008F56;
+	color: #ffffff;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 20px;
+    border-radius: 25px;
+    border:none;
+}
+
+.BotonHome{
+	padding-top: 10px;
+	float: right;
+	margin-bottom: 10px;
+	display: inline-block;
+	
+}
+
+.Home{
+	width: 70px;
+	height: 70px;
+	cursor:pointer;
+}
+/*********************************Cuerpo********************************/
+
+
+
+/* Cuerpo Home*/
+#Cuerpo{
+	background-color: #F1F1F1;
+	height: 900px;
+}
+
+#CuerpoBusca{
+	background-color: #F1F1F1;
+	height: 800px;
+	position: relative;
+}
+
+#Bienvenido{
+	font-size: 45px;
+	color: #5c636e;
+	padding-bottom: 25px;
+	padding-left: 40px;
+	padding-top: 50px;
+}
+#Frase{
+	padding-left: 40px;
+	font-size: 45px;
+	color:black;
+}
+#Pizza{
+	margin-top: 50px;
+	position: absolute;
+	border-radius: 15px;
+    width: 650px;
+    }
+
+#Figura{
+	position: absolute;
+}
+
+/*Cuerpo Demas*/
+.Titulo{
+	width: 500px;
+	font-size: 30px;
+	color:black;
+}
+.MenuIzq{
+	padding-top: 30px;
+	margin-left: 50px;
+}
+.PanelIzq{
+	position: relative;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
+	margin-top: 10px;
+	background-color: #FFFFFF;
+	height: 650px;
+	width: 300px;
+	text-align: center;
+}
+.PizzaPanel{
+	height: 150px;
+	width: 300px;
+	position: absolute;
+	left: 0;
+    bottom: 0;
+}
+
+/*Cuerpo promociones*/
+.TituloPromo::before{
+	content: "";
+  	width: 60%;
+	border-top-style: solid;
+    border-width: 1px;
+	position: relative;
+	display: block;
+	border-color: #5c636e;
+	margin-bottom: 10px;
+	left: 20%;
+	bottom: 97%;
+}
+.TituloPromo{
+	color: #008F56;
+	font-size: 20px;
+	padding-top: 10px;
+	margin-bottom: 20px;
+}
+.TituloPromo::after{
+	padding: 3px;
+	content: "";
+  	width: 60%;
+	position: relative;
+	display: block;
+	border-bottom-style: solid;
+    border-width: 1px;
+	border-color: #5c636e;
+	left: 20%;
+}
+
+.CabezaTabla{
+	background-color: #5c636e;
+	color: #F1F1F1;
+}
+#TablaPromos{
+	margin-top: 100px;
+}
+#TablaPed{
+	margin-top: 20px;
+}
+
+
+.TituloPromoSolo{
+	color: #008F56;
+	font-size: 20px;
+	
+}
+.EncabezadoCalendario{
+	color: #F1F1F1;
+	font-size: 20px;
+	font-weight: bold;
+	background-color: #81b214;
+	margin-left: 40px;
+	margin-right: 40px;
+}
+.LogoPanel{
+	width: 100px;
+	height: 100px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.Textbox{
+	color: #5c636e;
+	font-weight: bold;
+	width: 220px;
+	border-radius: 20px;
+	font-size: 14px;
+	padding: 6px;
+	border-color: #5c636e;
+	border-width: 2px;
+	border-style:solid;
+	margin-bottom: 7px;
+}
+.Busqueda{
+	color: #5c636e;
+	font-weight: bold;
+	width: 400px;
+	border-radius: 20px;
+	font-size: 14px;
+	padding: 6px;
+	border-color: #5c636e;
+	border-width: 2px;
+	border-style:solid;
+	margin-bottom: 7px;
+	position: absolute;
+  	top: 30%;
+  	left: 35%;
+}
+.Combo{
+	color: #5c636e;
+	font-weight: bold;
+	width: 220px;
+	border-radius: 20px;
+	font-size: 14px;
+	border-color: #5c636e;
+	padding: 6px;
+	border-width: 2px;
+	border-style:solid;
+	margin-bottom: 7px;
+}
+#BotonPromo{
+	background-color: #008F56;
+	color: #ffffff;
+    padding: 5px;
+	padding-left: 30px;
+	padding-right: 30px;
+    margin-top: 10px;
+    font-size: 20px;
+    border-radius: 25px;
+    border:none;
+
+}
+#BotonBusqueda
+{
+	background-color: #008F56;
+	color: #ffffff;
+    padding: 5px;
+	padding-left: 30px;
+	padding-right: 30px;
+    margin-top: 10px;
+    font-size: 20px;
+    border-radius: 25px;
+    border:none;
+	position: absolute;
+  	top: 35%;
+  	left: 58%;
+}
+
+table tr:nth-child(even) td{
+    background-color: #ffffff;
+}
+.botonesPromo{
+	float: right;
+}
+.Calendario{
+	margin-left: 40px;
+	width: 220px;
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+.Tablascroll{
+	height: 500px;
+	overflow-y:scroll;
+	overflow-x: hidden;
+}
+.renglonTabla:hover{
+	cursor:pointer;
+	border-width: 2px;
+	border-style: solid;
+	border-color: #008F56;
+}
+#Invicible{
+	background:transparent;
+	position:absolute;
+	border:none;
+	color:transparent;
+	width: 5px;
+	height: 20px;
+}
+#BotonTabla{
+	background-color: #008F56;
+	color: #ffffff;
+	border-radius: 25px;
+    border:none;
+}
+/*Logn*/
+#PanelLogin{
+	border-width: 0;
+	border-bottom-width: 2px;
+}
+#Alerta{
+	padding: 50px;
+	font-size: 20px;
+	width: 450px;
+}
+#Confirmacion{
+	font-size: 20px;
+	width: 280px;
+}
+#Modal1{
+	font-size: 20px;
+	text-align: center;
+	width: 300px;
+	overflow-y:scroll;
+	overflow-x: hidden;
+}
+#BotonModal{
+	background-color: #008F56;
+	color: #ffffff;
+    padding: 3px;
+	padding-left: 30px;
+	padding-right: 30px;
+    margin-top: 10px;
+    font-size: 16px;
+    border-radius: 25px;
+    border:none;
+
+}
+.renglonTabla2{
+	padding: 0px;
+}
+.renglonTabla2:hover{
+	cursor:pointer;
+	border-width: 2px;
+	border-style: solid;
+	border-color: #008F56;
+}
+#mensaje{
+	padding-left: 48px;
+}
+/*Revisar pedido*/
+.textoRevisar{
+	font-size: 18px;
+	color: #5c636e;
+	padding-left: 15px;
+	padding-top: 15px;
+}
+.textoRevisar1{
+	font-size: 18px;
+	color: #5c636e;
+	padding-left: 15px;
+	padding-right: 40px;
+	padding-top: 15px;
+	height: 200px;
+	overflow-y:scroll;
+	overflow-x: hidden;
+}
+.PanelPedido{
+	position: relative;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
+	margin-top: 10px;
+	background-color: #FFFFFF;
+	height: 650px;
+	width: 300px;
+}
+
+.scroll{
+	margin-top: 90px;
+	background-color: #FFFFFF;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
+	height: 650px;
+	overflow-y:scroll;
+	overflow-x: hidden;
+}
+.LogoPanelRe{
+	width: 130px;
+	height: 130px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.logopedido{
+	display: inline-block;
+	font-size: 18px;
+	color: #5c636e;
+	padding-left: 15px;
+	padding-top: 15px;
+}
+.PanelPedidos{
+	display: inline-block;
+	font-size: 18px;
+	color: #5c636e;
+	padding-left: 15px;
+	padding-top: 15px;
+	text-align: center;
+}
+#BotonPedido{
+	background-color: #008F56;
+	color: #ffffff;
+	border-radius: 25px;
+    border:none;
+}
+.ContenidoModal{
+	text-align: center;
+}
+/*Pie de pagina*/
