@@ -29,4 +29,7 @@ Route::get('/TiposViolencia', function () {
 Route::get('/Denuncia', function () {
     return view('denuncia/denuncia');
 });
+Route::get('/Login', function () {
+    return view('login/login');
+});
 

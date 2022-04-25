@@ -20,6 +20,7 @@
                                     <li><a class="oda" onclick="window.location='{{url("Test") }}'">TEST DE VIOLENCIA</a></li>
                                     <li><a class="oda" onclick="window.location='{{url("TiposViolencia") }}'">TIPOS DE VIOLENCIA</a></li>
                                     <li><a class="oda" onclick="window.location='{{url("Denuncia") }}'">REALIZA TU DENUNCIA</a></li>
+                                    <li><a class="oda" onclick="window.location='{{url("Login") }}'">INICIO DE SESIÓN</a></li>
                                 </ul>
                             </div>
 
@@ -39,7 +40,7 @@
                                 <div class="carousel-item active" data-bs-interval="10000">
                                 <img src="{{ asset('images/Carrusel3.jpg')}}" class="d-block w-100" alt="...">
                                 <div class="carousel-caption d-none d-md-block">
-                                <button type="button" class="btn btn-warning" style="margin-bottom:50px; font: 40px ; padding:15px">Informate</button>
+                                <button type="button" class="btn btn-warning" style="margin-bottom:30px; font: 30px Arial Black; padding:15px">Infórmate</button>
                                     <h5 style="color:rgb(250,250,250)">La ayuda está a tu alcance</h5>
                                     <p style="color:rgb(220,220,220)">La violencia es un delito que debe ser erradicado.</p>
                                 </div>
@@ -72,87 +73,64 @@
                             
 
 
-                            <div style="margin-top:500px">
-                            <div class="wrapper">
-                            <ul style="list-style: none;">
-                                <li class="encima" style="width: 50px;
-                                    height: 50px;
-                                    position: relative;
-                                    background: #e59500;
-                                    margin: 10px 0;
-                                    cursor: pointer;
-                                    border-radius: 3px;
-                                    box-shadow: 0 0 10px rgba(0,0,0,0.3); 
-                                    background: #3b5998;">
-                                <i class="fa fa-facebook" aria-hidden="true">
-                                <img style="width:38px;height:38px" src="{{ asset('images/facebook.png')}}">
-                                </i>
-                                <div class="slider">
-                                    <p>facebook</p>
-                                </div>
-                                </li>
-                                    <li class="encima" style="width: 50px;
-                                    height: 50px;
-                                    position: relative;
-                                    background: #e59500;
-                                    margin: 10px 0;
-                                    cursor: pointer;
-                                    border-radius: 3px;
-                                    box-shadow: 0 0 10px rgba(0,0,0,0.3);
-                                    background: #00aced;">
-                                <i class="fa fa-twitter" aria-hidden="true"></i>
-                                <div class="slider">
-                                    <p>twitter</p>
-                                </div>
-                                </li>
-                                
-                                <li class="encima" style="width: 50px;
-                                    height: 50px;
-                                    position: relative;
-                                    background: #e59500;
-                                    margin: 10px 0;
-                                    cursor: pointer;
-                                    border-radius: 3px;
-                                    box-shadow: 0 0 10px rgba(0,0,0,0.3);
-                                    background: #bc2a8d;">
-                                <i class="fa fa-instagram" aria-hidden="true"></i>
-                                <div class="slider">
-                                    <p>instagram</p>
-                                </div>
-                                </li>
-                                    <li class="encima" style="width: 50px;
-                                    height: 50px;
-                                    position: relative;
-                                    background: #e59500;
-                                    margin: 10px 0;
-                                    cursor: pointer;
-                                    border-radius: 3px;
-                                    box-shadow: 0 0 10px rgba(0,0,0,0.3);
-                                    background: #dd4b39;">
-                                <i class="fa fa-google" aria-hidden="true"></i>
-                                <div class="slider">
-                                    <p>google</p>
-                                </div>
-                                </li>
-                                    <li class="encima" style="width: 50px;
-                                    height: 50px;
-                                    position: relative;
-                                    background: #e59500;
-                                    margin: 10px 0;
-                                    cursor: pointer;
-                                    border-radius: 3px;
-                                    box-shadow: 0 0 10px rgba(0,0,0,0.3);
-                                    background: #4dc247;">
-                                <i class="fa fa-whatsapp" aria-hidden="true"></i>
-                                <div class="slider">
-                                    <p>whatsapp</p>
-                                </div>
-                                </li>
-                            </ul>
-                            </div>
-                            </div>
+                            
 
 
+                            <div id="Cuerpo2">
+                                    <div class="row justify-content-begin">
+                                        <div class="col-sm-6">
+                                            <br>
+                                            <a class="Titulo3">¿Quienes somos?</a>
+                                            <br><br>
+                                            <a class="Titulo2">Copyright © 2022 PROMEXAC.</a>
+                                            <br>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+
+                            
+                            
+                            
+                            
+                            
+                                <div id="Cuerpo">
+                                    <div class="row justify-content-begin">
+                                        <div class="col-sm-6">
+                                            <br>
+                                            <a class="Titulo">promex</a>
+                                            <br><br>
+                                            <a class="Titulo2">Copyright © 2022 PROMEXAC.</a>
+                                            <br>
+                                            <div class="wrapper">
+                                            <ul style="list-style: none;">
+                                                <li class="encima" style="width: 50px;
+                                                    height: 50px;
+                                                    position: relative;
+                                                    background: #e59500;
+                                                    margin: 10px 0;
+                                                    cursor: pointer;
+                                                    border-radius: 3px;
+                                                    box-shadow: 0 0 10px rgba(0,0,0,0.3); 
+                                                    background: #3b5998;">
+                                                <i class="fa fa-facebook" aria-hidden="true">
+                                                <img style="width:38px;height:38px" src="{{ asset('images/facebook.png')}}">
+                                                </i>
+                                                <div class="slider">
+                                                    <p>facebook</p>
+                                                </div>
+                                                
+                                            </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            
 
                             
     </body>
