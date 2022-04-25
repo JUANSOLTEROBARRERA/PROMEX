@@ -1,53 +1,159 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link href="{{ asset('css/Estilo.css') }}" rel="stylesheet">
-        
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="{{ asset('css/Estilo.css') }}" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     </head>
     <body>
         <div class=".container-fluid">
         <header class="Encabezado">
-            <nav class="navbar navbar-style">
-                <div class="container">
-                    <div class="navbar-nav">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <img class="logo" src="{{ asset('images/Logo.png')}}" >
-                    </div>
-                    <div class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a class="Navegacion" onclick="window.location='{{url("Consultoria") }}'">Consultoría</a></li>
-                        <li><a class="Navegacion" onclick="window.location='{{url("Test") }}'">Test de Violencia</a></li>
-                        <li><a class="Navegacion" onclick="window.location='{{url("TiposViolencia") }}'">Tipos de Violencia</a></li>
-                        <li><a class="Navegacion" onclick="window.location='{{url("Denuncia") }}'">Realiza tu Denuncia</a></li>
-                    </ul>
-                    </div>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <img class="logo" src="{{ asset('images/Logo.png')}}" onclick="window.location='{{url("/") }}'">
+
+                            <div class="d-flex flex-row-reverse">
+                                <ul class="menu"  data-animation="bonus">
+                                    <li><a class="oda" onclick="window.location='{{url("Consultoria") }}'">CONSULTORÍA</a></li>
+                                    <li><a class="oda" onclick="window.location='{{url("Test") }}'">TEST DE VIOLENCIA</a></li>
+                                    <li><a class="oda" onclick="window.location='{{url("TiposViolencia") }}'">TIPOS DE VIOLENCIA</a></li>
+                                    <li><a class="oda" onclick="window.location='{{url("Denuncia") }}'">REALIZA TU DENUNCIA</a></li>
+                                </ul>
+                            </div>
+
                 </div>
             </nav>
         </header>
         </div>
-        <div class="container-fluid">
-                    <div id="Cuerpo">
-                        <div class="row justify-content-end">
-                            <div class="col-sm-6">
-                                <img class="titulop"id="Figura2" src="{{ asset('images/Titulo.png')}}" >
+                            
+
+                        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
                             </div>
-                            <div class="col-sm-6">
-                                <img class="img-responsive"id="Figura" src="{{ asset('images/Figura.png')}}" >
-                                <div class="efecto">
-                                <img class="img-responsive"id="Pizza" src="{{ asset('images/Triste.png')}}" >
+                            <div class="carousel-inner">
+                                <div class="carousel-item active" data-bs-interval="10000">
+                                <img src="{{ asset('images/Carrusel3.jpg')}}" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                <button type="button" class="btn btn-warning" style="margin-bottom:50px; font: 40px ; padding:15px">Informate</button>
+                                    <h5 style="color:rgb(250,250,250)">La ayuda está a tu alcance</h5>
+                                    <p style="color:rgb(220,220,220)">La violencia es un delito que debe ser erradicado.</p>
+                                </div>
+                                </div>
+                                <div class="carousel-item" data-bs-interval="2000">
+                                <img src="{{ asset('images/Carrusel2.jpg')}}" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Second slide label</h5>
+                                    <p>Some representative placeholder content for the second slide.</p>
+                                </div>
+                                </div>
+                                <div class="carousel-item">
+                                <img src="{{ asset('images/Carrusel1.jpg')}}" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Third slide label</h5>
+                                    <p>Some representative placeholder content for the third slide.</p>
+                                </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                            </div>
+
+                            
+
+
+                            <div style="margin-top:500px">
+                            <div class="wrapper">
+                            <ul style="list-style: none;">
+                                <li class="encima" style="width: 50px;
+                                    height: 50px;
+                                    position: relative;
+                                    background: #e59500;
+                                    margin: 10px 0;
+                                    cursor: pointer;
+                                    border-radius: 3px;
+                                    box-shadow: 0 0 10px rgba(0,0,0,0.3); 
+                                    background: #3b5998;">
+                                <i class="fa fa-facebook" aria-hidden="true">
+                                <img style="width:38px;height:38px" src="{{ asset('images/facebook.png')}}">
+                                </i>
+                                <div class="slider">
+                                    <p>facebook</p>
+                                </div>
+                                </li>
+                                    <li class="encima" style="width: 50px;
+                                    height: 50px;
+                                    position: relative;
+                                    background: #e59500;
+                                    margin: 10px 0;
+                                    cursor: pointer;
+                                    border-radius: 3px;
+                                    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+                                    background: #00aced;">
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                                <div class="slider">
+                                    <p>twitter</p>
+                                </div>
+                                </li>
+                                
+                                <li class="encima" style="width: 50px;
+                                    height: 50px;
+                                    position: relative;
+                                    background: #e59500;
+                                    margin: 10px 0;
+                                    cursor: pointer;
+                                    border-radius: 3px;
+                                    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+                                    background: #bc2a8d;">
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                                <div class="slider">
+                                    <p>instagram</p>
+                                </div>
+                                </li>
+                                    <li class="encima" style="width: 50px;
+                                    height: 50px;
+                                    position: relative;
+                                    background: #e59500;
+                                    margin: 10px 0;
+                                    cursor: pointer;
+                                    border-radius: 3px;
+                                    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+                                    background: #dd4b39;">
+                                <i class="fa fa-google" aria-hidden="true"></i>
+                                <div class="slider">
+                                    <p>google</p>
+                                </div>
+                                </li>
+                                    <li class="encima" style="width: 50px;
+                                    height: 50px;
+                                    position: relative;
+                                    background: #e59500;
+                                    margin: 10px 0;
+                                    cursor: pointer;
+                                    border-radius: 3px;
+                                    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+                                    background: #4dc247;">
+                                <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                                <div class="slider">
+                                    <p>whatsapp</p>
+                                </div>
+                                </li>
+                            </ul>
+                            </div>
+                            </div>
+
+
+
+                            
     </body>
 </html>
