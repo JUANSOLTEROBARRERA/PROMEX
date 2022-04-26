@@ -101,7 +101,7 @@ body {
 #Cuerpo2{
 	padding-top: 35px;
 	background-color: rgb(74, 74, 74);
-	height: 800px;
+	height: 1200px;
     left: 50%;
 }
 #CuerpoBusca{
@@ -590,7 +590,7 @@ table tr:nth-child(even) td{
 	height:100%;
 	position:absolute;
 	padding:90px 70px 50px 70px;
-	background:rgba(40,57,101,.9);
+	background:rgba(63, 87, 62, 0.9);
 }
 .login-html .sign-in-htm,
 .login-html .sign-up-htm{
@@ -624,7 +624,7 @@ table tr:nth-child(even) td{
 .login-html .sign-in:checked + .tab,
 .login-html .sign-up:checked + .tab{
 	color:#fff;
-	border-color:#1161ee;
+	border-color:#88cca6;
 }
 .login-form{
 	min-height:345px;
@@ -646,7 +646,6 @@ table tr:nth-child(even) td{
 .login-form .group .button{
 	border:none;
 	padding:15px 20px;
-	border-radius:25px;
 	background:rgba(255,255,255,.1);
 }
 .login-form .group input[data-type="password"]{
@@ -658,7 +657,7 @@ table tr:nth-child(even) td{
 	font-size:12px;
 }
 .login-form .group .button{
-	background:#1161ee;
+	background:#9d9f36;
 }
 .login-form .group label .icon{
 	width:15px;
@@ -692,7 +691,7 @@ table tr:nth-child(even) td{
 	color:#fff;
 }
 .login-form .group .check:checked + label .icon{
-	background:#1161ee;
+	background:#9d9f36;
 }
 .login-form .group .check:checked + label .icon:before{
 	transform:scale(1) rotate(45deg);
