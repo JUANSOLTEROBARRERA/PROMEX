@@ -48,15 +48,15 @@
                                 <div class="carousel-item" data-bs-interval="2000">
                                 <img src="{{ asset('images/Carrusel2.jpg')}}" class="d-block w-100" alt="...">
                                 <div class="carousel-caption d-none d-md-block">
-                                    <h5>Second slide label</h5>
-                                    <p>Some representative placeholder content for the second slide.</p>
+                                    <h5 style="color:rgb(250,250,250)">Tu seguridad es lo mas importante</h5>
+                                    <p style="color:rgb(220,220,220)">Que la violencia no abuse con tu seguridad integral.</p>
                                 </div>
                                 </div>
                                 <div class="carousel-item">
                                 <img src="{{ asset('images/Carrusel1.jpg')}}" class="d-block w-100" alt="...">
                                 <div class="carousel-caption d-none d-md-block">
-                                    <h5>Third slide label</h5>
-                                    <p>Some representative placeholder content for the third slide.</p>
+                                    <h5 style="color:rgb(250,250,250)">Realiza tus denuncias</h5>
+                                    <p style="color:rgb(220,220,220)">No te preocupes porque todas las denuncias son anonimas.</p>
                                 </div>
                                 </div>
                             </div>
