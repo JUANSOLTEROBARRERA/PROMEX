@@ -78,11 +78,11 @@
 
                             <div id="Cuerpo2">
                                     <div class="row justify-content-begin">
-                                        <div class="col-sm-6">
+                                        <div class="col-sm-15">
                                             <br>
                                             <a class="Titulo3">¿Quienes somos?</a>
                                             <br><br>
-                                            <a class="Titulo2">Copyright © 2022 PROMEXAC.</a>
+                                            <p class="Titulo4">Somos un equipo multidisciplinario, multicultural; siendo conformada mayoritariamente por mujeres, jóvenes de diversas disciplinas de las áreas sociales; con una amplia experiencia en el trabajo de capacitación, gestión, desarrollo y ejecución de proyectos dentro del ámbito público y social.</p>
                                             <br>
                                         </div>
                                     </div>

@@ -134,10 +134,10 @@ body {
 
 /*Cuerpo Demas*/
 .Titulo3{
-	text-align: right;
 	font: 30px Arial Black;
 	color:rgb(102, 21, 123);
 	text-decoration: none;
+	margin-left: 40%;
 }
 .Titulo3:hover{
 	color:rgb(102, 21, 123);
@@ -160,6 +160,14 @@ body {
 	color:rgb(79, 79, 79);
 	text-decoration: none;
 	margin-left: 50px;
+}
+.Titulo4{
+	width: 500px;
+	font: 20px Georgia;
+	color:rgb(79, 79, 79);
+	text-decoration: none;
+	margin-left: 33%;
+	text-align: center;
 }
 .Titulo2:hover{
 	color:rgb(79, 79, 79);
@@ -539,7 +547,7 @@ table tr:nth-child(even) td{
 	left: 51px;
 	width: 0px;
 	height: 50px;
-	background: #ee5c5c;
+	background: #b2b2b2;
 	border-radius: 3px;
 	transition: all 0.5s 0.3s ease;
   } 

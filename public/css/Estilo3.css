@@ -135,7 +135,6 @@ body {
 
 /*Cuerpo Demas*/
 .Titulo3{
-	text-align: right;
 	font: 30px Arial Black;
 	color:rgb(102, 21, 123);
 	text-decoration: none;
@@ -156,7 +155,6 @@ body {
 	cursor:default;
 }
 .Titulo2{
-	width: 500px;
 	font: 20px Georgia;
 	color:rgb(79, 79, 79);
 	text-decoration: none;
@@ -584,7 +582,7 @@ table tr:nth-child(even) td{
 	max-width:525px;
 	min-height:670px;
 	position:relative;
-	background:url(https://raw.githubusercontent.com/khadkamhn/day-01-login-form/master/img/bg.jpg) no-repeat center;
+	background:url(https://foodandtravel.mx/wp-content/uploads/2020/07/Datos-Mexico.jpg) no-repeat center;
 	box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
 }
 .login-html{
