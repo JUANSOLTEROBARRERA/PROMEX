@@ -29,6 +29,7 @@ return new class extends Migration
             $table->longText('narracion');
             $table->string('recibe_info');
             $table->string('existen_mecanismos');
+            $table->mediumText('correo');
             $table->boolean('resuelto');
             $table->string('usuario');
         });
