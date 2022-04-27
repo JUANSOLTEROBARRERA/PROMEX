@@ -16,11 +16,19 @@
 
                             <div class="d-flex flex-row-reverse">
                                 <ul class="menu"  data-animation="bonus">
-                                    <li><a class="oda" onclick="window.location='{{url("Consultoria") }}'">CONSULTORÍA</a></li>
+                                    
                                     <li><a class="oda" onclick="window.location='{{url("Test") }}'">TEST DE VIOLENCIA</a></li>
                                     <li><a class="oda" onclick="window.location='{{url("TiposViolencia") }}'">TIPOS DE VIOLENCIA</a></li>
                                     <li><a class="oda" onclick="window.location='{{url("Denuncia") }}'">REALIZA TU DENUNCIA</a></li>
-                                    <li><a class="oda" onclick="window.location='{{url("login") }}'">INICIO DE SESIÓN</a></li>
+                                    @auth    
+                                    <li><a class="oda" onclick="window.location='{{url("Consultoria") }}'">CONSULTORÍA</a></li>
+                                    <li><form action="/post-logout" method="POST">
+                                    @csrf
+                                    <a class="oda" href="#" onclick="this.closest('form').submit()">CERRAR SESIÓN</a>
+                                    </form></li>
+                                    @else
+                                    <li><a class="oda" onclick="window.location='{{url("Login") }}'">INICIO DE SESIÓN</a></li>
+                                    @endauth
                                 </ul>
                             </div>
 
@@ -41,36 +49,41 @@
                                         <section class="vh-100">
                                             <div class="container py-5 h-100">
                                             <div class="login-wrap">
-
-
                                             
+                                            <form action="/post-login" method="POST">
+                                                @csrf
                                                                         <div class="login-html">
                                                                             <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Iniciar Sesión</label>
                                                                             <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab"></label>
+                                                                            
                                                                             <div class="login-form">
                                                                                 <div class="sign-in-htm">
                                                                                     <div class="group">
                                                                                         <label for="user" class="label">Usuario</label>
-                                                                                        <input id="user" type="text" class="input">
+                                                                                        <input id="user" type="text" value="{{ old('email') }}" required autofocus class="input" name="email">
+                                                                                        @error('email') {{ $message }} @enderror
                                                                                     </div>
                                                                                     <div class="group">
                                                                                         <label for="pass" class="label">Contraseña</label>
-                                                                                        <input id="pass" type="password" class="input" data-type="password">
+                                                                                        <input id="pass" type="password" required class="input" data-type="password" name="password">
+                                                                                        @error('password') {{ $message }} @enderror
                                                                                     </div>
                                                                                     <div class="group">
-                                                                                        <input id="check" type="checkbox" class="check" checked>
+                                                                                        <input id="check" type="checkbox" class="check" checked name="remember">
                                                                                         <label for="check"><span class="icon"></span> Permanecer conectado</label>
                                                                                     </div>
                                                                                     <div class="group">
                                                                                         <input type="submit" class="button" value="Ingresar"> 
                                                                                     </div>
+                                                                            
                                                                                     <div class="hr"></div>
                                                                                 </div>
                                                                             </div>
+                                                                            
                                                                         </div>
                                                                     </div>
                                                         
-                                            
+                                            </form>                             
                                         </div>
                                     </div>
                      </div>

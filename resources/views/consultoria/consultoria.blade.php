@@ -19,10 +19,18 @@
 
                         <div class="d-flex flex-row-reverse">
                             <ul class="menu"  data-animation="bonus">
-                                <li><a class="oda" onclick="window.location='{{url("Consultoria") }}'">Consultoría</a></li>
                                 <li><a class="oda" onclick="window.location='{{url("Test") }}'">Test de Violencia</a></li>
                                 <li><a class="oda" onclick="window.location='{{url("TiposViolencia") }}'">Tipos de Violencia</a></li>
                                 <li><a class="oda" onclick="window.location='{{url("Denuncia") }}'">Realiza tu Denuncia</a></li>
+                                @auth    
+                                <li><a class="oda" onclick="window.location='{{url("Consultoria") }}'">Consultoría</a></li>
+                                <li><form action="/post-logout" method="POST">
+                                    @csrf
+                                    <a class="oda" href="#" onclick="this.closest('form').submit()">Cerrar Sesión</a>
+                                </form></li>
+                                @else
+                                <li><a class="oda" onclick="window.location='{{url("Login") }}'">Inicio de Sesión</a></li>
+                                @endauth
                             </ul>
                         </div>
 

@@ -1,6 +1,9 @@
 <?php
 
+
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\LoginController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -19,7 +22,7 @@ Route::get('/', function () {
 
 Route::get('/Consultoria', function () {
     return view('consultoria/consultoria');
-});
+})->middleware('auth');
 Route::get('/Test', function () {
     return view('test/test');
 });
@@ -31,5 +34,8 @@ Route::get('/Denuncia', function () {
 });
 Route::get('/Login', function () {
     return view('login/login');
-});
+})->middleware('guest');
 
+Route::post('post-login', [LoginController::class, 'login']);
+
+Route::post('post-logout', [LoginController::class, 'logout']);
