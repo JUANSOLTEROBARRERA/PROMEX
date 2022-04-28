@@ -528,7 +528,7 @@ table tr:nth-child(even) td{
   /*REDES SOCIALES*/
 
   .wrapper {
-	position: absolute;
+	position:absolute;
 	margin-left: 15px;
 	margin-bottom: 35px;
   } 
