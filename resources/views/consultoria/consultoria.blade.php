@@ -35,19 +35,6 @@
             </nav>
         </header>
         </div>
-
-
-
-                                            <div id="Cuerpo2">
-                                            <div class="row justify-content-begin">
-                                                <div class="col-sm-6">
-                            
-                                                <a>La consultoría está en proceso.</a>
-                                    
-                                                </div>
-                                                </div>
-                                                </div>
-
                             
 
                             
