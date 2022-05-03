@@ -128,7 +128,15 @@
                                         <label class="animation a21" for="sexual">Sexual</label>
                                         </div>
                                     </fieldset>
-                                   <input type="text" class="form-field animation a22" placeholder="Lugar">
+                                   <select class="form-field animation a22" placeholder="Lugar">
+                                        <option>- Lugar -</option>
+                                        <option>Dentro del aula</option>
+                                        <option>En una oficina o privado</option>
+                                        <option>Áreas comunes</option>
+                                        <option>Baños</option>
+                                        <option>Fuera del plantel realizando una actividad académica</option>
+                                        <option>Fuera del plantel realizando otra actividad</option>
+                                   </select>
                                    <select class="form-field animation a23" placeholder="Accion Tomada">
                                         <option>- Acción Tomada -</option>
                                         <option>Ninguna</option>
@@ -138,6 +146,7 @@
                                    </select>
                                    <select class="form-field animation a24" placeholder="Respuesta Accion">
                                         <option>- Respuesta Accion -</option>
+                                        <option>No aplica</option>
                                         <option>No, no me quisieron atender</option>
                                         <option>No, no quisieron levanarme la denuncia</option>
                                         <option>No tomaron la denuncia y no se hizo nada</option>
@@ -155,12 +164,13 @@
                                    </select>
                                    <select class="form-field animation a26" placeholder="Servicio">
                                         <option>- Otro Servicio -</option>
+                                        <option>Ninguno</option>
                                         <option>Atención Psicológica</option>
                                         <option>Atención Psiquiátrica</option>
                                         <option>Atención Médica</option>
                                         <option>Interrupción legal del embarazo</option>
                                    </select>
-                                   <textarea class="form-field animation a27" placeholder="Detalles (¿En tu institución recibes información sobre los tipos y modalidades de violencias?, ¿En tu institución existen mecanismos para denunciar acciones de violencias?)" style="height:180px;"></textarea>
+                                   <textarea class="form-field animation a27" placeholder="Detalles" style="height:180px;"></textarea>
                                    <br>
                                    <hr style="animation-delay: 2.4s; border-top: 8px solid #bbb;border-radius: 5px;">
                                     <button class="form-field animation a28" class="Revisar">ENVIAR DENUNCIA</button>
