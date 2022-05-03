@@ -8,16 +8,17 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     </head>
     <body>
-        <div class=".container-fluid">
-        <header class="Encabezado">
+        <header class="Encabezado"> 
+            <!-- <header style="position: -webkit-sticky;  position: sticky; top: 0;">-->
+ 
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container-fluid">
                     <img class="logo" src="{{ asset('images/Logo.png')}}" onclick="window.location='{{url("/") }}'">
 
                             <div class="d-flex flex-row-reverse">
                                 <ul class="menu"  data-animation="bonus">
-                                <li><a class="oda" onclick="window.location='{{url("Test") }}'">TEST DE VIOLENCIA</a></li>
                                 <li><a class="oda" onclick="window.location='{{url("TiposViolencia") }}'">TIPOS DE VIOLENCIA</a></li>
+                                <li><a class="oda" onclick="window.location='{{url("Test") }}'">TEST DE VIOLENCIA</a></li>
                                 <li><a class="oda" onclick="window.location='{{url("Denuncia") }}'">REALIZA TU DENUNCIA</a></li>
                                 @auth    
                                 <li><a class="oda" onclick="window.location='{{url("Consultoria") }}'">CONSULTORÍA</a></li>
@@ -26,7 +27,7 @@
                                     <a class="oda" href="#" onclick="this.closest('form').submit()">CERRAR SESIÓN</a>
                                 </form></li>
                                 @else
-                                <li><a class="oda" onclick="window.location='{{url("Login") }}'">INICIO DE SESIÓN</a></li>
+                                <li><a class="oda" onclick="window.location='{{url("Login") }}'">INICIAR DE SESIÓN</a></li>
                                 @endauth
                                 </ul>
                             </div>
@@ -91,6 +92,8 @@
                                             <br><br>
                                             <p class="Titulo4">Somos un equipo multidisciplinario, multicultural; siendo conformada mayoritariamente por mujeres, jóvenes de diversas disciplinas de las áreas sociales; con una amplia experiencia en el trabajo de capacitación, gestión, desarrollo y ejecución de proyectos dentro del ámbito público y social.</p>
                                             <br>
+                                            <img src="{{ asset('images/mascota.png')}}" height=350px width=170px
+                                            style="top:656px; left:1000px; position:absolute" alt="...">
                                         </div>
                                     </div>
                                 </div>
@@ -106,7 +109,7 @@
                             
                                 <div id="Cuerpo">
                                     <div class="row justify-content-begin">
-                                        <div class="col-sm-6">
+                                        <div class="col-sm-14">
                                             <br>
                                             <a class="Titulo">promex</a>
                                             <br><br>
@@ -160,7 +163,7 @@
                                                 
                                             </ul>
                                 </div>
-
+                                
 
                             
     </body>
