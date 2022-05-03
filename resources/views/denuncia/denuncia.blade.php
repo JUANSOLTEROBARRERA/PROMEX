@@ -170,7 +170,7 @@
                                         <option>Atención Médica</option>
                                         <option>Interrupción legal del embarazo</option>
                                    </select>
-                                   <textarea class="form-field animation a27" placeholder="Detalles" style="height:180px;"></textarea>
+                                   <textarea class="form-field animation a27" placeholder="Detalles de los hechos" style="height:180px;"></textarea>
                                    <br>
                                    <hr style="animation-delay: 2.4s; border-top: 8px solid #bbb;border-radius: 5px;">
                                     <button class="form-field animation a28" class="Revisar">ENVIAR DENUNCIA</button>
