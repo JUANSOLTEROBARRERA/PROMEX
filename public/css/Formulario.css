@@ -12,6 +12,7 @@
  .left {
 	 overflow: hidden;
 	 display: flex;
+	 margin-left: -20%;
 	 flex-wrap: wrap;
 	 flex-direction: column;
 	 justify-content: center;
@@ -181,4 +182,5 @@
 #Cuerpo2{
 	background-color: rgb(240, 240, 240);
 	height: 100%;
+	margin-right:-35%;
 }

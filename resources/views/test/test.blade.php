@@ -53,6 +53,17 @@
                                     <div class="form">
                                     <input type="email" class="form-field animation a3" placeholder="Email Address">
                                     <input type="password" class="form-field animation a4" placeholder="Password">
+                                    <select class="form-field animation a4" name="niveleducativo" id="niveleducativo" placeholder="Nivel Educativo">
+                                        <option value="Preparatoria" >Preparatoria</option>
+                                        <option value="Universidad">Universidad</option>
+                                   </select>
+                                   <select class="form-field animation a5" name="nombreinstitucion" id="nombreinstitucion" placeholder="Nombre Institución">
+                                        <option value="Colegio ciencias y letras">Colegio ciencias y letras</option>
+                                        <option value="INAPSI NAYARIT">INAPSI NAYARIT</option>
+                                        <option value="Escuela Normal Superior de Nayarit">Escuela Normal Superior de Nayarit</option>
+                                        <option value="Colegio Simón Bolívar">Colegio Simón Bolívar</option>
+                                        <option value="Escuela Secundaria Federal #44 Severiano Ocejeda Peña">Escuela Secundaria Federal #44 Severiano Ocejeda Peña</option>
+                                   </select>
                                     <p class="animation a5"><a href="#">Forgot Password</a></p>
                                     <button class="animation a6">LOGIN</button>
                                     </div>
