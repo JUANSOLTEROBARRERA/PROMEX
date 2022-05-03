@@ -64,6 +64,26 @@
                                         <option value="Escuela Secundaria Federal #44 Severiano Ocejeda Peña">Escuela Secundaria Federal #44 Severiano Ocejeda Peña</option>
                                    </select>
                                    <input type="email" class="form-field animation a5" placeholder="Email Address">
+                                   <fieldset>
+                                       <br>
+                                        <p class="animation a8">Sexo</p>
+                                        <div>
+                                        <input class="animation a9" type="radio" id="hombre" name="drone2"
+                                                checked>
+                                        <label class="animation a10" for="hombre">Hombre</label>
+                                        </div>
+                                        
+
+                                        <div>
+                                        <input class="animation a11" type="radio" id="mujer" name="drone2">
+                                        <label  class="animation a12" for="mujer">Mujer</label>
+                                        </div>
+
+                                        <div>
+                                        <input class="animation a13" type="radio" id="indefinido" name="drone2">
+                                        <label  class="animation a13" for="indefinido">Indefinido</label>
+                                        </div>
+                                    </fieldset>
                                    <hr style="animation-delay: 2.4s; border-top: 8px solid #bbb;border-radius: 5px;">
                                    <br>
                                    <h4 class="animation a5">Datos Agresor</h4>
