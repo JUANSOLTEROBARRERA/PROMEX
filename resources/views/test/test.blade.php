@@ -51,21 +51,87 @@
                                     <h4 class="animation a2">Log in to your account using email and password</h4>
                                     </div>
                                     <div class="form">
-                                    <input type="email" class="form-field animation a3" placeholder="Email Address">
-                                    <input type="password" class="form-field animation a4" placeholder="Password">
-                                    <select class="form-field animation a4" name="niveleducativo" id="niveleducativo" placeholder="Nivel Educativo">
-                                        <option value="Preparatoria" >Preparatoria</option>
-                                        <option value="Universidad">Universidad</option>
+                                    
+                                    
+                                    <select class="form-field animation a3" name="niveleducativo" id="niveleducativo" placeholder="Nivel Educativo">
+                                        <option>- Nivel Educativo -</option>
+                                        <option>Preparatoria</option>
+                                        <option>Universidad</option>
                                    </select>
-                                   <select class="form-field animation a5" name="nombreinstitucion" id="nombreinstitucion" placeholder="Nombre Institución">
+                                   <select class="form-field animation a4" name="nombreinstitucion" id="nombreinstitucion" placeholder="Nombre Institución">
+                                        <option value="Universidad">- Institución -</option>
                                         <option value="Colegio ciencias y letras">Colegio ciencias y letras</option>
                                         <option value="INAPSI NAYARIT">INAPSI NAYARIT</option>
                                         <option value="Escuela Normal Superior de Nayarit">Escuela Normal Superior de Nayarit</option>
                                         <option value="Colegio Simón Bolívar">Colegio Simón Bolívar</option>
                                         <option value="Escuela Secundaria Federal #44 Severiano Ocejeda Peña">Escuela Secundaria Federal #44 Severiano Ocejeda Peña</option>
                                    </select>
-                                    <p class="animation a5"><a href="#">Forgot Password</a></p>
-                                    <button class="animation a6">LOGIN</button>
+                                   <input type="email" class="form-field animation a5" placeholder="Email Address">
+                                   <input type="text" class="form-field animation a6" placeholder="Nombre del agresor">
+                                   <select class="form-field animation a7" name="niveleducativo" id="niveleducativo" placeholder="Nivel Educativo">
+                                        <option>- Relación Agresor -</option>
+                                        <option>Preparatoria</option>
+                                        <option>Universidad</option>
+                                   </select>
+                                   <fieldset>
+                                       <br>
+                                        <p class="animation a2">Sexo del agresor</p>
+
+                                        <div>
+                                        <input class="animation a9" type="radio" id="hombre" name="drone"
+                                                checked>
+                                        <label for="hombre">Hombre</label>
+                                        </div>
+
+                                        <div>
+                                        <input class="animation a9" type="radio" id="dewey" name="mujer">
+                                        <label  for="mujer">Mujer</label>
+                                        </div>
+                                    </fieldset>
+                                    <fieldset>
+                                       <br>
+                                        <p class="animation a2">Tipo de violencia</p>
+
+                                        <div>
+                                        <input class="animation a9" type="checkbox" id="verb" name="drone">
+                                        <label for="verb">Verbal o psicológica</label>
+                                        </div>
+
+                                        <div>
+                                        <input class="animation a9" type="checkbox" id="patri" name="drone">
+                                        <label for="patri">Patrimonial</label>
+                                        </div>
+
+                                        <div>
+                                        <input class="animation a9" type="checkbox" id="fisica" name="drone">
+                                        <label for="fisica">Física</label>
+                                        </div>
+
+                                        <div>
+                                        <input class="animation a9" type="checkbox" id="sexual" name="drone">
+                                        <label for="sexual">Sexual</label>
+                                        </div>
+                                    </fieldset>
+                                   <input type="text" class="form-field animation a9" placeholder="Lugar">
+                                   <select class="form-field animation a7" placeholder="Nivel Educativo">
+                                        <option>- Acción Tomada -</option>
+                                        <option>Preparatoria</option>
+                                        <option>Universidad</option>
+                                   </select>
+                                   <select class="form-field animation a7" placeholder="Nivel Educativo">
+                                        <option>- Respuesta Acción -</option>
+                                        <option>Preparatoria</option>
+                                        <option>Universidad</option>
+                                   </select>
+                                   <select class="form-field animation a7" placeholder="Nivel Educativo">
+                                        <option>- Tiempo -</option>
+                                        <option>Preparatoria</option>
+                                        <option>Universidad</option>
+                                   </select>
+                                   <input type="text" class="form-field animation a10" placeholder="Otro servicio">
+                                   <input type="text" class="form-field animation a11" placeholder="Detalles">
+                                   <br>
+                                    <button class="Revisar">LOGIN</button>
                                     </div>
                                 </div>
                                 <div class="right"></div>

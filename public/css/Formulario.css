@@ -7,25 +7,26 @@
 }
  .container {
 	 display: flex;
-	 height: 100vh;
+	 height: 210vh;
 }
  .left {
 	 overflow: hidden;
 	 display: flex;
-	 margin-left: -20%;
+	 margin-left: -32%;
 	 flex-wrap: wrap;
 	 flex-direction: column;
-	 justify-content: center;
+	 justify-content: top;
 	 animation-name: left;
 	 animation-duration: 1s;
 	 animation-fill-mode: both;
 	 animation-delay: 1s;
+	 height: 100%;
 }
  .right {
 	 flex: 1;
 	 background-color: black;
 	 transition: 1s;
-	 background-image: url(https://cdn.pixabay.com/photo/2014/04/05/11/32/beautiful-316287_960_720.jpg);
+	 background-image: url(https://downloader.la/temp/[Downloader.la]-6270baa5a8aac.jpg);
 	 background-size: cover;
 	 background-repeat: no-repeat;
 	 background-position: center;
@@ -180,7 +181,7 @@
 	color: rgb(74, 133, 34);
 }
 #Cuerpo2{
-	background-color: rgb(240, 240, 240);
+	background-color: rgb(255, 255, 255);
 	height: 100%;
 	margin-right:-35%;
 }
