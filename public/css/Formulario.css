@@ -4,6 +4,7 @@
 }
  body {
 	 font-family: 'Rubik', sans-serif;
+	 overflow-x: hidden;
 }
  .container {
 	 display: flex;
@@ -99,6 +100,72 @@
 }
  .a6 {
 	 animation-delay: 2.5s;
+}
+.a7 {
+	animation-delay: 2.6s;
+}
+.a8 {
+	animation-delay: 2.7s;
+}
+.a9 {
+	animation-delay: 2.8s;
+}
+.a10 {
+	animation-delay: 2.9s;
+}
+.a11 {
+	animation-delay: 3s;
+}
+.a12 {
+	animation-delay: 3.1s;
+}
+.a13 {
+	animation-delay: 3.2s;
+}
+.a14 {
+	animation-delay: 3.3s;
+}
+.a15 {
+	animation-delay: 3.4s;
+}
+.a16 {
+	animation-delay: 3.5s;
+}
+.a17 {
+	animation-delay: 3.6s;
+}
+.a18 {
+	animation-delay: 3.7s;
+}
+.a19 {
+	animation-delay: 3.8s;
+}
+.a20 {
+	animation-delay: 3.9s;
+}
+.a21 {
+	animation-delay: 4s;
+}
+.a22 {
+	animation-delay: 4.1s;
+}
+.a23 {
+	animation-delay: 4.2s;
+}
+.a24 {
+	animation-delay: 4.3s;
+}
+.a25 {
+	animation-delay: 4.4s;
+}
+.a26 {
+	animation-delay: 4.5s;
+}
+.a27 {
+	animation-delay: 4.6s;
+}
+.a28 {
+	animation-delay: 4.7s;
 }
  @keyframes move {
 	 0% {

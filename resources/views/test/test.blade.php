@@ -47,8 +47,8 @@
                                         <div class="container">
                                 <div class="left">
                                     <div class="header">
-                                    <h2 class="animation a1">Welcome Back</h2>
-                                    <h4 class="animation a2">Log in to your account using email and password</h4>
+                                    <h2 class="animation a1">Test de Violencia</h2>
+                                    <h4 class="animation a2">Selecciona las opciones que corresponden a tu situación</h4>
                                     </div>
                                     <div class="form">
                                     
@@ -75,63 +75,66 @@
                                    </select>
                                    <fieldset>
                                        <br>
-                                        <p class="animation a2">Sexo del agresor</p>
-
+                                        <p class="animation a8">Sexo del agresor</p>
                                         <div>
                                         <input class="animation a9" type="radio" id="hombre" name="drone"
                                                 checked>
-                                        <label for="hombre">Hombre</label>
+                                        <label class="animation a10" for="hombre">Hombre</label>
                                         </div>
 
                                         <div>
-                                        <input class="animation a9" type="radio" id="dewey" name="mujer">
-                                        <label  for="mujer">Mujer</label>
+                                        <input class="animation a11" type="radio" id="mujer" name="drone">
+                                        <label  class="animation a12" for="mujer">Mujer</label>
+                                        </div>
+                                        <div>
+                                        <input class="animation a13" type="radio" id="indefinido" name="drone">
+                                        <label  class="animation a13" for="indefinido">Indefinido</label>
                                         </div>
                                     </fieldset>
                                     <fieldset>
                                        <br>
-                                        <p class="animation a2">Tipo de violencia</p>
+                                        <p class="animation a13">Tipo de violencia</p>
 
                                         <div>
-                                        <input class="animation a9" type="checkbox" id="verb" name="drone">
-                                        <label for="verb">Verbal o psicológica</label>
+                                        <input class="animation a14" type="checkbox" id="verb" name="drone">
+                                        <label class="animation a15" for="verb">Verbal o psicológica</label>
                                         </div>
 
                                         <div>
-                                        <input class="animation a9" type="checkbox" id="patri" name="drone">
-                                        <label for="patri">Patrimonial</label>
+                                        <input class="animation a16" type="checkbox" id="patri" name="drone">
+                                        <label class="animation a17" for="patri">Patrimonial</label>
                                         </div>
 
                                         <div>
-                                        <input class="animation a9" type="checkbox" id="fisica" name="drone">
-                                        <label for="fisica">Física</label>
+                                        <input class="animation a18" type="checkbox" id="fisica" name="drone">
+                                        <label class="animation a19" for="fisica">Física</label>
                                         </div>
 
                                         <div>
-                                        <input class="animation a9" type="checkbox" id="sexual" name="drone">
-                                        <label for="sexual">Sexual</label>
+                                        <input class="animation a20" type="checkbox" id="sexual" name="drone">
+                                        <label class="animation a21" for="sexual">Sexual</label>
                                         </div>
                                     </fieldset>
-                                   <input type="text" class="form-field animation a9" placeholder="Lugar">
-                                   <select class="form-field animation a7" placeholder="Nivel Educativo">
+                                   <input type="text" class="form-field animation a22" placeholder="Lugar">
+                                   <select class="form-field animation a23" placeholder="Nivel Educativo">
                                         <option>- Acción Tomada -</option>
                                         <option>Preparatoria</option>
                                         <option>Universidad</option>
                                    </select>
-                                   <select class="form-field animation a7" placeholder="Nivel Educativo">
+                                   <select class="form-field animation a24" placeholder="Nivel Educativo">
                                         <option>- Respuesta Acción -</option>
                                         <option>Preparatoria</option>
                                         <option>Universidad</option>
                                    </select>
-                                   <select class="form-field animation a7" placeholder="Nivel Educativo">
+                                   <select class="form-field animation a25" placeholder="Nivel Educativo">
                                         <option>- Tiempo -</option>
                                         <option>Preparatoria</option>
                                         <option>Universidad</option>
                                    </select>
-                                   <input type="text" class="form-field animation a10" placeholder="Otro servicio">
-                                   <input type="text" class="form-field animation a11" placeholder="Detalles">
+                                   <input type="text" class="form-field animation a26" placeholder="Otro servicio">
+                                   <input type="text" class="form-field animation a27" placeholder="Detalles">
                                    <br>
-                                    <button class="Revisar">LOGIN</button>
+                                    <button class="form-field animation a28" class="Revisar">ENVIAR</button>
                                     </div>
                                 </div>
                                 <div class="right"></div>
