@@ -37,20 +37,47 @@
             </div>
             </nav>
 
-
-
         </header>
         </div>
+        
+<div class="container mt-5">
+    <div class="col-12">
+        <div class="row">
+                <div class="col-12 grid-margin">
+                        <div class="card">
+                                <div class="card-body">
+                                        <h4 class="card-title">Consultar</h4>
+                                        <button type="button" class="btn btn-danger" style="background-color: #00695c;color:#ffffffff; ">Genera reporte</button>
+
+                                        <div class="table-responsive">
+                                                <table class="table">
+                                                        <thead>
+                                                                <tr style="background-color: #00695c; color:#FFFFFF;">
+                                                                        <th style=" text-align: center;"> Institucion </th>
+                                                                        <th style=" text-align: center;"> Sexo del agresor </th>
+                                                                        <th style=" text-align: center;"> Sexo del agredido </th>
+                                                                        <th style=" text-align: center;"> Fecha del insidente </th>
+                                                                </tr>
+                                                        </thead>                                                        
+                                                </table>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </div>
+
+    </div>
+</div>
+
+ <!-- 
         <div class="container-fluid">
                     <div id="Cuerpo">
                         <div class="row justify-content-end">
-
-
                             <a>Consulta</a>
-
-
                         </div>
                     </div>
             </div>
-    </body>
+        -->   
+     </body>
 </html>
+ 
