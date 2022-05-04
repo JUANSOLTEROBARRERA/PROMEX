@@ -35,117 +35,195 @@
             </nav>
         </header>
         </div>
-                            
 
-                                    <div id="Cuerpo2">
-                                    <div class="row justify-content-begin">
-                                        <div class="col-sm-15">
-
+        <div id="Cuerpo2">
+        <div class="row justify-content-begin">
+      <div class="col-sm-9">   
 
 
+                        <table class="table">
+                    <thead>
+                        <tr>
+                        <th scope="col">¡BUSCA AYUDA! Esto no es tu culpa</th>
+                        <th scope="col">Frecuente<br>1</th>
+                        <th scope="col">A veces<br>2</th>
+                        <th scope="col">No<br>3</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <th scope="row">Me pegan (puñetes, patadas, etc.) </th>
+                        <td>
+                                        <div>
+                                        <input  type="radio" id="pregunta1a" name="pregunta1">
+                                        </div>
+                         </td>
+                        <td>
+                                        <div>
+                                        <input  type="radio" id="pregunta1b" name="pregunta1">
+                                        </div>
+                        </td>
+                        <td>
+                                        <div>
+                                        <input  type="radio" id="pregunta1c" name="pregunta1">
+                                        </div>
+                        </td>
+                        </tr>
 
-                                        <div class="container">
-                                <div class="left">
-                                    <div class="header">
-                                    <h2 class="animation a1">Test de Violencia</h2>
-                                    <h4 class="animation a2">Selecciona las opciones que corresponden a tu situación</h4>
-                                    </div>
-                                    <div class="form">
+                        <tr class="table-primary">
+                        <th scope="row">2.- Te ha dicho que estás con alguien más, o que tus amigos quieren estar contigo?</th>
+                        <td>
+                                        <div>
+                                        <input  type="radio" id="pregunta2a" name="pregunta2">
+                                        </div>
+                         </td>
+                        <td>
+                                        <div>
+                                        <input  type="radio" id="pregunta2b" name="pregunta2">
+                                        </div>
+                        </td>
+                        <td>
+                                        <div>
+                                        <input  type="radio" id="pregunta2c" name="pregunta2">
+                                        </div>
+                        </td>
+                        </tr>
+                        <tr class="table-secondary">
+                        <th scope="row">3.- ¿Te dice que tiene otras mujeres y te compara con tus ex parejas?</th>
+                        <td>
+                                        <div>
+                                        <input  type="radio" id="pregunta3a" name="pregunta3">
+                                        </div>
+                         </td>
+                        <td>
+                                        <div>
+                                        <input  type="radio" id="pregunta3b" name="pregunta3">
+                                        </div>
+                        </td>
+                        <td>
+                                        <div>
+                                        <input  type="radio" id="pregunta3c" name="pregunta3">
+                                        </div>
+                        </td>
+                        </tr>
+                        <tr class="table-success">
+                        <th scope="row">4.- ¿Todo el tiempo quiere saber qué haces y con quién estas?</th>
+                        <td>
+                                        <div>
+                                        <input  type="radio" id="pregunta4a" name="pregunta4">
+                                        </div>
+                         </td>
+                        <td>
+                                        <div>
+                                        <input  type="radio" id="pregunta4b" name="pregunta4">
+                                        </div>
+                        </td>
+                        <td>
+                                        <div>
+                                        <input  type="radio" id="pregunta4c" name="pregunta4">
+                                        </div>
+                        </td>
+                        </tr>
+                        <tr class="table-danger">
+                        <th scope="row">5.- ¿Te critica, se burla de tu cuerpo y exagera de tus defectos en público o en privado?</th>
+                        <td>
+                                        <div>
+                                        <input  type="radio" id="pregunta5a" name="pregunta5">
+                                        </div>
+                         </td>
+                        <td>
+                                        <div>
+                                        <input  type="radio" id="pregunta5b" name="pregunta5">
+                                        </div>
+                        </td>
+                        <td>
+                                        <div>
+                                        <input  type="radio" id="pregunta5c" name="pregunta5">
+                                        </div>
+                        </td>
+                        </tr>
+                        <tr class="table-warning">
+                        <th scope="row">6.- Cuando estás con tu pareja ¿sientes tensión y piensas que hagas lo que hagas se molestará?</th>
+                        <td>
+                                        <div>
+                                        <input  type="radio" id="pregunta6a" name="pregunta6">
+                                        </div>
+                         </td>
+                        <td>
+                                        <div>
+                                        <input  type="radio" id="pregunta6b" name="pregunta6">
+                                        </div>
+                        </td>
+                        <td>
+                                        <div>
+                                        <input  type="radio" id="pregunta6c" name="pregunta6">
+                                        </div>
+                        </td>
+                        </tr>
+                        <tr class="table-info">
+                        <th scope="row">7.-Para decidir lo que harán cuando salen ¿Ignora tu opinión?</th>
+                        <td>
+                                        <div>
+                                        <input  type="radio" id="pregunta7a" name="pregunta7">
+                                        </div>
+                         </td>
+                        <td>
+                                        <div>
+                                        <input  type="radio" id="pregunta7b" name="pregunta7">
+                                        </div>
+                        </td>
+                        <td>
+                                        <div>
+                                        <input  type="radio" id="pregunta7c" name="pregunta7">
+                                        </div>
+                        </td>
+                        </tr>
+                        <tr class="table-light">
+                        <th scope="row">8.- Cuando hablan ¿te sientes mal porque sólo te habla de sexo y te pregunta si tuviste relaciones sexuales con otras personas?</th>
+                        <td>
+                                        <div>
+                                        <input  type="radio" id="pregunta8a" name="pregunta8">
+                                        </div>
+                         </td>
+                        <td>
+                                        <div>
+                                        <input  type="radio" id="pregunta8b" name="pregunta8">
+                                        </div>
+                        </td>
+                        <td>
+                                        <div>
+                                        <input  type="radio" id="pregunta8c" name="pregunta8">
+                                        </div>
+                        </td>
+                        </tr>
+                        <tr class="table-dark">
+                        <th scope="row">9.- ¿Sientes que tu pareja constantemente te está controlando por amor?</th>
+                        <td>
+                                        <div>
+                                        <input  type="radio" id="pregunta9a" name="pregunta9">
+                                        </div>
+                         </td>
+                        <td>
+                                        <div>
+                                        <input  type="radio" id="pregunta9b" name="pregunta9">
+                                        </div>
+                        </td>
+                        <td>
+                                        <div>
+                                        <input  type="radio" id="pregunta9c" name="pregunta9">
+                                        </div>
+                        </td>
+                        </tr>
+                    </tbody>
+                    </table>
+
+
+
+      </div>
+      </div>
+      </div>
+
                                     
-                                    
-                                    <select class="form-field animation a3" name="niveleducativo" id="niveleducativo" placeholder="Nivel Educativo">
-                                        <option>- Nivel Educativo -</option>
-                                        <option>Preparatoria</option>
-                                        <option>Universidad</option>
-                                   </select>
-                                   <select class="form-field animation a4" name="nombreinstitucion" id="nombreinstitucion" placeholder="Nombre Institución">
-                                        <option value="Universidad">- Institución -</option>
-                                        <option value="Colegio ciencias y letras">Colegio ciencias y letras</option>
-                                        <option value="INAPSI NAYARIT">INAPSI NAYARIT</option>
-                                        <option value="Escuela Normal Superior de Nayarit">Escuela Normal Superior de Nayarit</option>
-                                        <option value="Colegio Simón Bolívar">Colegio Simón Bolívar</option>
-                                        <option value="Escuela Secundaria Federal #44 Severiano Ocejeda Peña">Escuela Secundaria Federal #44 Severiano Ocejeda Peña</option>
-                                   </select>
-                                   <input type="email" class="form-field animation a5" placeholder="Email Address">
-                                   <input type="text" class="form-field animation a6" placeholder="Nombre del agresor">
-                                   <select class="form-field animation a7" name="niveleducativo" id="niveleducativo" placeholder="Nivel Educativo">
-                                        <option>- Relación Agresor -</option>
-                                        <option>Preparatoria</option>
-                                        <option>Universidad</option>
-                                   </select>
-                                   <fieldset>
-                                       <br>
-                                        <p class="animation a8">Sexo del agresor</p>
-                                        <div>
-                                        <input class="animation a9" type="radio" id="hombre" name="drone"
-                                                checked>
-                                        <label class="animation a10" for="hombre">Hombre</label>
-                                        </div>
-
-                                        <div>
-                                        <input class="animation a11" type="radio" id="mujer" name="drone">
-                                        <label  class="animation a12" for="mujer">Mujer</label>
-                                        </div>
-                                        <div>
-                                        <input class="animation a13" type="radio" id="indefinido" name="drone">
-                                        <label  class="animation a13" for="indefinido">Indefinido</label>
-                                        </div>
-                                    </fieldset>
-                                    <fieldset>
-                                       <br>
-                                        <p class="animation a13">Tipo de violencia</p>
-
-                                        <div>
-                                        <input class="animation a14" type="checkbox" id="verb" name="drone">
-                                        <label class="animation a15" for="verb">Verbal o psicológica</label>
-                                        </div>
-
-                                        <div>
-                                        <input class="animation a16" type="checkbox" id="patri" name="drone">
-                                        <label class="animation a17" for="patri">Patrimonial</label>
-                                        </div>
-
-                                        <div>
-                                        <input class="animation a18" type="checkbox" id="fisica" name="drone">
-                                        <label class="animation a19" for="fisica">Física</label>
-                                        </div>
-
-                                        <div>
-                                        <input class="animation a20" type="checkbox" id="sexual" name="drone">
-                                        <label class="animation a21" for="sexual">Sexual</label>
-                                        </div>
-                                    </fieldset>
-                                   <input type="text" class="form-field animation a22" placeholder="Lugar">
-                                   <select class="form-field animation a23" placeholder="Nivel Educativo">
-                                        <option>- Acción Tomada -</option>
-                                        <option>Preparatoria</option>
-                                        <option>Universidad</option>
-                                   </select>
-                                   <select class="form-field animation a24" placeholder="Nivel Educativo">
-                                        <option>- Respuesta Acción -</option>
-                                        <option>Preparatoria</option>
-                                        <option>Universidad</option>
-                                   </select>
-                                   <select class="form-field animation a25" placeholder="Nivel Educativo">
-                                        <option>- Tiempo -</option>
-                                        <option>Preparatoria</option>
-                                        <option>Universidad</option>
-                                   </select>
-                                   <input type="text" class="form-field animation a26" placeholder="Otro servicio">
-                                   <input type="text" class="form-field animation a27" placeholder="Detalles">
-                                   <br>
-                                    <button class="form-field animation a28" class="Revisar">ENVIAR</button>
-                                    </div>
-                                </div>
-                                <div class="right"></div>
-                                </div>
-
-
-
-
-                                </div>
-                                </div>
-                                </div>
 
 
 
