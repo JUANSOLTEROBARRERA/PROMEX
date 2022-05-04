@@ -276,7 +276,7 @@
 
 
 
-                    <hr style="animation-delay: 2.4s; border-top: 8px solid #bbb;border-radius: 5px;">
+                    <hr style="animation-delay: 2.4s; border-top: 11px solid #bbb;border-radius: 5px;">
                     
 
 
@@ -332,7 +332,7 @@
                     </tbody>
                     </table>
 
-                    <hr style="animation-delay: 2.4s; border-top: 8px solid #bbb;border-radius: 5px;">
+                    <hr style="animation-delay: 2.4s; border-top: 11px solid #bbb;border-radius: 5px;">
 
                     <table class="table">
                     <thead>
@@ -531,7 +531,7 @@
 
 
 
-                    <hr style="animation-delay: 2.4s; border-top: 8px solid #bbb;border-radius: 5px;">
+                    <hr style="animation-delay: 2.4s; border-top: 11px solid #bbb;border-radius: 5px;">
 
 
 
@@ -740,21 +740,29 @@
                                         </div>
                         </td>
                         <td>
+                                    <?php
+                                    $contador = 0;
+                                    $booleana = true;
+                                    $contador++;
+                                    echo $contador;
+                                    echo "PUMA";
+                                    ?>
+                                    
                                         <div>
                                         <input  type="radio" id="pregunta36c" name="pregunta36">
                                         </div>
+                                    
+
                         </td>
                         </tr>
                     </tbody>
                     </table>
+                            
+                    <?php if ($pregunta36== true):?>
+                                            <h1>Usted si es violentado</h1>
 
-
-
-
-
-
-
-
+                                            <?php else: ?>
+                                                <?php endif;?>
 
 
 
