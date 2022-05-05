@@ -740,16 +740,14 @@
                                         </div>
                         </td>
                         <td>
-                                    <?php
-                                    $contador = 0;
-                                    $booleana = true;
-                                    $contador++;
-                                    echo $contador;
-                                    echo "PUMA";
-                                    ?>
                                     
+                        
+
+
+
+                        
                                         <div>
-                                        <input  type="radio" id="pregunta36c" name="pregunta36">
+                                        <input type="radio" id="pregunta36c" name="pregunta36">
                                         </div>
                                     
 
@@ -758,29 +756,15 @@
                     </tbody>
                     </table>
                             
-                    <?php if ($pregunta36== true):?>
-                                            <h1>Usted si es violentado</h1>
+                    <form id="form1" name="form1" method="post" action="ejemplo.php" autocomplete="off">
+                    <input name="btnLogA" type="submit" class="btnAceptar" id="btnLogA" value="Enviar"/><span style="color: #FFF">  
+                </form>
+                    
 
-                                            <?php else: ?>
-                                                <?php endif;?>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                    
+                    
+                    
+                   
 
 
 
