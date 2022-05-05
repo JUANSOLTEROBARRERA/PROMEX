@@ -45,9 +45,9 @@
                     <thead>
                         <tr>
                         <th scope="col">Verbal o Psicológica</th>
-                        <th scope="col">Frecuente<br>1</th>
+                        <th scope="col">Nunca<br>1</th>
                         <th scope="col">A veces<br>2</th>
-                        <th scope="col">No<br>3</th>
+                        <th scope="col">Muchas Veces<br>3</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -285,9 +285,9 @@
                     <thead>
                         <tr>
                         <th scope="col">Patrimonial</th>
-                        <th scope="col">Frecuente<br>1</th>
+                        <th scope="col">Nunca<br>1</th>
                         <th scope="col">A veces<br>2</th>
-                        <th scope="col">No<br>3</th>
+                        <th scope="col">Muchas Veces<br>3</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -338,9 +338,9 @@
                     <thead>
                         <tr>
                         <th scope="col">Física</th>
-                        <th scope="col">Frecuente<br>1</th>
+                        <th scope="col">Nunca<br>1</th>
                         <th scope="col">A veces<br>2</th>
-                        <th scope="col">No<br>3</th>
+                        <th scope="col">Muchas Veces<br>3</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -358,13 +358,31 @@
                         </td>
                         <td>
                                         <div>
-                                        <input  type="radio" id="pregunta16c" name="pregunta16">
+                                        <input  type="radio" id="pregunta15c" name="pregunta15">
                                         </div>
                         </td>
                         </tr>
 
                         <tr class="table-primary">
                         <th scope="row">2.- ¿Te han pgolpeado mientras juegas?</th>
+                        <td>
+                                        <div>
+                                        <input  type="radio" id="pregunta16a" name="pregunta16">
+                                        </div>
+                         </td>
+                        <td>
+                                        <div>
+                                        <input  type="radio" id="pregunta16b" name="pregunta16">
+                                        </div>
+                        </td>
+                        <td>
+                                        <div>
+                                        <input  type="radio" id="pregunta16c" name="pregunta16">
+                                        </div>
+                        </td>
+                        </tr>
+                        <tr class="table-secondary">
+                        <th scope="row">3.- ¿Te han pellizcado?</th>
                         <td>
                                         <div>
                                         <input  type="radio" id="pregunta17a" name="pregunta17">
@@ -381,8 +399,8 @@
                                         </div>
                         </td>
                         </tr>
-                        <tr class="table-secondary">
-                        <th scope="row">3.- ¿Te han pellizcado?</th>
+                        <tr class="table-success">
+                        <th scope="row">4.- ¿Te han arañado?</th>
                         <td>
                                         <div>
                                         <input  type="radio" id="pregunta18a" name="pregunta18">
@@ -399,8 +417,8 @@
                                         </div>
                         </td>
                         </tr>
-                        <tr class="table-success">
-                        <th scope="row">4.- ¿Te han arañado?</th>
+                        <tr class="table-danger">
+                        <th scope="row">5.- ¿Te han empujado?</th>
                         <td>
                                         <div>
                                         <input  type="radio" id="pregunta19a" name="pregunta19">
@@ -417,8 +435,8 @@
                                         </div>
                         </td>
                         </tr>
-                        <tr class="table-danger">
-                        <th scope="row">5.- ¿Te han empujado?</th>
+                        <tr class="table-warning">
+                        <th scope="row">6.- ¿Te han jaloneado?</th>
                         <td>
                                         <div>
                                         <input  type="radio" id="pregunta20a" name="pregunta20">
@@ -435,8 +453,8 @@
                                         </div>
                         </td>
                         </tr>
-                        <tr class="table-warning">
-                        <th scope="row">6.- ¿Te han jaloneado?</th>
+                        <tr class="table-info">
+                        <th scope="row">7.-¿Te han forcejeado?</th>
                         <td>
                                         <div>
                                         <input  type="radio" id="pregunta21a" name="pregunta21">
@@ -453,8 +471,8 @@
                                         </div>
                         </td>
                         </tr>
-                        <tr class="table-info">
-                        <th scope="row">7.-¿Te han forcejeado?</th>
+                        <tr class="table-light">
+                        <th scope="row">8.- ¿Se han dado una bofetada?</th>
                         <td>
                                         <div>
                                         <input  type="radio" id="pregunta22a" name="pregunta22">
@@ -471,8 +489,8 @@
                                         </div>
                         </td>
                         </tr>
-                        <tr class="table-light">
-                        <th scope="row">8.- ¿Se han dado una bofetada?</th>
+                        <tr class="table-dark">
+                        <th scope="row">9.- ¿Te han pateado?</th>
                         <td>
                                         <div>
                                         <input  type="radio" id="pregunta23a" name="pregunta23">
@@ -489,8 +507,8 @@
                                         </div>
                         </td>
                         </tr>
-                        <tr class="table-dark">
-                        <th scope="row">9.- ¿Te han pateado?</th>
+                        <tr class="table-primary">
+                        <th scope="row">10.- ¿Te han encerrado?</th>
                         <td>
                                         <div>
                                         <input  type="radio" id="pregunta24a" name="pregunta24">
@@ -504,24 +522,6 @@
                         <td>
                                         <div>
                                         <input  type="radio" id="pregunta24c" name="pregunta24">
-                                        </div>
-                        </td>
-                        </tr>
-                        <tr class="table-primary">
-                        <th scope="row">10.- ¿Te han encerrado?</th>
-                        <td>
-                                        <div>
-                                        <input  type="radio" id="pregunta25a" name="pregunta25">
-                                        </div>
-                         </td>
-                        <td>
-                                        <div>
-                                        <input  type="radio" id="pregunta25b" name="pregunta25">
-                                        </div>
-                        </td>
-                        <td>
-                                        <div>
-                                        <input  type="radio" id="pregunta25c" name="pregunta25">
                                         </div>
                         </td>
                         </tr>
@@ -540,14 +540,33 @@
                     <thead>
                         <tr>
                         <th scope="col">Sexual</th>
-                        <th scope="col">Frecuente<br>1</th>
+                        <th scope="col">Nunca<br>1</th>
                         <th scope="col">A veces<br>2</th>
-                        <th scope="col">No<br>3</th>
+                        <th scope="col">Muchas Veces<br>3</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                         <th scope="row">1.- ¿Te han hecho piropos?</th>
+                        <td>
+                                        <div>
+                                        <input  type="radio" id="pregunta25a" name="pregunta25">
+                                        </div>
+                         </td>
+                        <td>
+                                        <div>
+                                        <input  type="radio" id="pregunta25b" name="pregunta25">
+                                        </div>
+                        </td>
+                        <td>
+                                        <div>
+                                        <input  type="radio" id="pregunta25c" name="pregunta25">
+                                        </div>
+                        </td>
+                        </tr>
+
+                        <tr class="table-primary">
+                        <th scope="row">2.- ¿Te han hecho miradas lascivas?</th>
                         <td>
                                         <div>
                                         <input  type="radio" id="pregunta26a" name="pregunta26">
@@ -564,9 +583,8 @@
                                         </div>
                         </td>
                         </tr>
-
-                        <tr class="table-primary">
-                        <th scope="row">2.- ¿Te han hecho miradas lascivas?</th>
+                        <tr class="table-secondary">
+                        <th scope="row">3.- ¿Te han condicionado a tener mejores calificaciones haciendo favores sexuales?</th>
                         <td>
                                         <div>
                                         <input  type="radio" id="pregunta27a" name="pregunta27">
@@ -583,8 +601,8 @@
                                         </div>
                         </td>
                         </tr>
-                        <tr class="table-secondary">
-                        <th scope="row">3.- ¿Te han condicionado a tener mejores calificaciones haciendo favores sexuales?</th>
+                        <tr class="table-success">
+                        <th scope="row">4.- ¿Te han tocado sin tu concentimiento?</th>
                         <td>
                                         <div>
                                         <input  type="radio" id="pregunta28a" name="pregunta28">
@@ -601,8 +619,8 @@
                                         </div>
                         </td>
                         </tr>
-                        <tr class="table-success">
-                        <th scope="row">4.- ¿Te han tocado sin tu concentimiento?</th>
+                        <tr class="table-danger">
+                        <th scope="row">5.- ¿Se han enviado fotografías o vídeos íntimos sin haberlos solicitado?</th>
                         <td>
                                         <div>
                                         <input  type="radio" id="pregunta29a" name="pregunta29">
@@ -619,8 +637,8 @@
                                         </div>
                         </td>
                         </tr>
-                        <tr class="table-danger">
-                        <th scope="row">5.- ¿Se han enviado fotografías o vídeos íntimos sin haberlos solicitado?</th>
+                        <tr class="table-warning">
+                        <th scope="row">6.- ¿Te han solicitado fotografías o videos íntimos?</th>
                         <td>
                                         <div>
                                         <input  type="radio" id="pregunta30a" name="pregunta30">
@@ -637,8 +655,8 @@
                                         </div>
                         </td>
                         </tr>
-                        <tr class="table-warning">
-                        <th scope="row">6.- ¿Te han solicitado fotografías o videos íntimos?</th>
+                        <tr class="table-info">
+                        <th scope="row">7.-¿Te han expuesto con contenido sexual sin tu concentimiento?</th>
                         <td>
                                         <div>
                                         <input  type="radio" id="pregunta31a" name="pregunta31">
@@ -655,8 +673,8 @@
                                         </div>
                         </td>
                         </tr>
-                        <tr class="table-info">
-                        <th scope="row">7.-¿Te han expuesto con contenido sexual sin tu concentimiento?</th>
+                        <tr class="table-light">
+                        <th scope="row">8.- ¿Te han tomado fotografías o videos íntimos sin tu concentimiento?</th>
                         <td>
                                         <div>
                                         <input  type="radio" id="pregunta32a" name="pregunta32">
@@ -673,8 +691,8 @@
                                         </div>
                         </td>
                         </tr>
-                        <tr class="table-light">
-                        <th scope="row">8.- ¿Te han tomado fotografías o videos íntimos sin tu concentimiento?</th>
+                        <tr class="table-dark">
+                        <th scope="row">9.- ¿Te han amenazado con difundir contigo íntimo tuyo?</th>
                         <td>
                                         <div>
                                         <input  type="radio" id="pregunta33a" name="pregunta33">
@@ -691,8 +709,8 @@
                                         </div>
                         </td>
                         </tr>
-                        <tr class="table-dark">
-                        <th scope="row">9.- ¿Te han amenazado con difundir contigo íntimo tuyo?</th>
+                        <tr class="table-primary">
+                        <th scope="row">10.- ¿Te han forzado a tener relaciones sexuales?</th>
                         <td>
                                         <div>
                                         <input  type="radio" id="pregunta34a" name="pregunta34">
@@ -709,8 +727,8 @@
                                         </div>
                         </td>
                         </tr>
-                        <tr class="table-primary">
-                        <th scope="row">10.- ¿Te han forzado a tener relaciones sexuales?</th>
+                        <tr class="table-secundary">
+                        <th scope="row">11.- ¿Has sido víctima de violación?</th>
                         <td>
                                         <div>
                                         <input  type="radio" id="pregunta35a" name="pregunta35">
@@ -722,32 +740,9 @@
                                         </div>
                         </td>
                         <td>
+                                                
                                         <div>
-                                        <input  type="radio" id="pregunta35c" name="pregunta35">
-                                        </div>
-                        </td>
-                        </tr>
-                        <tr class="table-secundary">
-                        <th scope="row">11.- ¿Has sido víctima de violación?</th>
-                        <td>
-                                        <div>
-                                        <input  type="radio" id="pregunta36a" name="pregunta36">
-                                        </div>
-                         </td>
-                        <td>
-                                        <div>
-                                        <input  type="radio" id="pregunta36b" name="pregunta36">
-                                        </div>
-                        </td>
-                        <td>
-                                    
-                        
-
-
-
-                        
-                                        <div>
-                                        <input type="radio" id="pregunta36c" name="pregunta36">
+                                        <input type="radio" id="pregunta35c" name="pregunta35">
                                         </div>
                                     
 
@@ -756,15 +751,413 @@
                     </tbody>
                     </table>
                             
-                    <form id="form1" name="form1" method="post" action="ejemplo.php" autocomplete="off">
-                    <input name="btnLogA" type="submit" class="btnAceptar" id="btnLogA" value="Enviar"/><span style="color: #FFF">  
-                </form>
-                    
+                    <script lang = "JavaScript">
+                        function verificar(){
+                        var contador = 0;
+                        var contador2 = 0;
+                        var contador3 = 0;
+                        var contador4 = 0;
+                        if(document.getElementById('pregunta1a').checked){
+                            contador++;  
+                        }
+                        if(document.getElementById('pregunta1b').checked){
+                            contador=contador + 2;
+                            
+                        }
+                        if(document.getElementById('pregunta1c').checked){
+                            contador= contador + 3;
+                            
+                        }
+
+                        if(document.getElementById('pregunta2a').checked){
+                            contador++;
+                            
+                        }
+                        if(document.getElementById('pregunta2b').checked){
+                            contador=contador + 2;
+                            
+                        }
+                        if(document.getElementById('pregunta2c').checked){
+                            contador= contador + 3;
+                            
+                        }
+
+                        if(document.getElementById('pregunta3a').checked){
+                            contador++;
+                            
+                        }
+                        if(document.getElementById('pregunta3b').checked){
+                            contador=contador + 2;
+                            
+                        }
+                        if(document.getElementById('pregunta3c').checked){
+                            contador=contador + 3;
+                            
+                        }
+
+                        if(document.getElementById('pregunta4a').checked){
+                            contador++;                           
+                        }
+                        if(document.getElementById('pregunta4b').checked){
+                            contador=contador + 2;                         
+                        }
+                        if(document.getElementById('pregunta4c').checked){
+                            contador=contador + 3;                          
+                        }
+
+                        if(document.getElementById('pregunta5a').checked){
+                            contador++;                           
+                        }
+                        if(document.getElementById('pregunta5b').checked){
+                            contador=contador + 2;                           
+                        }
+                        if(document.getElementById('pregunta5c').checked){
+                            contador=contador + 3;
+                            
+                        }
+                        if(document.getElementById('pregunta6a').checked){
+                            contador++;                           
+                        }
+                        if(document.getElementById('pregunta6b').checked){
+                            contador=contador + 2;                           
+                        }
+                        if(document.getElementById('pregunta6c').checked){
+                            contador=contador + 3;                         
+                        }
+
+                        if(document.getElementById('pregunta7a').checked){
+                            contador++;                        
+                        }
+                        if(document.getElementById('pregunta7b').checked){
+                            contador=contador + 2;                           
+                        }
+                        if(document.getElementById('pregunta7c').checked){
+                            contador=contador + 3;                           
+                        }
+
+                        if(document.getElementById('pregunta8a').checked){
+                            contador++;                          
+                        }
+                        if(document.getElementById('pregunta8b').checked){
+                            contador=contador + 2;                             
+                        }
+                        if(document.getElementById('pregunta8c').checked){
+                            contador=contador + 3;                             
+                        }
+
+                        if(document.getElementById('pregunta9a').checked){
+                            contador++;                           
+                        }
+                        if(document.getElementById('pregunta9b').checked){
+                            contador=contador + 2;                            
+                        }
+                        if(document.getElementById('pregunta9c').checked){
+                            contador=contador + 3;                            
+                        }
+
+                        if(document.getElementById('pregunta10a').checked){
+                            contador++;                         
+                        }
+                        if(document.getElementById('pregunta10b').checked){
+                            contador=contador + 2;                            
+                        }
+                        if(document.getElementById('pregunta10c').checked){
+                            contador=contador + 3;                             
+                        }
+
+                        if(document.getElementById('pregunta11a').checked){
+                            contador++;                           
+                        }
+                        if(document.getElementById('pregunta11b').checked){
+                            contador=contador + 2;                            
+                        }
+                        if(document.getElementById('pregunta11c').checked){
+                            contador=contador + 3;                           
+                        }
+
+                        if(document.getElementById('pregunta12a').checked){
+                            contador++;                           
+                        }
+                        if(document.getElementById('pregunta12b').checked){
+                            contador=contador + 2;                             
+                        }
+                        if(document.getElementById('pregunta12c').checked){
+                            contador=contador + 3;                            
+                        }
+
+                        if(document.getElementById('pregunta13a').checked){
+                            contador2++;                           
+                        }
+                        if(document.getElementById('pregunta13b').checked){
+                            contador2=contador2 + 2;                            
+                        }
+                        if(document.getElementById('pregunta13c').checked){
+                            contador2=contador2 + 3;                             
+                        }
+
+                        if(document.getElementById('pregunta14a').checked){
+                            contador2++;                
+                        }
+                        if(document.getElementById('pregunta14b').checked){
+                            contador2=contador2 + 2;                    
+                        }
+                        if(document.getElementById('pregunta14c').checked){
+                            contador2=contador2 + 3;                   
+                        }
+
+                        if(document.getElementById('pregunta15a').checked){
+                            contador3++;                       
+                        }
+                        if(document.getElementById('pregunta15b').checked){
+                            contador3=contador3 + 2;                          
+                        }
+                        if(document.getElementById('pregunta15c').checked){
+                            contador3=contador3 + 3;  
+                            
+                        }
+
+                        if(document.getElementById('pregunta16a').checked){
+                            contador3++;    
+                        }
+                        if(document.getElementById('pregunta16b').checked){
+                            contador3=contador3 + 2;  
+                        }
+                        if(document.getElementById('pregunta16c').checked){
+                            contador3=contador3 + 3;  
+                            
+                        }
+
+                        if(document.getElementById('pregunta17a').checked){
+                            contador3++;  
+                        }
+                        if(document.getElementById('pregunta17b').checked){
+                            contador3=contador3 + 2;  
+                        }
+                        if(document.getElementById('pregunta17c').checked){
+                            contador3=contador3 + 3;  
+                        }
+
+                        if(document.getElementById('pregunta18a').checked){
+                            contador3++;  
+                        }
+                        if(document.getElementById('pregunta18b').checked){
+                            contador3=contador3 + 2;  
+                        }
+                        if(document.getElementById('pregunta18c').checked){
+                            contador3=contador3 + 3;  
+                        }
+
+                        if(document.getElementById('pregunta19a').checked){
+                            contador3++;  
+                        }
+                        if(document.getElementById('pregunta19b').checked){
+                            contador3=contador3 + 2;  
+                        }
+                        if(document.getElementById('pregunta19c').checked){
+                            contador3=contador3 + 3;  
+                        }
+
+                        if(document.getElementById('pregunta20a').checked){
+                            contador3++;  
+                        }
+                        if(document.getElementById('pregunta20b').checked){
+                            contador3=contador3 + 2;  
+                        }
+                        if(document.getElementById('pregunta20c').checked){
+                            contador3=contador3 + 3;  
+                        }
+
+                        if(document.getElementById('pregunta21a').checked){
+                            contador3++;  
+                        }
+                        if(document.getElementById('pregunta21b').checked){
+                            contador3=contador3 + 2;  
+                        }
+                        if(document.getElementById('pregunta21c').checked){
+                            contador3=contador3 + 3;  
+                        }
+
+                        if(document.getElementById('pregunta22a').checked){
+                            contador3++;  
+                        }
+                        if(document.getElementById('pregunta22b').checked){
+                            contador3=contador3 + 2;  
+                        }
+                        if(document.getElementById('pregunta22c').checked){
+                            contador3=contador3 + 3;  
+                        }
+
+                        if(document.getElementById('pregunta23a').checked){
+                            contador3++;  
+                        }
+                        if(document.getElementById('pregunta23b').checked){
+                            contador3=contador3 + 2;  
+                        }
+                        if(document.getElementById('pregunta23c').checked){
+                            contador3=contador3 + 3;  
+                        }
+
+                        if(document.getElementById('pregunta24a').checked){
+                            contador3++;  
+                        }
+                        if(document.getElementById('pregunta24b').checked){
+                            contador3=contador3 + 2;  
+                        }
+                        if(document.getElementById('pregunta24c').checked){
+                            contador3=contador3 + 3;  
+                        }
+
+                        if(document.getElementById('pregunta25a').checked){
+                            contador4++;  
+                        }
+                        if(document.getElementById('pregunta25b').checked){
+                            contador4=contador4 + 2;  
+                        }
+                        if(document.getElementById('pregunta25c').checked){
+                            contador4=contador4 + 3;  
+                        }
+
+                        if(document.getElementById('pregunta26a').checked){
+                            contador4++;  
+                        }
+                        if(document.getElementById('pregunta26b').checked){
+                            contador4=contador4 + 2;  
+                        }
+                        if(document.getElementById('pregunta26c').checked){
+                            contador4=contador4 + 3;  
+                        }
+
+                        if(document.getElementById('pregunta27a').checked){
+                            contador4++;  
+                        }
+                        if(document.getElementById('pregunta27b').checked){
+                            contador4=contador4 + 2;  
+                        }
+                        if(document.getElementById('pregunta27c').checked){
+                            contador4=contador4 + 3;  
+                        }
+
+                        if(document.getElementById('pregunta28a').checked){
+                            contador4++;  
+                        }
+                        if(document.getElementById('pregunta28b').checked){
+                            contador4=contador4 + 2;  
+                        }
+                        if(document.getElementById('pregunta28c').checked){
+                            contador4=contador4 + 3;  
+                        }
+
+                        if(document.getElementById('pregunta29a').checked){
+                            contador4++;  
+                        }
+                        if(document.getElementById('pregunta29b').checked){
+                            contador4=contador4 + 2;  
+                        }
+                        if(document.getElementById('pregunta29c').checked){
+                            contador4=contador4 + 3;  
+                        }
+
+                        if(document.getElementById('pregunta30a').checked){
+                            contador4++;  
+                        }
+                        if(document.getElementById('pregunta30b').checked){
+                            contador4=contador4 + 2;  
+                        }
+                        if(document.getElementById('pregunta30c').checked){
+                            contador4=contador4 + 3;  
+                        }
+
+                        if(document.getElementById('pregunta31a').checked){
+                            contador4++;  
+                        }
+                        if(document.getElementById('pregunta31b').checked){
+                            contador4=contador4 + 2;  
+                        }
+                        if(document.getElementById('pregunta31c').checked){
+                            contador4=contador4 + 3;  
+                        }
+
+                        if(document.getElementById('pregunta32a').checked){
+                            contador4++;  
+                        }
+                        if(document.getElementById('pregunta32b').checked){
+                            contador4=contador4 + 2;  
+                        }
+                        if(document.getElementById('pregunta32c').checked){
+                            contador4=contador4 + 3;  
+                        }
+
+                        if(document.getElementById('pregunta33a').checked){
+                            contador4++;  
+                        }
+                        if(document.getElementById('pregunta33b').checked){
+                            contador4=contador4 + 2;  
+                        }
+                        if(document.getElementById('pregunta33c').checked){
+                            contador4=contador4 + 3;  
+                        }
+
+                        if(document.getElementById('pregunta34a').checked){
+                            contador4++;  
+                        }
+                        if(document.getElementById('pregunta34b').checked){
+                            contador4=contador4 + 2;  
+                        }
+                        if(document.getElementById('pregunta34c').checked){
+                            contador4=contador4 + 3;  
+                        }
+
+                        if(document.getElementById('pregunta35a').checked){
+                            contador4++;  
+                        }
+                        if(document.getElementById('pregunta35b').checked){
+                            contador4=contador4 + 2;  
+                        }
+                        if(document.getElementById('pregunta35c').checked){
+                            contador4=contador4 + 3;  
+                        }
+
+
+                       if(contador>=0 && contador<=15)alert("TOTAL PUNTAJE: "+ contador+"\n NO SUFRES VIOLENCIA VERBAL O PSICOLÓGICA");
+                        if(contador>=16 && contador<=36)alert("TOTAL PUNTAJE: "+ contador+"\n SUFRES VIOLENCIA VERBAL O PSICOLÓGICA REALIZA UNA DENUNCIA");
+
+                        if(contador2>=0 && contador2<=2)alert("TOTAL PUNTAJE: "+ contador2+"\n NO SUFRES VIOLENCIA PATRIMONIAL");
+                        if(contador2>=3 && contador2<=6)alert("TOTAL PUNTAJE: "+ contador2+"\n SUFRES VIOLENCIA PATRIMONIAL");
+
+                        if(contador3>=0 && contador3<=16)alert("TOTAL PUNTAJE: "+ contador3+"\n NO SUFRES VIOLENCIA FÍSICA");
+                        if(contador3>=17 && contador3<=30)alert("TOTAL PUNTAJE: "+ contador3+"\n SUFRES VIOLENCIA FÍSICA");
+
+                        if(contador4>=0 && contador4<=17)alert("TOTAL PUNTAJE: "+ contador4+"\n NO SUFRES VIOLENCIA SEXUAL");
+                        if(contador4>=18 && contador4<=33)alert("TOTAL PUNTAJE: "+ contador4+"\n SUFRES VIOLENCIA SEXUAL");
+
+                    }
+                    </script>
 
                     
+                                            <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="verificar()" name = "boton">
+                        Enviar
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">PUNTAJE</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <h5 id="texto">  </h5>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
                     
-                    
-                   
+                        
 
 
 
