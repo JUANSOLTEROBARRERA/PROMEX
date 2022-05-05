@@ -757,6 +757,7 @@
                         var contador2 = 0;
                         var contador3 = 0;
                         var contador4 = 0;
+                        var realizar = 35;
                         if(document.getElementById('pregunta1a').checked){
                             contador++;  
                         }
@@ -766,6 +767,10 @@
                         }
                         if(document.getElementById('pregunta1c').checked){
                             contador= contador + 3;
+                            
+                        }
+                        if(document.getElementById('pregunta1a').checked || document.getElementById('pregunta1b').checked || document.getElementById('pregunta1c').checked){
+                            realizar--;
                             
                         }
 
@@ -779,6 +784,10 @@
                         }
                         if(document.getElementById('pregunta2c').checked){
                             contador= contador + 3;
+                            
+                        }
+                        if(document.getElementById('pregunta2a').checked || document.getElementById('pregunta2b').checked || document.getElementById('pregunta2c').checked){
+                            realizar--;
                             
                         }
 
@@ -795,6 +804,11 @@
                             
                         }
 
+                        if(document.getElementById('pregunta3a').checked || document.getElementById('pregunta3b').checked || document.getElementById('pregunta3c').checked){
+                            realizar--;
+                            
+                        }
+
                         if(document.getElementById('pregunta4a').checked){
                             contador++;                           
                         }
@@ -803,6 +817,11 @@
                         }
                         if(document.getElementById('pregunta4c').checked){
                             contador=contador + 3;                          
+                        }
+
+                        if(document.getElementById('pregunta4a').checked || document.getElementById('pregunta4b').checked || document.getElementById('pregunta4c').checked){
+                            realizar--;
+                            
                         }
 
                         if(document.getElementById('pregunta5a').checked){
@@ -815,6 +834,12 @@
                             contador=contador + 3;
                             
                         }
+
+                        if(document.getElementById('pregunta5a').checked || document.getElementById('pregunta5b').checked || document.getElementById('pregunta5c').checked){
+                            realizar--;
+                            
+                        }
+
                         if(document.getElementById('pregunta6a').checked){
                             contador++;                           
                         }
@@ -823,6 +848,11 @@
                         }
                         if(document.getElementById('pregunta6c').checked){
                             contador=contador + 3;                         
+                        }
+
+                        if(document.getElementById('pregunta6a').checked || document.getElementById('pregunta6b').checked || document.getElementById('pregunta6c').checked){
+                            realizar--;
+                            
                         }
 
                         if(document.getElementById('pregunta7a').checked){
@@ -835,6 +865,11 @@
                             contador=contador + 3;                           
                         }
 
+                        if(document.getElementById('pregunta7a').checked || document.getElementById('pregunta7b').checked || document.getElementById('pregunta7c').checked){
+                            realizar--;
+                            
+                        }
+
                         if(document.getElementById('pregunta8a').checked){
                             contador++;                          
                         }
@@ -843,6 +878,11 @@
                         }
                         if(document.getElementById('pregunta8c').checked){
                             contador=contador + 3;                             
+                        }
+
+                        if(document.getElementById('pregunta8a').checked || document.getElementById('pregunta8b').checked || document.getElementById('pregunta8c').checked){
+                            realizar--;
+                            
                         }
 
                         if(document.getElementById('pregunta9a').checked){
@@ -855,6 +895,11 @@
                             contador=contador + 3;                            
                         }
 
+                        if(document.getElementById('pregunta9a').checked || document.getElementById('pregunta9b').checked || document.getElementById('pregunta9c').checked){
+                            realizar--;
+                            
+                        }
+
                         if(document.getElementById('pregunta10a').checked){
                             contador++;                         
                         }
@@ -863,6 +908,11 @@
                         }
                         if(document.getElementById('pregunta10c').checked){
                             contador=contador + 3;                             
+                        }
+
+                        if(document.getElementById('pregunta10a').checked || document.getElementById('pregunta10b').checked || document.getElementById('pregunta10c').checked){
+                            realizar--;
+                            
                         }
 
                         if(document.getElementById('pregunta11a').checked){
@@ -875,6 +925,11 @@
                             contador=contador + 3;                           
                         }
 
+                        if(document.getElementById('pregunta11a').checked || document.getElementById('pregunta11b').checked || document.getElementById('pregunta11c').checked){
+                            realizar--;
+                            
+                        }
+
                         if(document.getElementById('pregunta12a').checked){
                             contador++;                           
                         }
@@ -883,6 +938,11 @@
                         }
                         if(document.getElementById('pregunta12c').checked){
                             contador=contador + 3;                            
+                        }
+
+                        if(document.getElementById('pregunta12a').checked || document.getElementById('pregunta12b').checked || document.getElementById('pregunta12c').checked){
+                            realizar--;
+                            
                         }
 
                         if(document.getElementById('pregunta13a').checked){
@@ -895,6 +955,11 @@
                             contador2=contador2 + 3;                             
                         }
 
+                        if(document.getElementById('pregunta13a').checked || document.getElementById('pregunta13b').checked || document.getElementById('pregunta13c').checked){
+                            realizar--;
+                            
+                        }
+
                         if(document.getElementById('pregunta14a').checked){
                             contador2++;                
                         }
@@ -905,6 +970,11 @@
                             contador2=contador2 + 3;                   
                         }
 
+                        if(document.getElementById('pregunta14a').checked || document.getElementById('pregunta14b').checked || document.getElementById('pregunta14c').checked){
+                            realizar--;
+                            
+                        }
+
                         if(document.getElementById('pregunta15a').checked){
                             contador3++;                       
                         }
@@ -913,6 +983,11 @@
                         }
                         if(document.getElementById('pregunta15c').checked){
                             contador3=contador3 + 3;  
+                            
+                        }
+
+                        if(document.getElementById('pregunta15a').checked || document.getElementById('pregunta15b').checked || document.getElementById('pregunta15c').checked){
+                            realizar--;
                             
                         }
 
@@ -927,6 +1002,11 @@
                             
                         }
 
+                        if(document.getElementById('pregunta16a').checked || document.getElementById('pregunta16b').checked || document.getElementById('pregunta16c').checked){
+                            realizar--;
+                            
+                        }
+
                         if(document.getElementById('pregunta17a').checked){
                             contador3++;  
                         }
@@ -935,6 +1015,11 @@
                         }
                         if(document.getElementById('pregunta17c').checked){
                             contador3=contador3 + 3;  
+                        }
+
+                        if(document.getElementById('pregunta17a').checked || document.getElementById('pregunta17b').checked || document.getElementById('pregunta17c').checked){
+                            realizar--;
+                            
                         }
 
                         if(document.getElementById('pregunta18a').checked){
@@ -947,6 +1032,11 @@
                             contador3=contador3 + 3;  
                         }
 
+                        if(document.getElementById('pregunta18a').checked || document.getElementById('pregunta18b').checked || document.getElementById('pregunta18c').checked){
+                            realizar--;
+                            
+                        }
+
                         if(document.getElementById('pregunta19a').checked){
                             contador3++;  
                         }
@@ -955,6 +1045,11 @@
                         }
                         if(document.getElementById('pregunta19c').checked){
                             contador3=contador3 + 3;  
+                        }
+
+                        if(document.getElementById('pregunta19a').checked || document.getElementById('pregunta19b').checked || document.getElementById('pregunta19c').checked){
+                            realizar--;
+                            
                         }
 
                         if(document.getElementById('pregunta20a').checked){
@@ -967,6 +1062,11 @@
                             contador3=contador3 + 3;  
                         }
 
+                        if(document.getElementById('pregunta20a').checked || document.getElementById('pregunta20b').checked || document.getElementById('pregunta20c').checked){
+                            realizar--;
+                            
+                        }
+
                         if(document.getElementById('pregunta21a').checked){
                             contador3++;  
                         }
@@ -975,6 +1075,11 @@
                         }
                         if(document.getElementById('pregunta21c').checked){
                             contador3=contador3 + 3;  
+                        }
+
+                        if(document.getElementById('pregunta21a').checked || document.getElementById('pregunta21b').checked || document.getElementById('pregunta21c').checked){
+                            realizar--;
+                            
                         }
 
                         if(document.getElementById('pregunta22a').checked){
@@ -987,6 +1092,11 @@
                             contador3=contador3 + 3;  
                         }
 
+                        if(document.getElementById('pregunta22a').checked || document.getElementById('pregunta22b').checked || document.getElementById('pregunta22c').checked){
+                            realizar--;
+                            
+                        }
+
                         if(document.getElementById('pregunta23a').checked){
                             contador3++;  
                         }
@@ -995,6 +1105,11 @@
                         }
                         if(document.getElementById('pregunta23c').checked){
                             contador3=contador3 + 3;  
+                        }
+
+                        if(document.getElementById('pregunta23a').checked || document.getElementById('pregunta23b').checked || document.getElementById('pregunta23c').checked){
+                            realizar--;
+                            
                         }
 
                         if(document.getElementById('pregunta24a').checked){
@@ -1007,6 +1122,11 @@
                             contador3=contador3 + 3;  
                         }
 
+                        if(document.getElementById('pregunta24a').checked || document.getElementById('pregunta24b').checked || document.getElementById('pregunta24c').checked){
+                            realizar--;
+                            
+                        }
+
                         if(document.getElementById('pregunta25a').checked){
                             contador4++;  
                         }
@@ -1015,6 +1135,11 @@
                         }
                         if(document.getElementById('pregunta25c').checked){
                             contador4=contador4 + 3;  
+                        }
+
+                        if(document.getElementById('pregunta25a').checked || document.getElementById('pregunta25b').checked || document.getElementById('pregunta25c').checked){
+                            realizar--;
+                            
                         }
 
                         if(document.getElementById('pregunta26a').checked){
@@ -1027,6 +1152,11 @@
                             contador4=contador4 + 3;  
                         }
 
+                        if(document.getElementById('pregunta26a').checked || document.getElementById('pregunta26b').checked || document.getElementById('pregunta26c').checked){
+                            realizar--;
+                            
+                        }
+
                         if(document.getElementById('pregunta27a').checked){
                             contador4++;  
                         }
@@ -1035,6 +1165,11 @@
                         }
                         if(document.getElementById('pregunta27c').checked){
                             contador4=contador4 + 3;  
+                        }
+
+                        if(document.getElementById('pregunta27a').checked || document.getElementById('pregunta27b').checked || document.getElementById('pregunta27c').checked){
+                            realizar--;
+                            
                         }
 
                         if(document.getElementById('pregunta28a').checked){
@@ -1047,6 +1182,11 @@
                             contador4=contador4 + 3;  
                         }
 
+                        if(document.getElementById('pregunta28a').checked || document.getElementById('pregunta28b').checked || document.getElementById('pregunta28c').checked){
+                            realizar--;
+                            
+                        }
+
                         if(document.getElementById('pregunta29a').checked){
                             contador4++;  
                         }
@@ -1055,6 +1195,11 @@
                         }
                         if(document.getElementById('pregunta29c').checked){
                             contador4=contador4 + 3;  
+                        }
+
+                        if(document.getElementById('pregunta29a').checked || document.getElementById('pregunta29b').checked || document.getElementById('pregunta29c').checked){
+                            realizar--;
+                            
                         }
 
                         if(document.getElementById('pregunta30a').checked){
@@ -1067,6 +1212,11 @@
                             contador4=contador4 + 3;  
                         }
 
+                        if(document.getElementById('pregunta30a').checked || document.getElementById('pregunta30b').checked || document.getElementById('pregunta30c').checked){
+                            realizar--;
+                            
+                        }
+
                         if(document.getElementById('pregunta31a').checked){
                             contador4++;  
                         }
@@ -1075,6 +1225,11 @@
                         }
                         if(document.getElementById('pregunta31c').checked){
                             contador4=contador4 + 3;  
+                        }
+
+                        if(document.getElementById('pregunta31a').checked || document.getElementById('pregunta31b').checked || document.getElementById('pregunta31c').checked){
+                            realizar--;
+                            
                         }
 
                         if(document.getElementById('pregunta32a').checked){
@@ -1087,6 +1242,11 @@
                             contador4=contador4 + 3;  
                         }
 
+                        if(document.getElementById('pregunta32a').checked || document.getElementById('pregunta32b').checked || document.getElementById('pregunta32c').checked){
+                            realizar--;
+                            
+                        }
+
                         if(document.getElementById('pregunta33a').checked){
                             contador4++;  
                         }
@@ -1095,6 +1255,11 @@
                         }
                         if(document.getElementById('pregunta33c').checked){
                             contador4=contador4 + 3;  
+                        }
+
+                        if(document.getElementById('pregunta33a').checked || document.getElementById('pregunta33b').checked || document.getElementById('pregunta33c').checked){
+                            realizar--;
+                            
                         }
 
                         if(document.getElementById('pregunta34a').checked){
@@ -1107,6 +1272,11 @@
                             contador4=contador4 + 3;  
                         }
 
+                        if(document.getElementById('pregunta34a').checked || document.getElementById('pregunta34b').checked || document.getElementById('pregunta34c').checked){
+                            realizar--;
+                            
+                        }
+
                         if(document.getElementById('pregunta35a').checked){
                             contador4++;  
                         }
@@ -1117,46 +1287,33 @@
                             contador4=contador4 + 3;  
                         }
 
+                        if(document.getElementById('pregunta35a').checked || document.getElementById('pregunta35b').checked || document.getElementById('pregunta35c').checked){
+                            realizar--;
+                            
+                        }
 
-                       if(contador>=0 && contador<=15)alert("TOTAL PUNTAJE: "+ contador+"\n NO SUFRES VIOLENCIA VERBAL O PSICOLÓGICA");
-                        if(contador>=16 && contador<=36)alert("TOTAL PUNTAJE: "+ contador+"\n SUFRES VIOLENCIA VERBAL O PSICOLÓGICA REALIZA UNA DENUNCIA");
 
-                        if(contador2>=0 && contador2<=2)alert("TOTAL PUNTAJE: "+ contador2+"\n NO SUFRES VIOLENCIA PATRIMONIAL");
-                        if(contador2>=3 && contador2<=6)alert("TOTAL PUNTAJE: "+ contador2+"\n SUFRES VIOLENCIA PATRIMONIAL");
+                        if(realizar==0){
+                                if(contador>=0 && contador<=15)alert("TOTAL PUNTAJE: "+ contador+"\n NO SUFRES VIOLENCIA VERBAL O PSICOLÓGICA");
+                                if(contador>=16 && contador<=36)alert("TOTAL PUNTAJE: "+ contador+"\n SUFRES VIOLENCIA VERBAL O PSICOLÓGICA REALIZA UNA DENUNCIA");
 
-                        if(contador3>=0 && contador3<=16)alert("TOTAL PUNTAJE: "+ contador3+"\n NO SUFRES VIOLENCIA FÍSICA");
-                        if(contador3>=17 && contador3<=30)alert("TOTAL PUNTAJE: "+ contador3+"\n SUFRES VIOLENCIA FÍSICA");
+                                if(contador2>=0 && contador2<=2)alert("TOTAL PUNTAJE: "+ contador2+"\n NO SUFRES VIOLENCIA PATRIMONIAL");
+                                if(contador2>=3 && contador2<=6)alert("TOTAL PUNTAJE: "+ contador2+"\n SUFRES VIOLENCIA PATRIMONIAL");
 
-                        if(contador4>=0 && contador4<=17)alert("TOTAL PUNTAJE: "+ contador4+"\n NO SUFRES VIOLENCIA SEXUAL");
-                        if(contador4>=18 && contador4<=33)alert("TOTAL PUNTAJE: "+ contador4+"\n SUFRES VIOLENCIA SEXUAL");
+                                if(contador3>=0 && contador3<=16)alert("TOTAL PUNTAJE: "+ contador3+"\n NO SUFRES VIOLENCIA FÍSICA");
+                                if(contador3>=17 && contador3<=30)alert("TOTAL PUNTAJE: "+ contador3+"\n SUFRES VIOLENCIA FÍSICA");
+
+                                if(contador4>=0 && contador4<=17)alert("TOTAL PUNTAJE: "+ contador4+"\n NO SUFRES VIOLENCIA SEXUAL");
+                                if(contador4>=18 && contador4<=33)alert("TOTAL PUNTAJE: "+ contador4+"\n SUFRES VIOLENCIA SEXUAL");
+                        }else{
+                            alert("FALTA RESPONDER: "+ realizar+" PREGUNTAS.");
+                        }
 
                     }
                     </script>
 
                     
-                                            <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="verificar()" name = "boton">
-                        Enviar
-                        </button>
-
-                        <!-- Modal -->
-                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">PUNTAJE</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <h5 id="texto">  </h5>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            </div>
-                            </div>
-                        </div>
-                        </div>
-                    
+                    <button type="button" style="margin-left:50%; margin-bottom:50px; margin-top:50px" class="btn btn-success" onclick="verificar()" name = "boton">Enviar</button>
                         
 
 
