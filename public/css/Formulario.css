@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik:400,500&display=swap');
+ * {
+	 box-sizing: border-box;
+}
+ body {
+	 font-family: 'Rubik', sans-serif;
+	 overflow-x: hidden;
+}
+ .container {
+	 display: flex;
+	 height: 210vh;
+}
+ .left {
+	 overflow: hidden;
+	 display: flex;
+	 margin-left: -32%;
+	 flex-wrap: wrap;
+	 flex-direction: column;
+	 justify-content: top;
+	 animation-name: left;
+	 animation-duration: 1s;
+	 animation-fill-mode: both;
+	 animation-delay: 1s;
+	 height: 100%;
+}
+ .right {
+	 flex: 1;
+	 background-color: black;
+	 transition: 1s;
+	 background-image: url(https://downloader.la/temp/[Downloader.la]-6270baa5a8aac.jpg);
+	 background-size: cover;
+	 background-repeat: no-repeat;
+	 background-position: center;
+}
+ .header > h2 {
+	 margin: 0;
+	 color: #4f46a5;
+}
+ .header > h4 {
+	 margin-top: 10px;
+	 font-weight: normal;
+	 font-size: 15px;
+	 color: rgba(0, 0, 0, .4);
+}
+ .form {
+	 max-width: 80%;
+	 display: flex;
+	 flex-direction: column;
+}
+ .form > p {
+	 text-align: right;
+}
+ .form > p > a {
+	 color: #000;
+	 font-size: 14px;
+}
+ .form-field {
+	 height: 46px;
+	 padding: 0 16px;
+	 border: 2px solid #ddd;
+	 border-radius: 4px;
+	 font-family: 'Rubik', sans-serif;
+	 outline: 0;
+	 transition: 0.2s;
+	 margin-top: 20px;
+}
+ .form-field:focus {
+	 border-color: #0f7ef1;
+}
+ .form > button {
+	 padding: 12px 10px;
+	 border: 0;
+	 background: linear-gradient(to right, #de48b5 0%, #0097ff 100%);
+	 border-radius: 3px;
+	 margin-top: 10px;
+	 color: #fff;
+	 letter-spacing: 1px;
+	 font-family: 'Rubik', sans-serif;
+}
+ .animation {
+	 animation-name: move;
+	 animation-duration: 0.4s;
+	 animation-fill-mode: both;
+	 animation-delay: 2s;
+}
+ .a1 {
+	 animation-delay: 2s;
+}
+ .a2 {
+	 animation-delay: 2.1s;
+}
+ .a3 {
+	 animation-delay: 2.2s;
+}
+ .a4 {
+	 animation-delay: 2.3s;
+}
+ .a5 {
+	 animation-delay: 2.4s;
+}
+ .a6 {
+	 animation-delay: 2.5s;
+}
+.a7 {
+	animation-delay: 2.6s;
+}
+.a8 {
+	animation-delay: 2.7s;
+}
+.a9 {
+	animation-delay: 2.8s;
+}
+.a10 {
+	animation-delay: 2.9s;
+}
+.a11 {
+	animation-delay: 3s;
+}
+.a12 {
+	animation-delay: 3.1s;
+}
+.a13 {
+	animation-delay: 3.2s;
+}
+.a14 {
+	animation-delay: 3.3s;
+}
+.a15 {
+	animation-delay: 3.4s;
+}
+.a16 {
+	animation-delay: 3.5s;
+}
+.a17 {
+	animation-delay: 3.6s;
+}
+.a18 {
+	animation-delay: 3.7s;
+}
+.a19 {
+	animation-delay: 3.8s;
+}
+.a20 {
+	animation-delay: 3.9s;
+}
+.a21 {
+	animation-delay: 4s;
+}
+.a22 {
+	animation-delay: 4.1s;
+}
+.a23 {
+	animation-delay: 4.2s;
+}
+.a24 {
+	animation-delay: 4.3s;
+}
+.a25 {
+	animation-delay: 4.4s;
+}
+.a26 {
+	animation-delay: 4.5s;
+}
+.a27 {
+	animation-delay: 4.6s;
+}
+.a28 {
+	animation-delay: 4.7s;
+}
+ @keyframes move {
+	 0% {
+		 opacity: 0;
+		 visibility: hidden;
+		 transform: translateY(-40px);
+	}
+	 100% {
+		 opacity: 1;
+		 visibility: visible;
+		 transform: translateY(0);
+	}
+}
+ @keyframes left {
+	 0% {
+		 opacity: 0;
+		 width: 0;
+	}
+	 100% {
+		 opacity: 1;
+		 padding: 20px 40px;
+		 width: 440px;
+	}
+}
+.Encabezado{
+    background-color: rgb(47, 47, 47);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
+}
+.logo{
+	margin-top: 2px;
+	margin-bottom: 10px;
+    height: 55px;
+    width: 110px;
+	cursor: pointer;
+}
+.menu {
+	display: flex;
+	justify-content: center;
+  }
+  
+  
+  .menu a {
+	position: relative;
+	display: block;
+	padding: 5px;
+  }
+  .menu li {
+	margin-right: 20px;
+	list-style-type:none;
+	padding-top: 10px;
+  }
+
+
+  .menu a::before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background: linear-gradient(to right, rgb(242, 243, 211), rgb(216, 217, 184), rgb(195, 196, 165));
+	z-index: 1;
+	transform: scaleX(0);
+	transform-origin: left;
+	transition: transform 0.5s ease-in-out;
+  }
+  
+  .menu a:hover::before {
+	transform: scaleX(1);
+  }
+  .oda {
+	margin: 10px;
+	color: rgb(74, 133, 34);
+  	text-decoration: none;
+	font: 15px sans-serif;
+	cursor:pointer;
+}
+.oda:hover {
+	text-decoration: none;
+	color: rgb(74, 133, 34);
+}
+#Cuerpo2{
+	background-color: rgb(255, 255, 255);
+	height: 100%;
+	margin-right:-35%;
+}

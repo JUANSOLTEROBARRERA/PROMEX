@@ -4,11 +4,20 @@ body {
 	background-position: 200px 60px;
 	background-size: 2000px;
 	background-color: black;
+	overflow-x: hidden;
   }
 /*Encabezado*/
+div.sticky {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+  }
+
+
 .Encabezado{
     background-color: rgb(47, 47, 47);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
+	
 }
 .titulop{
 	margin-top: 100px;
@@ -58,6 +67,9 @@ body {
   	text-decoration: none;
 	font: 15px sans-serif;
 	cursor:pointer;
+}
+div.{
+	
 }
 .oda:hover {
 	text-decoration: none;
@@ -528,9 +540,9 @@ table tr:nth-child(even) td{
   /*REDES SOCIALES*/
 
   .wrapper {
-	position: absolute;
-	margin-left: 15px;
-	margin-bottom: 35px;
+	position: fixed;
+    top: 90%;
+	left: 10px;
   } 
   ul li .fa {
 	position: absolute;
