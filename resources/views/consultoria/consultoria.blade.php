@@ -38,19 +38,25 @@
         </header>
         </div>
 <div>
+
 <div class="container mt-5">
     <div class="col-12">
         <div class="row">
                 <div class="col-12 grid-margin">
+
+                        <div style="text-align: right;"> <!-- botón -->
+                                <button type="button" class="btn btn-danger" style= "background-color: #00695c;color:#ffffffff; ">Genera reporte</button>                
+                        </div>
+
                         <div class="card">
                                 <div class="card-body" style="background-color: rgb(47, 47, 47);">
                                         <h4 class="card-title" style="color: rgb(74, 133, 34);">Incidente</h4>
-                                       <!-- <button type="button" class="btn btn-danger" style="background-color: #00695c;color:#ffffffff; ">Genera reporte</button>-->
-                                       <select class="form-field animation a3" name="institucion" id="institucion" placeholder="Institucion"style="color: rgb(74, 133, 34);">
-                                        <option>- Institucion -</option>
-                                        <option>ITTEPIC</option>
-                                        <option>UAN</option>
-                                       </select>   
+                                                <select class="form-field animation a3" name="institucion" id="institucion" placeholder="Institucion"style="color: rgb(74, 133, 34);">
+                                                                <option>- Institucion -</option>
+                                                                <option>ITTEPIC</option>
+                                                                <option>UAN</option>
+                                                </select> 
+                                  
                                         <div class="table-responsive">
                                                 <table class="table">
                                                         <thead>
@@ -58,7 +64,7 @@
                                                                         <th style=" text-align: center;"> Institucion </th>
                                                                         <th style=" text-align: center;"> Sexo del agresor </th>
                                                                         <th style=" text-align: center;"> Sexo del agredido </th>
-                                                                        <th style=" text-align: center;"> Fecha del insidente </th>
+                                                                        <th style=" text-align: center;"> Fecha del incidente </th>
                                                                 </tr>
 
                                                         </thead>                                                        
@@ -79,14 +85,16 @@
         <div class="row">
                 <div class="col-12 grid-margin">
                         <div class="card">
+                                       
                                 <div class="card-body"style="background-color: rgb(47, 47, 47);" >
                                         <h4 class="card-title"style="color: rgb(74, 133, 34);">Institución</h4>
-                                       <!-- <button type="button" class="btn btn-danger" style="background-color: #00695c;color:#ffffffff; ">Genera reporte</button>-->
-                                       <select class="form-field animation a3" name="tipo" id="tipo" placeholder="tipo"style="color: rgb(74, 133, 34);">
-                                        <option>- Tipo -</option>
-                                        <option>Medio Superior</option>
-                                        <option>Superior</option>
-                                       </select>                                
+
+                                                <select class="form-field animation a3" name="tipo" id="tipo" placeholder="tipo"style="color: rgb(74, 133, 34);">
+                                                <option>- Tipo -</option>
+                                                <option>Medio Superior</option>
+                                                <option>Superior</option>
+                                                </select> 
+                                                                                                                                        
                                        <div class="table-responsive" >
                                                 <table class="table">
                                                         <thead>
