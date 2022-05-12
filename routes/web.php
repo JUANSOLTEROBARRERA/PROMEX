@@ -4,6 +4,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\MailController;
+use App\Http\Controllers\AgresorController;
+use App\Http\Controllers\DenunciaController;
 
 
 /*
@@ -42,3 +44,7 @@ Route::post('post-login', [LoginController::class, 'login']);
 Route::post('post-logout', [LoginController::class, 'logout']);
 
 Route::get('/send-email', [MailController::class,'sendEmail']);
+
+Route::resource('/agresor',AgresorController::class);
+
+Route::resource('/denuncia',DenunciaController::class);

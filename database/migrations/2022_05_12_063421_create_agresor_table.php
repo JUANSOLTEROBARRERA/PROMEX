@@ -15,8 +15,7 @@ return new class extends Migration
     {
         Schema::create('agresor', function (Blueprint $table) {
             $table->engine="InnoDB";
-            $table->bigIncrements('id_agresor');
-            $table->string('nombre_agresor');
+            $table->string('nombre_agresor')->primary();
             $table->string('relacion_agresor');
             $table->string('sexo_agresor');
         });
