@@ -13,12 +13,12 @@ return new class extends Migration
      */
     public function up()
     {
-        //
-        Schema::create('tipo_violencia', function (Blueprint $table) {
+        Schema::create('reporte', function (Blueprint $table) {
             $table->engine="InnoDB";
-            $table->bigIncrements('id_tipo');
-            $table->string('nombre_violencia');
-            
+            $table->bigIncrements('id_reporte');
+            $table->Integer('id_usuario')->unsigned();
+            $table->date('fecha_reporte');
+            $table->foreign('id_usuario')->references('id')->on('users')->onDelete("cascade");
         });
     }
 
@@ -29,6 +29,6 @@ return new class extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('reporte');
     }
 };

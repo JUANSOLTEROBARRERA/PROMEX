@@ -13,12 +13,10 @@ return new class extends Migration
      */
     public function up()
     {
-        //
-        Schema::create('reporte_denuncia', function (Blueprint $table){
+        Schema::create('tipo_violencia', function (Blueprint $table) {
             $table->engine="InnoDB";
-            $table->bigInteger('id_denuncia')->references('id_denuncia')->on('denuncia')->onDelete("cascade");
-            $table->bigInteger('id_reporte')->references('id_reporte')->on('reporte')->onDelete("cascade");
-            
+            $table->bigIncrements('id_tipo');
+            $table->string('nombre_violencia');
         });
     }
 
@@ -29,6 +27,6 @@ return new class extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('tipo_violencia');
     }
 };

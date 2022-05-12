@@ -13,13 +13,11 @@ return new class extends Migration
      */
     public function up()
     {
-        //
-        Schema::create('denuncia', function (Blueprint $table){
-            
+        Schema::create('denuncia', function (Blueprint $table) {
             $table->engine="InnoDB";
             $table->bigIncrements('id_denuncia');
-            $table->bigInteger('id_tipo_violencia')->references('id_tipo')->on('tipo_violencia')->onDelete("cascade");
-            $table->bigInteger('id_institucion')->references('id_institucion')->on('institucion')->onDelete("cascade");
+            $table->bigInteger('id_tipo_violencia')->unsigned();
+            $table->bigInteger('id_institucion')->unsigned();
             $table->string('lugar');
             $table->string('accion_tomada');
             $table->string('respuesta_accion');
@@ -28,8 +26,11 @@ return new class extends Migration
             $table->string('detalles');
             $table->string('correo');
             $table->string('sexo_agredido');
-            $table->bigInteger('id_agresor')->references('id_agresor')->on('agresor')->onDelete("cascade");
-            
+            $table->bigInteger('id_agresor')->unsigned();
+
+            $table->foreign('id_tipo_violencia')->references('id_tipo')->on('tipo_violencia')->onDelete("cascade");
+            $table->foreign('id_institucion')->references('id_institucion')->on('institucion')->onDelete("cascade");
+            $table->foreign('id_agresor')->references('id_agresor')->on('agresor')->onDelete("cascade");
         });
     }
 
@@ -40,6 +41,6 @@ return new class extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('denuncia');
     }
 };

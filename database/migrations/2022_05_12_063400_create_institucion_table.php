@@ -13,12 +13,10 @@ return new class extends Migration
      */
     public function up()
     {
-        //
         Schema::create('institucion', function (Blueprint $table) {
             $table->bigIncrements('id_institucion');
             $table->string('nombre_institucion');
             $table->string('nivel');
-                       
         });
     }
 
@@ -29,6 +27,6 @@ return new class extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('institucion');
     }
 };
