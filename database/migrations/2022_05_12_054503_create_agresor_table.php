@@ -13,13 +13,13 @@ return new class extends Migration
      */
     public function up()
     {
-        //
-        Schema::create('reporte', function (Blueprint $table) {
+        Schema::create('agresor', function (Blueprint $table) {
             $table->engine="InnoDB";
-            $table->bigIncrements('id_reporte');
-            $table->int('id_usuario');
-            $table->date('fecha_reporte');
-         
+            $table->bigIncrements('id_agresor');
+            $table->string('nombre_agresor');
+            $table->string('relacion_agresor');
+            $table->string('sexo_agresor');
+            $table->timestamps();
         });
     }
 

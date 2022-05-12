@@ -14,10 +14,11 @@ return new class extends Migration
     public function up()
     {
         //
-        Schema::create('institucion', function (Blueprint $table) {
-            $table->bigIncrements('id_institucion');
-            $table->string('nombre_institucion');
-            $table->string('nivel');            
+        Schema::create('denuncia', function (Blueprint $table){
+            $table->engine="InnoDB";
+            $table->bigInteger('id_denuncia')->references('id_denuncia')->on('denuncia')->onDelete("cascade");
+            $table->bigInteger('id_reporte')->references('id_reporte')->on('reporte')->onDelete("cascade");;
+            $table->timestamps();
         });
     }
 

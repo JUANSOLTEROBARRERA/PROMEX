@@ -18,6 +18,7 @@ return new class extends Migration
             $table->engine="InnoDB";
             $table->bigIncrements('id_tipo');
             $table->string('nombre_violencia');
+            $table->timestamps();
         });
     }
 
