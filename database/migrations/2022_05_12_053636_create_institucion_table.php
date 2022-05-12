@@ -18,7 +18,7 @@ return new class extends Migration
             $table->bigIncrements('id_institucion');
             $table->string('nombre_institucion');
             $table->string('nivel');
-            $table->timestamps();            
+                       
         });
     }
 

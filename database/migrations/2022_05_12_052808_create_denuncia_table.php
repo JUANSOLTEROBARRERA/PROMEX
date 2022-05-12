@@ -29,7 +29,7 @@ return new class extends Migration
             $table->string('correo');
             $table->string('sexo_agredido');
             $table->bigInteger('id_agresor')->references('id_agresor')->on('agresor')->onDelete("cascade");
-            $table->timestamps();
+            
         });
     }
 

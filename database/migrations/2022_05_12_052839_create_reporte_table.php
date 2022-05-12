@@ -17,9 +17,9 @@ return new class extends Migration
         Schema::create('reporte', function (Blueprint $table) {
             $table->engine="InnoDB";
             $table->bigIncrements('id_reporte');
-            $table->int('id_usuario')->references('id')->on('users')->onDelete("cascade");
+            $table->Integer('id_usuario')->references('id')->on('users')->onDelete("cascade");
             $table->date('fecha_reporte');
-            $table->timestamps();
+            
         });
     }
 

@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('nombre_agresor');
             $table->string('relacion_agresor');
             $table->string('sexo_agresor');
-            $table->timestamps();
+            
         });
     }
 
