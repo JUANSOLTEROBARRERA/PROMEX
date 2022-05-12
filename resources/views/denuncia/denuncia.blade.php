@@ -68,8 +68,8 @@
                                         <option value="Escuela Secundaria Federal #44 Severiano Ocejeda Peña">Escuela Secundaria Federal #44 Severiano Ocejeda Peña</option>
                                    </select>
                                    <input type="email" class="form-field animation a5" placeholder="Email Address" name="correo">
-                                   <select class="form-field animation a7"  id="sexoagresor" placeholder="Relacion Agresor" name="sexo_agresor">
-                                                <option>- Sexo Agresor -</option>
+                                   <select class="form-field animation a7"  id="sexoagredido" placeholder="Relacion Agresor" name="sexo_agredido">
+                                                <option>- Sexo Agredido -</option>
                                                 <option>Hombre</option>
                                                 <option>Mujer</option>
                                     </select>
