@@ -3,6 +3,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\MailController;
 
 
 /*
@@ -39,3 +40,5 @@ Route::get('/Login', function () {
 Route::post('post-login', [LoginController::class, 'login']);
 
 Route::post('post-logout', [LoginController::class, 'logout']);
+
+Route::get('/send-email', [MailController::class,'sendEmail']);
