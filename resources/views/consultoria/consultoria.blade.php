@@ -65,15 +65,15 @@
                                                                 </select>
                                                                 <select class="form-field animation a3" name="tipo_violencia" id="tipo_violencia" placeholder="tipo_violencia">
                                                                         <option>- Tipo violencia -</option>
-                                                                        <option>Verbal o psicológica</option>
-                                                                        <option>Patrimonial</option>
-                                                                        <option>Fisica</option>
-                                                                        <option>Sexual</option>
+                                                                        @foreach ($violencias as $violencia)
+                                                                                <option value="{{$violencia->nombre_violencia}}">{{$violencia->nombre_violencia}}</option-->
+                                                                        @endforeach
                                                                 </select>
                                                                 <select class="form-field animation a3" name="institucion" id="institucion" placeholder="institucion">
-                                                                        <option>- Institucion -</option>
-                                                                        <option>ITTEPIC</option>
-                                                                        <option>UAN</option>
+                                                                        <option>- Institución -</option>
+                                                                        @foreach ($instituciones as $institucion)
+                                                                                <option value="{{$institucion->nombre_institucion}}">{{$institucion->nombre_institucion}}</option-->
+                                                                        @endforeach
                                                                 </select>
                                                                 <select class="form-field animation a3" name="lugar" id="lugar" placeholder="lugar">
                                                                         <option>- Lugar -</option>

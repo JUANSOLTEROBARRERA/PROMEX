@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Institucion;
+use App\Models\Tipo_Violencia;
 
 class ReporteController extends Controller
 {
@@ -14,6 +16,9 @@ class ReporteController extends Controller
     public function index()
     {
         //
+        $instituciones = Institucion::all();
+        $violencias = Tipo_Violencia::all();
+        return view('consultoria.consultoria',compact('instituciones','violencias'));
     }
 
     /**
