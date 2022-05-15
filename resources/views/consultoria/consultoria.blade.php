@@ -16,7 +16,6 @@
                                 <div class="container-fluid">
                                         <img class="logo" src="{{ asset('images/Logo.png')}}" onclick="window.location='{{url("/") }}'">
 
-<<<<<<< HEAD
                             <div class="d-flex flex-row-reverse">
                                 <ul class="menu"  data-animation="bonus">
                                 <li><a class="oda" onclick="window.location='{{url("TiposViolencia") }}'">TIPOS DE VIOLENCIA</a></li>
@@ -33,26 +32,6 @@
                                 @endauth
                                 </ul>
                             </div>
-=======
-                                        <div class="d-flex flex-row-reverse">
-                                                <ul class="menu" data-animation="bonus">
-                                                        <li><a class="oda" onclick="window.location='{{url("TiposViolencia") }}'">TIPOS DE VIOLENCIA</a></li>
-                                                        <li><a class="oda" onclick="window.location='{{url("Test") }}'">TEST DE VIOLENCIA</a></li>
-                                                        <li><a class="oda" onclick="window.location='{{url("Denuncia") }}'">REALIZA TU DENUNCIA</a></li>
-                                                        @auth
-                                                        <li><a class="oda" onclick="window.location='{{url("Consultoria") }}'">CONSULTORÍA</a></li>
-                                                        <li>
-                                                                <form action="/post-logout" method="POST">
-                                                                        @csrf
-                                                                        <a class="oda" href="#" onclick="this.closest('form').submit()">CERRAR SESIÓN</a>
-                                                                </form>
-                                                        </li>
-                                                        @else
-                                                        <li><a class="oda" onclick="window.location='{{url("Login") }}'">INICIO DE SESIÓN</a></li>
-                                                        @endauth
-                                                </ul>
-                                        </div>
->>>>>>> 4c83453b27fe06df187180d619f3d169188d99d3
 
                                 </div>
                         </nav>
