@@ -5,13 +5,12 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Tipo_Violencia extends Model
+class Institucion extends Model
 {
     //use HasFactory;
-    protected $table="tipo_violencia";
-    protected $primaryKey="id_tipo";
+    protected $table="institucion";
     protected $fillable = [
-        'nombre_violencia'
+        'nombre_institucion', 'nivel'
     ];
 
     public $timestamps = false;

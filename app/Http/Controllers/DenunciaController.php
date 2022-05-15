@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Denuncia;
 use App\Models\Agresor;
+use App\Models\Institucion;
+use App\Models\Tipo_Violencia;
 
 class DenunciaController extends Controller
 {
@@ -16,6 +18,9 @@ class DenunciaController extends Controller
     public function index()
     {
         //
+        $instituciones = Institucion::all();
+        $violencias = Tipo_Violencia::all();
+        return view('denuncia.denuncia',compact('instituciones','violencias'));
     }
 
     /**
