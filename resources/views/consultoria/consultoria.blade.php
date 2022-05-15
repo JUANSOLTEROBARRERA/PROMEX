@@ -52,7 +52,7 @@
                                                 <div class="card">
                                                         <div class="card-body" style="background-color: rgb(47, 47, 47);">
                                                                 <h4 class="card-title" style="color: rgb(74, 133, 34);">Tabla de denuncias</h4>
-                                                                
+                                                        <form action="{{route('Consultoria.index')}}" method="get">
                                                                 <select class="form-field animation a3" name="sexo_agredido" id="sexo_agredido" placeholder="sexo_agredido">
                                                                         <option>- Sexo agredido -</option>
                                                                         <option>Hombre</option>
@@ -86,7 +86,8 @@
                                                                 </select>
                                                                 <br>
                                                                 <div style="margin-top: 10px;">
-                                                                <input type="button" class="btn btn-sm" value="Consultar" style="background-color: #00695c; color: white;">
+                                                                <input type="submit" class="btn btn-sm" value="Consultar" style="background-color: #00695c; color: white;">
+                                                        </form>
                                                                 <input type="button" class="btn btn-sm" value="Generar reporte" style="background-color: #00695c; color: white;">
                                                                 </div>
                                                                 
@@ -112,6 +113,24 @@
                                                                                         </tr>
 
                                                                                 </thead>
+                                                                                <tbody>
+                                                                                        @foreach($denuncias as $denuncia)
+                                                                                        <tr>
+                                                                                                <td>{{denuncia->sexo_agredido}}</td>
+                                                                                                <td>{{denuncia->nombre_agresor}}</td>
+                                                                                                <td>{{denuncia->nombre_agresor}}</td>
+                                                                                                <td>{{denuncia->id_tipo_violencia}}</td>
+                                                                                                <td>{{denuncia->nombre_institucion}}</td>
+                                                                                                <td>{{denuncia->lugar}}</td>
+                                                                                                <td>{{denuncia->accion_tomada}}</td>
+                                                                                                <td>{{denuncia->respuesta_accion}}</td>
+                                                                                                <td>{{denuncia->tiempo}}</td>
+                                                                                                <td>{{denuncia->otro_servicio}}</td>
+                                                                                                <td>{{denuncia->detalles}}</td>
+                                                                                                <td>{{denuncia->correo}}</td>
+                                                                                        </tr>
+                                                                                        @endforeach
+                                                                                </tbody>
                                                                         </table>
                                                                 </div>
 
