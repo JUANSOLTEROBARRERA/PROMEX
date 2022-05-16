@@ -44,7 +44,7 @@
                                         <div class="col-sm-15">
                                         <div class="container">
                                 <div class="left">
-                                    <div class="header">
+                                    <div class="header" style="margin-top: 50px">
                                     <h2 class="animation a1">Realiza tu Denuncia</h2>
                                     </div>
                                 <form action="{{route('denuncia.store')}}" method="post">

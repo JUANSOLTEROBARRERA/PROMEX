@@ -6,6 +6,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+	overflow-x: hidden;
   }
  
 /*Encabezado*/
@@ -103,7 +104,7 @@ body {
 }
 #Cuerpo2{
 	padding-top: 35px;
-	background-color: rgb(74, 74, 74);
+	background-color: rgb(95, 93, 96);
 	height: 1200px;
     left: 50%;
 }
@@ -139,11 +140,11 @@ body {
 /*Cuerpo Demas*/
 .Titulo3{
 	font: 30px Arial Black;
-	color:rgb(102, 21, 123);
+	color:rgb(0, 0, 0);
 	text-decoration: none;
 }
 .Titulo3:hover{
-	color:rgb(102, 21, 123);
+	color:rgb(0, 0, 0);
 	cursor:default;
 }
 .Titulo{
@@ -541,7 +542,7 @@ table tr:nth-child(even) td{
 	left: 51px;
 	width: 0px;
 	height: 50px;
-	background: #ee5c5c;
+	background: #a49d9d;
 	border-radius: 3px;
 	transition: all 0.5s 0.3s ease;
   } 
@@ -583,7 +584,7 @@ table tr:nth-child(even) td{
 	margin:auto;
     left: 50%;
 	max-width:525px;
-	min-height:670px;
+	min-height:600px;
 	position:relative;
 	background:url(https://foodandtravel.mx/wp-content/uploads/2020/07/Datos-Mexico.jpg) no-repeat center;
 	box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
