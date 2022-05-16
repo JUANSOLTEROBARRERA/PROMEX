@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Institucion;
+use App\Models\Tipo_Violencia;
+use Illuminate\Support\Facades\DB;
 
 class ReporteController extends Controller
 {
@@ -11,9 +14,17 @@ class ReporteController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
         //
+        $instituciones = Institucion::all();
+        $violencias = Tipo_Violencia::all();
+        $sexo_agredido=trim($request->get('sexo_agredido'));
+        $denuncias=DB::table('denuncia')
+                        ->select('sexo_agredido','nombre_agresor','id_tipo_violencia','nombre_institucion','lugar','accion_tomada','respuesta_accion','tiempo','otro_servicio','detalles','correo')
+                        ->where('sexo_agredido','=',$sexo_agredido)
+                        ->paginate(10);
+        return view('consultoria.consultoria',compact('instituciones','violencias','denuncias'));
     }
 
     /**
@@ -21,9 +32,15 @@ class ReporteController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(Request $request)
     {
         //
+        $sexo_agredido=trim($request->get('sexo_agredido'));
+        $denuncias=DB::table('denuncia')
+                        ->select('sexo_agredido','nombre_agresor','id_tipo_violencia','nombre_institucion','lugar','accion_tomada','respuesta_accion','tiempo','otro_servicio','detalles','correo')
+                        ->where('sexo_agredido','=',$sexo_agredido)
+                        ->paginate(10);
+        return view('consultoria.consultoria',compact('denuncias'));
     }
 
     /**
