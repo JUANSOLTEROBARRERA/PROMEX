@@ -2,8 +2,7 @@
 
 namespace App\Http\Controllers;
 use App\Mail\TestMail;
-
-
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Http\Request;
 use App\Models\Denuncia;
 use App\Models\Agresor;
