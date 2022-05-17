@@ -116,18 +116,18 @@
                                                                                 <tbody>
                                                                                         @foreach($denuncias as $denuncia)
                                                                                         <tr>
-                                                                                                <td>{{$denuncia->sexo_agredido}}</td>
-                                                                                                <td>{{$denuncia->nombre_agresor}}</td>
-                                                                                                <td>{{$denuncia->nombre_agresor}}</td>
-                                                                                                <td>{{$denuncia->id_tipo_violencia}}</td>
-                                                                                                <td>{{$denuncia->nombre_institucion}}</td>
-                                                                                                <td>{{$denuncia->lugar}}</td>
-                                                                                                <td>{{$denuncia->accion_tomada}}</td>
-                                                                                                <td>{{$denuncia->respuesta_accion}}</td>
-                                                                                                <td>{{$denuncia->tiempo}}</td>
-                                                                                                <td>{{$denuncia->otro_servicio}}</td>
-                                                                                                <td>{{$denuncia->detalles}}</td>
-                                                                                                <td>{{$denuncia->correo}}</td>
+                                                                                                <td style="background-color: #FFFFFF; color:#000000;">{{$denuncia->sexo_agredido}}</td>
+                                                                                                <td style="background-color: #FFFFFF; color:#000000;">{{$denuncia->nombre_agresor}}</td>
+                                                                                                <td style="background-color: #FFFFFF; color:#000000;">{{$denuncia->sexo_agresor}}</td>
+                                                                                                <td style="background-color: #FFFFFF; color:#000000;">{{$denuncia->nombre_violencia}}</td>
+                                                                                                <td style="background-color: #FFFFFF; color:#000000;">{{$denuncia->nombre_institucion}}</td>
+                                                                                                <td style="background-color: #FFFFFF; color:#000000;">{{$denuncia->lugar}}</td>
+                                                                                                <td style="background-color: #FFFFFF; color:#000000;">{{$denuncia->accion_tomada}}</td>
+                                                                                                <td style="background-color: #FFFFFF; color:#000000;">{{$denuncia->respuesta_accion}}</td>
+                                                                                                <td style="background-color: #FFFFFF; color:#000000;">{{$denuncia->tiempo}}</td>
+                                                                                                <td style="background-color: #FFFFFF; color:#000000;">{{$denuncia->otro_servicio}}</td>
+                                                                                                <td style="background-color: #FFFFFF; color:#000000;">{{$denuncia->detalles}}</td>
+                                                                                                <td style="background-color: #FFFFFF; color:#000000;">{{$denuncia->correo}}</td>
                                                                                         </tr>
                                                                                         @endforeach
                                                                                 </tbody>
