@@ -29,6 +29,6 @@ class TestMail extends Mailable
      */
     public function build()
     {
-        return $this->subject('Prueba de correo de PROMEX')->view('emails.TestEmail');
+        return $this->subject('CONFIRMACIÓN PROMEX')->view('emails.TestEmail');//emails.TestEmail
     }
 }

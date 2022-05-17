@@ -48,6 +48,7 @@ Route::get('/send-email', [MailController::class,'sendEmail']);
 
 Route::resource('/agresor',AgresorController::class);
 
+Route::resource('/denuncia',DenunciaController::class,[MailController::class,'sendEmail']);
 Route::resource('/denuncia',DenunciaController::class);
 
 Route::resource('/Consultoria',ReporteController::class);
