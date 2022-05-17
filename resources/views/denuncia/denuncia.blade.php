@@ -47,7 +47,7 @@
                                     <div class="header">
                                     <h2 class="animation a1">Realiza tu Denuncia</h2>
                                     </div>
-                                <form action="{{route('denuncia.store')}}" method="post">
+                                <form action="{{route('denuncia.store')}}" method="POST" method="POST">
                                     @csrf
                                     <br>
                                     <h4 class="animation a2">Datos Personales</h4>
@@ -208,11 +208,20 @@
                                    <textarea class="form-field animation a27" placeholder="Detalles de los hechos" style="height:180px;" name="detalles"></textarea>
                                    <br>
                                    <hr style="animation-delay: 2.4s; border-top: 8px solid #bbb;border-radius: 5px;">
-                                    <!--button class="form-field animation a28" class="Revisar">ENVIAR DENUNCIA</button-->
-                                    <input type="submit" class="btn btn-default" value="ENVIAR DENUNCIA">
+                                    <!--button class="form-field animation a28" class="Revisar">enviar correo</button-->
+
+                             <!--div class="d-flex flex-row-reverse">
+                                    <ul class="menu"  data-animation="bonus">
+                                    <li><a class="oda" onclick="window.location='{{url("send-email") }}'">enviar correo</a></li>
+                                    </ul>
+                                </div-->  
+                                
+                                <input type="submit" class="btn btn-default" value="ENVIAR DENUNCIA" >
+                                    <!-- <li><a class="oda" onclick="window.location='{{url("send-email") }}'"></a></li>-->
                                     </div>
                                 </div>
-                            <form>
+
+                            </form>
                                 <div class="right"></div>
                                 </div>
 
