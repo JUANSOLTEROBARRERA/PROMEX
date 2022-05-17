@@ -6,6 +6,7 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\MailController;
 use App\Http\Controllers\AgresorController;
 use App\Http\Controllers\DenunciaController;
+use App\Http\Controllers\ReporteController;
 
 
 /*
@@ -48,3 +49,6 @@ Route::get('/send-email', [MailController::class,'sendEmail']);
 Route::resource('/agresor',AgresorController::class);
 
 Route::resource('/denuncia',DenunciaController::class,[MailController::class,'sendEmail']);
+Route::resource('/denuncia',DenunciaController::class);
+
+Route::resource('/Consultoria',ReporteController::class);

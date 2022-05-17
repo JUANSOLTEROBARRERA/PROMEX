@@ -19,7 +19,7 @@
                                     <ul class="menu"  data-animation="bonus">
                                     <li><a class="oda" onclick="window.location='{{url("TiposViolencia") }}'">TIPOS DE VIOLENCIA</a></li>
                                     <li><a class="oda" onclick="window.location='{{url("Test") }}'">TEST DE VIOLENCIA</a></li>
-                                    <li><a class="oda" onclick="window.location='{{url("Denuncia") }}'">REALIZA TU DENUNCIA</a></li>
+                                    <li><a class="oda" onclick="window.location='{{url("denuncia") }}'">REALIZA TU DENUNCIA</a></li>
                                     @auth    
                                     <li><a class="oda" onclick="window.location='{{url("Consultoria") }}'">CONSULTORÍA</a></li>
                                     <li><form action="/post-logout" method="POST">
@@ -44,7 +44,7 @@
                                         <div class="col-sm-15">
                                         <div class="container">
                                 <div class="left">
-                                    <div class="header">
+                                    <div class="header" style="margin-top: 50px">
                                     <h2 class="animation a1">Realiza tu Denuncia</h2>
                                     </div>
                                 <form action="{{route('denuncia.store')}}" method="POST" method="POST">
@@ -52,8 +52,7 @@
                                     <br>
                                     <h4 class="animation a2">Datos Personales</h4>
                                     <div class="form">
-                                    
-                                    
+
                                     <select class="form-field animation a3" name="niveleducativo" id="niveleducativo" placeholder="Nivel Educativo">
                                         <option>- Nivel Educativo -</option>
                                         <option>Preparatoria</option>
@@ -61,11 +60,13 @@
                                    </select>
                                    <select class="form-field animation a4" name="nombre_institucion" id="nombreinstitucion" placeholder="Nombre Institución">
                                         <option value="Universidad">- Institución -</option>
-                                        <option value="Colegio ciencias y letras">Colegio ciencias y letras</option>
-                                        <option value="INAPSI NAYARIT">INAPSI NAYARIT</option>
+                                    @foreach ($instituciones as $institucion)
+                                        <option value="{{$institucion->nombre_institucion}}">{{$institucion->nombre_institucion}}</option-->
+                                    @endforeach
+                                        <!--option value="INAPSI NAYARIT">INAPSI NAYARIT</option>
                                         <option value="Escuela Normal Superior de Nayarit">Escuela Normal Superior de Nayarit</option>
                                         <option value="Colegio Simón Bolívar">Colegio Simón Bolívar</option>
-                                        <option value="Escuela Secundaria Federal #44 Severiano Ocejeda Peña">Escuela Secundaria Federal #44 Severiano Ocejeda Peña</option>
+                                        <option value="Escuela Secundaria Federal #44 Severiano Ocejeda Peña">Escuela Secundaria Federal #44 Severiano Ocejeda Peña</option-->
                                    </select>
                                    <input type="email" class="form-field animation a5" placeholder="Email Address" name="correo">
                                    <select class="form-field animation a7"  id="sexoagredido" placeholder="Relacion Agresor" name="sexo_agredido">
@@ -111,8 +112,7 @@
                                         <option>Personal de labores Varias</option>
                                         <option>Personas ajenas de la Escuela</option>
                                    </select>
-                                   <!--fieldset-->
-                                       <br>
+                                   <fieldset>
                                         <!--p class="animation a8">Sexo del agresor</p-->
                                         <!--div-->
                                         <select class="form-field animation a7"  id="sexoagresor" placeholder="Relacion Agresor" name="sexo_agresor">
@@ -120,6 +120,7 @@
                                                 <option>Hombre</option>
                                                 <option>Mujer</option>
                                         </select>
+                                    </fieldset>
                                         <!--/div-->
                                         <!--input class="animation a9" type="radio" id="hombre" name="sexo_agresor">
                                         <label class="animation a10" for="hombre">Hombre</label>
@@ -142,8 +143,14 @@
                                        <br>
                                        <h4 class="animation a13">Narración de Hechos</h4>
                                        <hr style="animation-delay: 2.4s; border-top: 8px solid #bbb;border-radius: 5px;">
-                                        <p class="animation a13">Tipo de violencia</p>
-                                        <div>
+                                       <select class="form-field animation a4" name="nombre_institucion" id="nombreinstitucion" placeholder="Nombre Institución">
+                                            <option value="Universidad">- Tipo de Violencia -</option>
+                                            @foreach ($violencias as $violencia)
+                                            <option value="{{$violencia->nombre_violencia}}">{{$violencia->nombre_violencia}}</option-->
+                                            @endforeach
+                                        </select>
+                                       <!--p class="animation a13">Tipo de violencia</p>
+                                       <div>
                                         <input class="animation a14" type="radio" id="verb" name="tipoviolencia">
                                         <label class="animation a15" for="verb">Verbal o psicológica</label>
                                         </div>
@@ -161,7 +168,7 @@
                                         <div>
                                         <input class="animation a20" type="radio" id="sexual" name="tipoviolencia">
                                         <label class="animation a21" for="sexual">Sexual</label>
-                                        </div>
+                                        </div-->
                                     </fieldset>
                                    <select class="form-field animation a22" placeholder="Lugar" name="lugar">
                                         <option>- Lugar -</option>

@@ -1,17 +1,15 @@
 <?php
 
 namespace App\Http\Controllers;
-use Illuminate\Support\Facades\Mail;//sxs
-use App\Mail\MessageReceived;//
 use App\Mail\TestMail;
 
 
 use Illuminate\Http\Request;
 use App\Models\Denuncia;
 use App\Models\Agresor;
-use Mailer\src\PHPMailer;
-use Mailer\src\SMTP;
-use Mailer\src\Exception;
+use App\Models\Institucion;
+use App\Models\Tipo_Violencia;
+
 class DenunciaController extends Controller
 {
     
@@ -23,6 +21,9 @@ class DenunciaController extends Controller
     public function index()
     {
         //
+        $instituciones = Institucion::all();
+        $violencias = Tipo_Violencia::all();
+        return view('denuncia.denuncia',compact('instituciones','violencias'));
     }
 
     /**
