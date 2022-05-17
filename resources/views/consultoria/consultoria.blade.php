@@ -21,7 +21,7 @@
                                 <li><a class="oda" onclick="window.location='{{url("TiposViolencia") }}'">TIPOS DE VIOLENCIA</a></li>
                                 <li><a class="oda" onclick="window.location='{{url("Test") }}'">TEST DE VIOLENCIA</a></li>
                                 <li><a class="oda" onclick="window.location='{{url("denuncia") }}'">REALIZA TU DENUNCIA</a></li>
-                                @auth    
+                                @auth
                                 <li><a class="oda" onclick="window.location='{{url("Consultoria") }}'">CONSULTORÍA</a></li>
                                 <li><form action="/post-logout" method="POST">
                                     @csrf
@@ -40,7 +40,7 @@
         </div>
         <div>
 
-                <div class="container-fluid mt-5">
+                <div class="container-fluid mt-4">
                         <div class="col-13">
                                 <div class="row">
                                         <div class="col-18 grid-margin">
@@ -50,32 +50,33 @@
                                                 </div> -->
 
                                                 <div class="card">
-                                                        <div class="card-body" style="background-color: rgb(47, 47, 47);">
-                                                                <h4 class="card-title" style="color: rgb(74, 133, 34);">Tabla de denuncias</h4>
+                                                        <div class="card-body">
+                                                                <!-- style="background-color: rgb(47, 47, 47);" -->
+                                                                <h2 class="card-title" style="color: rgb(74, 133, 34);">Tabla de denuncias</h2>
                                                         <form action="{{route('Consultoria.index')}}" method="get">
-                                                                <select class="form-field animation a3" name="sexo_agredido" id="sexo_agredido" placeholder="sexo_agredido">
+                                                                <select class="form-field animation a3 form-select-sm" name="sexo_agredido" id="sexo_agredido" placeholder="sexo_agredido">
                                                                         <option>- Sexo agredido -</option>
                                                                         <option>Hombre</option>
                                                                         <option>Mujer</option>
                                                                 </select>
-                                                                <select class="form-field animation a3" name="sexo_agresor" id="sexo_agresor" placeholder="sexo_agresor">
+                                                                <select class="form-field animation a3 form-select-sm" name="sexo_agresor" id="sexo_agresor" placeholder="sexo_agresor">
                                                                         <option>- Sexo agresor -</option>
                                                                         <option>Hombre</option>
                                                                         <option>Mujer</option>
                                                                 </select>
-                                                                <select class="form-field animation a3" name="tipo_violencia" id="tipo_violencia" placeholder="tipo_violencia">
+                                                                <select class="form-field animation a3 form-select-sm" name="tipo_violencia" id="tipo_violencia" placeholder="tipo_violencia">
                                                                         <option>- Tipo violencia -</option>
                                                                         @foreach ($violencias as $violencia)
                                                                                 <option value="{{$violencia->nombre_violencia}}">{{$violencia->nombre_violencia}}</option-->
                                                                         @endforeach
                                                                 </select>
-                                                                <select class="form-field animation a3" name="institucion" id="institucion" placeholder="institucion">
+                                                                <select class="form-field animation a3 form-select-sm" name="institucion" id="institucion" placeholder="institucion">
                                                                         <option>- Institución -</option>
                                                                         @foreach ($instituciones as $institucion)
                                                                                 <option value="{{$institucion->nombre_institucion}}">{{$institucion->nombre_institucion}}</option-->
                                                                         @endforeach
                                                                 </select>
-                                                                <select class="form-field animation a3" name="lugar" id="lugar" placeholder="lugar">
+                                                                <select class="form-field animation a3 form-select-sm" name="lugar" id="lugar" placeholder="lugar">
                                                                         <option>- Lugar -</option>
                                                                         <option>Dentro del aula</option>
                                                                         <option>En una oficina o privado</option>
@@ -86,17 +87,17 @@
                                                                 </select>
                                                                 <br>
                                                                 <div style="margin-top: 10px;">
-                                                                <input type="submit" class="btn btn-sm" value="Consultar" style="background-color: #00695c; color: white;">
+                                                                <input type="submit" class="btn btn-sm" value="Consultar" style="background-color: #4A8522; color: white;">
                                                         </form>
-                                                                <input type="button" class="btn btn-sm" value="Generar reporte" style="background-color: #00695c; color: white;">
+                                                                <input type="button" class="btn btn-sm" value="Generar reporte" style="background-color: #4A8522; color: white;">
                                                                 </div>
-                                                                
+
                                                                 <br>
 
                                                                 <div class="table-responsive">
                                                                         <table class="table">
                                                                                 <thead>
-                                                                                        <tr style="background-color: #00695c; color:#FFFFFF;">
+                                                                                        <tr style="background-color: #4A8522; color:#FFFFFF;">
                                                                                                 <th style=" text-align: center;"> Sexo agredido </th>
                                                                                                 <th style=" text-align: center;"> Nombre agresor </th>
                                                                                                 <th style=" text-align: center;"> Sexo agresor </th>
@@ -115,7 +116,7 @@
                                                                                 </thead>
                                                                                 <tbody>
                                                                                         @foreach($denuncias as $denuncia)
-                                                                                        <tr style="background-color: #FFFFFF; color:#000000;">
+                                                                                        <tr style="background-color: #DCFFE5; color:#000000;">
                                                                                                 <td >{{$denuncia->sexo_agredido}}</td>
                                                                                                 <td >{{$denuncia->nombre_agresor}}</td>
                                                                                                 <td >{{$denuncia->sexo_agresor}}</td>
@@ -130,8 +131,9 @@
                                                                                                 <td >{{$denuncia->correo}}</td>
                                                                                         </tr>
                                                                                         @endforeach
-                                                                                        <tr style="background-color: #FFFFFF; color:#000000;">
-                                                                                                <td >{{$denuncias_cuenta}}</td>
+                                                                                        <tr style="background-color: #4A8522; color:#FFFFFF; font-weight: bold;">
+                                                                                                <td colspan="11">Total de denuncias con estos parametros</td>
+                                                                                                <td style="text-align: center; ">{{$denuncias_cuenta}}</td>
                                                                                         </tr>
                                                                                 </tbody>
                                                                         </table>
