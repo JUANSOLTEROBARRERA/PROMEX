@@ -116,18 +116,18 @@
                                                                                 <tbody>
                                                                                         @foreach($denuncias as $denuncia)
                                                                                         <tr>
-                                                                                                <td>{{denuncia->sexo_agredido}}</td>
-                                                                                                <td>{{denuncia->nombre_agresor}}</td>
-                                                                                                <td>{{denuncia->nombre_agresor}}</td>
-                                                                                                <td>{{denuncia->id_tipo_violencia}}</td>
-                                                                                                <td>{{denuncia->nombre_institucion}}</td>
-                                                                                                <td>{{denuncia->lugar}}</td>
-                                                                                                <td>{{denuncia->accion_tomada}}</td>
-                                                                                                <td>{{denuncia->respuesta_accion}}</td>
-                                                                                                <td>{{denuncia->tiempo}}</td>
-                                                                                                <td>{{denuncia->otro_servicio}}</td>
-                                                                                                <td>{{denuncia->detalles}}</td>
-                                                                                                <td>{{denuncia->correo}}</td>
+                                                                                                <td>{{$denuncia->sexo_agredido}}</td>
+                                                                                                <td>{{$denuncia->nombre_agresor}}</td>
+                                                                                                <td>{{$denuncia->nombre_agresor}}</td>
+                                                                                                <td>{{$denuncia->id_tipo_violencia}}</td>
+                                                                                                <td>{{$denuncia->nombre_institucion}}</td>
+                                                                                                <td>{{$denuncia->lugar}}</td>
+                                                                                                <td>{{$denuncia->accion_tomada}}</td>
+                                                                                                <td>{{$denuncia->respuesta_accion}}</td>
+                                                                                                <td>{{$denuncia->tiempo}}</td>
+                                                                                                <td>{{$denuncia->otro_servicio}}</td>
+                                                                                                <td>{{$denuncia->detalles}}</td>
+                                                                                                <td>{{$denuncia->correo}}</td>
                                                                                         </tr>
                                                                                         @endforeach
                                                                                 </tbody>
