@@ -66,7 +66,6 @@
                                 <div>
                                     <label class="animation a4" for="nombreinstitucion" style="position:absolute;">Institución: </label>
                                     <select class="form-field animation a4" name="nombre_institucion" id="nombreinstitucion" placeholder="Nombre Institución" style="width: 285px;">
-                                        <option value="Universidad">- Institución -</option>
                                         @foreach ($instituciones as $institucion)
                                         <option value="{{$institucion->nombre_institucion}}">{{$institucion->nombre_institucion}}</option-->
                                             @endforeach
@@ -77,7 +76,7 @@
                                     </select>
                                 </div>
 
-                                <input type="email" class="form-field animation a5" placeholder="Email Address" name="correo" style="width: 285px;">
+                                <input type="email" class="form-field animation a5" placeholder="Email Address" name="correo" style="width: 285px;" required>
                                 <div>
                                     <label class="animation a7" for="sexoagredido" style="position:absolute;">Sexo Agredido: </label>
                                     <select class="form-field animation a7" id="sexoagredido" placeholder="Relacion Agresor" name="sexo_agredido" style="width: 285px;">
@@ -164,7 +163,6 @@
                                     <div>
                                         <label class="animation a4" for="tipoviolencia" style="position:absolute;">Tipo de Violencia: </label>
                                         <select class="form-field animation a4" name="nombre_institucion" id="tipoviolencia" placeholder="Tipo de Violencia" style="width: 285px;">
-                                            <option value="Universidad">- Tipo de Violencia -</option>
                                             @foreach ($violencias as $violencia)
                                             <option value="{{$violencia->nombre_violencia}}">{{$violencia->nombre_violencia}}</option-->
                                                 @endforeach
