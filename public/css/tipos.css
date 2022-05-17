@@ -1,0 +1,134 @@
+.Encabezado{
+    background-color: rgb(47, 47, 47);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
+}
+.logo{
+	margin-top: 2px;
+	margin-bottom: 10px;
+    height: 55px;
+    width: 110px;
+	cursor: pointer;
+}
+.menu {
+	display: flex;
+	justify-content: center;
+  }
+  
+  
+  .menu a {
+	position: relative;
+	display: block;
+	padding: 5px;
+  }
+  .menu li {
+	margin-right: 20px;
+	list-style-type:none;
+	padding-top: 10px;
+  }
+
+
+  .menu a::before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background: linear-gradient(to right, rgb(242, 243, 211), rgb(216, 217, 184), rgb(195, 196, 165));
+	z-index: 1;
+	transform: scaleX(0);
+	transform-origin: left;
+	transition: transform 0.5s ease-in-out;
+  }
+  
+  .menu a:hover::before {
+	transform: scaleX(1);
+  }
+  .oda {
+	margin: 10px;
+	color: rgb(74, 133, 34);
+  	text-decoration: none;
+	font: 15px sans-serif;
+	cursor:pointer;
+}
+.oda:hover {
+	text-decoration: none;
+	color: rgb(74, 133, 34);
+}
+#Cuerpo2{
+	background-color: rgb(255, 255, 255);
+	height: 100%;
+	margin-right:-35%;
+}
+body {
+    font-family: 'Rubik', sans-serif;
+    overflow-x: hidden;
+}
+.container {
+    display: flex;
+    height: 210vh;
+}
+
+
+
+
+
+
+
+
+section {
+    padding-top: 4rem;
+    padding-bottom: 5rem;
+    background-color: #f1f4fa;
+}
+.wrap {
+    display: flex;
+    background: white;
+    padding: 1rem 1rem 1rem 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 7px 7px 30px -5px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+}
+
+.wrap:hover {
+    background: linear-gradient(135deg,#6394ff 0%,#0a193b 100%);
+    color: white;
+}
+
+.ico-wrap {
+    margin: auto;
+}
+
+.mbr-iconfont {
+    font-size: 4.5rem !important;
+    color: #313131;
+    margin: 1rem;
+    padding-right: 1rem;
+}
+.vcenter {
+    margin: auto;
+}
+
+.mbr-section-title3 {
+    text-align: left;
+}
+h2 {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.display-5 {
+    font-family: 'Source Sans Pro',sans-serif;
+    font-size: 1.4rem;
+}
+.mbr-bold {
+    font-weight: 700;
+}
+
+ p {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    line-height: 25px;
+}
+.display-6 {
+    font-family: 'Source Sans Pro',sans-serif;
+    font-size: 1re}
