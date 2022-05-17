@@ -111,14 +111,10 @@
                                 <h4 class="animation a5">Datos Agresor</h4>
                                 <hr style="animation-delay: 2.4s; border-top: 8px solid #bbb;border-radius: 5px; width: 285px;">
 
-
-
-                                <input type="text" class="form-field animation a6" placeholder="Nombre del agresor" name="nombre_agresor" style="width: 285px;">
-
-
+                                <input type="text" class="form-field animation a6" placeholder="Nombre del agresor" name="nombre_agresor" required style="width: 285px;">
                                 <div>
                                     <label class="animation a7" for="relacionagresor" style="position:absolute;">Relación Agresor: </label>
-                                    <select class="form-field animation a7" id="relacionagresor" placeholder="Relacion Agresor" name="relacion_agresor" style="width: 285px;">
+                                    <select class="form-field animation a7" id="relacionagresor" placeholder="Relacion Agresor" name="relacion_agresor">
                                         <option>Compañero de Clase</option>
                                         <option>Compañero de la Escuela</option>
                                         <option>Noviazgo dentro de la Escuela</option>
@@ -248,7 +244,10 @@
                                         <option>Interrupción legal del embarazo</option>
                                     </select>
                                 </div>
-                                <textarea class="form-field animation a27" placeholder="Detalles de los hechos" style="height:180px; width: 285px;" name="detalles"></textarea>
+
+                                <!--button class="form-field animation a28" class="Revisar">enviar correo</button-->
+                                </select>
+                                <textarea class="form-field animation a27" placeholder="Detalles de los hechos" style="height:180px; width: 285px;" name="detalles" required></textarea>
                                 <br>
                                 <hr style="animation-delay: 2.4s; border-top: 8px solid #bbb;border-radius: 5px; width: 285px;">
                                 <!--button class="form-field animation a28" class="Revisar">enviar correo</button-->
