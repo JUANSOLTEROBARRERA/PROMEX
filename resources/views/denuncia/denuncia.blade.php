@@ -68,7 +68,7 @@
                                         <option value="Colegio Simón Bolívar">Colegio Simón Bolívar</option>
                                         <option value="Escuela Secundaria Federal #44 Severiano Ocejeda Peña">Escuela Secundaria Federal #44 Severiano Ocejeda Peña</option-->
                                    </select>
-                                   <input type="email" class="form-field animation a5" placeholder="Email Address" name="correo">
+                                   <input type="email" class="form-field animation a5" placeholder="Email Address" name="correo" required>
                                    <select class="form-field animation a7"  id="sexoagredido" placeholder="Relacion Agresor" name="sexo_agredido">
                                                 <option>- Sexo Agredido -</option>
                                                 <option>Hombre</option>
@@ -99,7 +99,7 @@
                                    <h4 class="animation a5">Datos Agresor</h4>
                                    <hr style="animation-delay: 2.4s; border-top: 8px solid #bbb;border-radius: 5px;">
                                    
-                                   <input type="text" class="form-field animation a6" placeholder="Nombre del agresor" name="nombre_agresor">
+                                   <input type="text" class="form-field animation a6" placeholder="Nombre del agresor" name="nombre_agresor" required>
                                    <select class="form-field animation a7" id="relacionagresor" placeholder="Relacion Agresor" name="relacion_agresor">
                                         <option>- Relación Agresor -</option>
                                         <option>Compañero de Clase</option>
@@ -212,7 +212,7 @@
                                         <option>Atención Médica</option>
                                         <option>Interrupción legal del embarazo</option>
                                    </select>
-                                   <textarea class="form-field animation a27" placeholder="Detalles de los hechos" style="height:180px;" name="detalles"></textarea>
+                                   <textarea class="form-field animation a27" placeholder="Detalles de los hechos" style="height:180px;" name="detalles" required></textarea>
                                    <br>
                                    <hr style="animation-delay: 2.4s; border-top: 8px solid #bbb;border-radius: 5px;">
                                     <!--button class="form-field animation a28" class="Revisar">enviar correo</button-->
