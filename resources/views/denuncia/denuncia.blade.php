@@ -65,14 +65,13 @@
                                 </select>
                                 <div>
                                     <label class="animation a4" for="nombreinstitucion" style="position:absolute;">Institución: </label>
-                                    <select class="form-field animation a4" name="nombre_institucion" id="nombreinstitucion" placeholder="Nombre Institución" style="width: 285px;">
+                                    <select class="form-field animation a4" name="nombre_institucion" id="nombre_institucion" placeholder="Nombre Institución" style="width: 285px;">
                                         @foreach ($instituciones as $institucion)
                                         <option value="{{$institucion->nombre_institucion}}">{{$institucion->nombre_institucion}}</option-->
                                             @endforeach
                                             <!--option value="INAPSI NAYARIT">INAPSI NAYARIT</option>
                                         <option value="Escuela Normal Superior de Nayarit">Escuela Normal Superior de Nayarit</option>
-                                        <option value="Colegio Simón Bolívar">Colegio Simón Bolívar</option>
-                                        <option value="Escuela Secundaria Federal #44 Severiano Ocejeda Peña">Escuela Secundaria Federal #44 Severiano Ocejeda Peña</option-->
+                                        <option value="Colegio Simón Bolívar">Colegio Simón Bolívar</option>-->
                                     </select>
                                 </div>
 
@@ -163,7 +162,7 @@
                                     <hr style="animation-delay: 2.4s; border-top: 8px solid #bbb;border-radius: 5px; width: 285px;">
                                     <div>
                                         <label class="animation a4" for="tipoviolencia" style="position:absolute;">Tipo de Violencia: </label>
-                                        <select class="form-field animation a4" name="nombre_institucion" id="tipoviolencia" placeholder="Tipo de Violencia" style="width: 285px;">
+                                        <select class="form-field animation a4" name="tipoviolencia" id="tipoviolencia" placeholder="Tipo de Violencia" style="width: 285px;">
                                             @foreach ($violencias as $violencia)
                                             <option value="{{$violencia->nombre_violencia}}">{{$violencia->nombre_violencia}}</option-->
                                                 @endforeach
