@@ -89,14 +89,22 @@ class DenunciaController extends Controller
     //try{
        // $existe= BD::select('SELECT nombre_agresor FROM agresor WHERE nombre_agresor=$agresor');
       //  if($existe==NULL){
-         
-        $agresor->nombre_agresor=$request->input('nombre_agresor');
+
+        
+
+        $agresor = Agresor::updateOrCreate(
+            ['nombre_agresor' => $request->input('nombre_agresor') ],
+            ['relacion_agresor' => $request->input('relacion_agresor'),'sexo_agresor' => $request->input('sexo_agresor')]
+        );
+        print_r(" "); //dejen el print por fa, sino se pone sus moños (de por sí) y no quiere jalar
+    /*  $agresor->nombre_agresor=$request->input('nombre_agresor');
         $agresor->relacion_agresor=$request->input('relacion_agresor');
-        $agresor->sexo_agresor=$request->input('sexo_agresor');
-        $agresor->save();
+        $agresor->sexo_agresor=$request->input('sexo_agresor'); 
+    */
+      //  $agresor->save();
    // }
         
-        $denuncia->save();
+       $denuncia->save();
   //  }catch(QueryException $e){
 
     //}
