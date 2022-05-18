@@ -47,21 +47,7 @@ class DenunciaController extends Controller
     public function store(Request $request)
     {
         //verifica que el flujo de los datos esten llenos 
-        $request->validate([
-            'id_tipo_violencia'=>'required',
-            'nombre_institucion'=>'required',
-            'lugar'=>'required',
-            'accion_tomada'=>'required',
-            'respuesta_accion'=>'required',
-            'tiempo'=>'required',
-            'otro_servicio'=>'required',
-            'detalles'=>'required',
-            'correo'=>'required',
-            'sexo_agredido'=>'required',
-            'nombre_agresor'=>'required',
-            'relacion_agresor'=>'required',
-            'sexo_agresor'=>'required',
-        ]);
+       
 
 
         $agresor = new Agresor;

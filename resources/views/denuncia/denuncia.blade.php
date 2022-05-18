@@ -77,6 +77,7 @@
                                 </div>
 
                                 <input type="email" class="form-field animation a5" placeholder="Email Address" name="correo" style="width: 285px;" required>
+                            
                                 <div>
                                     <label class="animation a7" for="sexoagredido" style="position:absolute;">Sexo Agredido: </label>
                                     <select class="form-field animation a7" id="sexoagredido" placeholder="Relacion Agresor" name="sexo_agredido" style="width: 285px;">
@@ -167,6 +168,7 @@
                                             <option value="{{$violencia->nombre_violencia}}">{{$violencia->nombre_violencia}}</option-->
                                                 @endforeach
                                         </select>
+                                       
                                         <div>
                                             <!--p class="animation a13">Tipo de violencia</p>
                                        <div>
