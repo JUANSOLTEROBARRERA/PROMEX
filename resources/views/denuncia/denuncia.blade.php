@@ -58,6 +58,7 @@
                                         <option>Preparatoria</option>
                                         <option>Universidad</option>
                                    </select>
+
                                    <select class="form-field animation a4" name="nombre_institucion" id="nombreinstitucion" placeholder="Nombre Institución">
                                         <option value="Universidad">- Institución -</option>
                                     @foreach ($instituciones as $institucion)
@@ -100,8 +101,15 @@
                                    <hr style="animation-delay: 2.4s; border-top: 8px solid #bbb;border-radius: 5px;">
                                    
                                    <input type="text" class="form-field animation a6" placeholder="Nombre del agresor" name="nombre_agresor">
+                                   <!--mensaje de error para el que llena el formularío-->
+                                    @error('nombre_agresor')
+                                    <small style="color:red;">*{{$message}}</small>         
+                                    @enderror
+                                    <br>
+                                    <label>Relación con el agresor</label>
+
                                    <select class="form-field animation a7" id="relacionagresor" placeholder="Relacion Agresor" name="relacion_agresor">
-                                        <option>- Relación Agresor -</option>
+                                        <option></option>
                                         <option>Compañero de Clase</option>
                                         <option>Compañero de la Escuela</option>
                                         <option>Noviazgo dentro de la Escuela</option>
@@ -112,15 +120,27 @@
                                         <option>Personal de labores Varias</option>
                                         <option>Personas ajenas de la Escuela</option>
                                    </select>
+                                   <!--mensaje de error para el que llena el formularío-->
+                                    @error('relacion_agresor')
+                                    <small style="color:red;">*{{$message}}</small>         
+                                    @enderror
+                                    <br>
                                    <fieldset>
                                         <!--p class="animation a8">Sexo del agresor</p-->
                                         <!--div-->
-                                        <select class="form-field animation a7"  id="sexoagresor" placeholder="Relacion Agresor" name="sexo_agresor">
-                                                <option>- Sexo Agresor -</option>
+                                        <label>Sexo del agresor</label>
+                                        <br>
+                                        <select class="form-field animation a7"  id="sexoagresor"  name="sexo_agresor">
+                                                <option></option>
                                                 <option>Hombre</option>
                                                 <option>Mujer</option>
                                         </select>
+                                     @error('sexo_agresor')
+                                    <small style="color:red;">*{{$message}}</small>         
+                                    @enderror
+                                    <br>
                                     </fieldset>
+
                                         <!--/div-->
                                         <!--input class="animation a9" type="radio" id="hombre" name="sexo_agresor">
                                         <label class="animation a10" for="hombre">Hombre</label>
@@ -149,6 +169,10 @@
                                             <option value="{{$violencia->nombre_violencia}}">{{$violencia->nombre_violencia}}</option-->
                                             @endforeach
                                         </select>
+                                    @error('sexo_agresor')
+                                    <small style="color:red;">*{{$message}}</small>         
+                                    @enderror
+                                    <br>
                                        <!--p class="animation a13">Tipo de violencia</p>
                                        <div>
                                         <input class="animation a14" type="radio" id="verb" name="tipoviolencia">
@@ -215,16 +239,9 @@
                                    <textarea class="form-field animation a27" placeholder="Detalles de los hechos" style="height:180px;" name="detalles"></textarea>
                                    <br>
                                    <hr style="animation-delay: 2.4s; border-top: 8px solid #bbb;border-radius: 5px;">
-                                    <!--button class="form-field animation a28" class="Revisar">enviar correo</button-->
-
-                             <!--div class="d-flex flex-row-reverse">
-                                    <ul class="menu"  data-animation="bonus">
-                                    <li><a class="oda" onclick="window.location='{{url("send-email") }}'">enviar correo</a></li>
-                                    </ul>
-                                </div-->  
                                 
                                 <input type="submit" class="btn btn-default" value="ENVIAR DENUNCIA" >
-                                    <!-- <li><a class="oda" onclick="window.location='{{url("send-email") }}'"></a></li>-->
+                                    
                                     </div>
                                 </div>
 

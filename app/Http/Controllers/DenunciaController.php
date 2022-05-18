@@ -9,6 +9,8 @@ use App\Models\Agresor;
 use App\Models\Institucion;
 use App\Models\Tipo_Violencia;
 
+use Illuminate\Support\Facades\BD;
+use Illuminate\Database\Seeder;
 class DenunciaController extends Controller
 {
     
@@ -22,6 +24,7 @@ class DenunciaController extends Controller
         //
         $instituciones = Institucion::all();
         $violencias = Tipo_Violencia::all();
+
         return view('denuncia.denuncia',compact('instituciones','violencias'));
     }
 
@@ -43,7 +46,24 @@ class DenunciaController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        //verifica que el flujo de los datos esten llenos 
+        $request->validate([
+            'id_tipo_violencia'=>'required',
+            'nombre_institucion'=>'required',
+            'lugar'=>'required',
+            'accion_tomada'=>'required',
+            'respuesta_accion'=>'required',
+            'tiempo'=>'required',
+            'otro_servicio'=>'required',
+            'detalles'=>'required',
+            'correo'=>'required',
+            'sexo_agredido'=>'required',
+            'nombre_agresor'=>'required',
+            'relacion_agresor'=>'required',
+            'sexo_agresor'=>'required',
+        ]);
+
+
         $agresor = new Agresor;
         $denuncia = new Denuncia;
         $id_tipo_violencia = 3;
@@ -63,6 +83,7 @@ class DenunciaController extends Controller
                 $id_tipo_violencia = 4;
                 break;
         }
+        //insert a la tabla denuncia
         $denuncia->id_tipo_violencia=$id_tipo_violencia;
         $denuncia->nombre_institucion=$request->input('nombre_institucion');//"nombre_institucion"
         $denuncia->lugar=$request->input('lugar');
@@ -72,15 +93,28 @@ class DenunciaController extends Controller
         $denuncia->otro_servicio=$request->input('otro_servicio');
         $denuncia->detalles=$request->input('detalles');
         $denuncia->correo=$request->input('correo');
-       // print_r($denuncia['correo']);
-        $receptor=$denuncia['correo'];//==obtenemos la variable correo (que ingresara el usuario desde teclado en denuncia.blade.php)
         $denuncia->sexo_agredido=$request->input('sexo_agredido');
         $denuncia->nombre_agresor=$request->input('nombre_agresor');
+        //==obtenemos la variable correo (que ingresara el usuario desde teclado en denuncia.blade.php)
+        $receptor=$denuncia['correo'];
+       
+ //insert a la tabla del agresor   
+ //antes de insertar en la tabla agresor debemos "preguntar" si el agresor existe o es nuevo
+    //try{
+       // $existe= BD::select('SELECT nombre_agresor FROM agresor WHERE nombre_agresor=$agresor');
+      //  if($existe==NULL){
+         
         $agresor->nombre_agresor=$request->input('nombre_agresor');
         $agresor->relacion_agresor=$request->input('relacion_agresor');
         $agresor->sexo_agresor=$request->input('sexo_agresor');
         $agresor->save();
+   // }
+        
         $denuncia->save();
+  //  }catch(QueryException $e){
+
+    //}
+
        
 //Hacemos la funcion de envio del correo, mostrando la vista que ya creamos (TestEmail.blade.php)
         $details=[
