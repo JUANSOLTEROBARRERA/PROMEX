@@ -27,6 +27,9 @@ Route::get('/', function () {
 Route::get('/Consultoria', function () {
     return view('consultoria/consultoria');
 })->middleware('auth');
+
+
+
 Route::get('/Test', function () {
     return view('test/test');
 });
@@ -52,3 +55,5 @@ Route::resource('/denuncia',DenunciaController::class,[MailController::class,'se
 Route::resource('/denuncia',DenunciaController::class);
 
 Route::resource('/Consultoria',ReporteController::class);
+
+Route::get('pdf', [ReporteController::class, 'pdf'])->name('pdf');
