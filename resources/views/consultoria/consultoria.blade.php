@@ -22,13 +22,8 @@
                                 <li><a class="oda" onclick="window.location='{{url("TiposViolencia") }}'">TIPOS DE VIOLENCIA</a></li>
                                 
                                 <li><a class="oda" onclick="window.location='{{url("denuncia") }}'">REALIZA TU DENUNCIA</a></li>
-<<<<<<< HEAD
                                 @auth    
                                 <li><a class="oda" onclick="window.location='{{url("Consultoria") }}'">CONSULTA</a></li>
-=======
-                                @auth
-                                <li><a class="oda" onclick="window.location='{{url("Consultoria") }}'">CONSULTORÍA</a></li>
->>>>>>> e17b76a871aa29b185a5901b2b5d8b7c5171339f
                                 <li><form action="/post-logout" method="POST">
                                     @csrf
                                     <a class="oda" href="#" onclick="this.closest('form').submit()">CERRAR SESIÓN</a>
