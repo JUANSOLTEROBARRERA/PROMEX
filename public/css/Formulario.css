@@ -8,7 +8,7 @@
 }
  .container {
 	 display: flex;
-	 height: 210vh;
+	 height: 250vh;
 }
  .left {
 	 overflow: hidden;
