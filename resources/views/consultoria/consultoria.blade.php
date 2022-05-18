@@ -22,13 +22,8 @@
                                 <li><a class="oda" onclick="window.location='{{url("TiposViolencia") }}'">TIPOS DE VIOLENCIA</a></li>
                                 
                                 <li><a class="oda" onclick="window.location='{{url("denuncia") }}'">REALIZA TU DENUNCIA</a></li>
-<<<<<<< HEAD
                                 @auth    
                                 <li><a class="oda" onclick="window.location='{{url("Consultoria") }}'">CONSULTA</a></li>
-=======
-                                @auth
-                                <li><a class="oda" onclick="window.location='{{url("Consultoria") }}'">CONSULTORÍA</a></li>
->>>>>>> e17b76a871aa29b185a5901b2b5d8b7c5171339f
                                 <li><form action="/post-logout" method="POST">
                                     @csrf
                                     <a class="oda" href="#" onclick="this.closest('form').submit()">CERRAR SESIÓN</a>
@@ -54,12 +49,12 @@
                                                 <!-- <div style="text-align: right;">
                                                         <button type="button" class="btn btn-danger" style="background-color: #00695c;color:#ffffffff; ">Genera reporte</button>
                                                 </div> -->
-
+                                                <form action="{{route('Consultoria.index')}}" method="get">
+                                                                @csrf
                                                 <div class="card">
                                                         <div class="card-body">
                                                                 <!-- style="background-color: rgb(47, 47, 47);" -->
                                                                 <h2 class="card-title" style="color: rgb(74, 133, 34);">Tabla de denuncias</h2>
-                                                        <form action="{{route('Consultoria.index')}}" method="get">
                                                                 <select class="form-field animation a3 form-select-sm" name="sexo_agredido" id="sexo_agredido" placeholder="sexo_agredido">
                                                                         <option>- Sexo agredido -</option>
                                                                         <option>Hombre</option>
@@ -93,13 +88,11 @@
                                                                 </select>
                                                                 <br>
                                                                 <div style="margin-top: 10px;">
-                                                                <input type="submit" class="btn btn-sm" value="Consultar" style="background-color: #4A8522; color: white;">
-                                                        </form>
-                                                                <input type="button" class="btn btn-sm" value="Generar reporte" style="background-color: #4A8522; color: white;">
-                                                                </div>
-
+                                                                <input type="submit" class="btn btn-sm" value="Consultar" name="consultar" style="background-color: #4A8522; color: white;">
+                                                                <input type="submit" class="btn btn-sm" value="Generar Reporte" name="generar" style="background-color: #4A8522; color: white;">
+                                                        </form>        
+                                                        </div>
                                                                 <br>
-
                                                                 <div class="table-responsive">
                                                                         <table class="table">
                                                                                 <thead>
@@ -137,12 +130,14 @@
                                                                                                 <td >{{$denuncia->correo}}</td>
                                                                                         </tr>
                                                                                         @endforeach
-                                                                                        <tr style="background-color: #4A8522; color:#FFFFFF; font-weight: bold;">
-                                                                                                <td colspan="11">Total de denuncias con estos parametros</td>
-                                                                                                <td style="text-align: center; ">{{$denuncias_cuenta}}</td>
-                                                                                        </tr>
-                                                                                </tbody>
+                                                                                        </tbody>
                                                                         </table>
+                                                                        <table style="width: 100%;">
+                                                                                <tr style="background-color: #4A8522; color:#FFFFFF; font-weight: bold;">
+                                                                                        <td >Total de denuncias con estos parametros </td>
+                                                                                        <td style="text-align: center;">{{$denuncias_cuenta}}</td>
+                                                                                </tr>
+                                                                        </table>    
                                                                 </div>
 
 
