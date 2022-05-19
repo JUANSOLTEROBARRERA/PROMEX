@@ -8,10 +8,19 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     </head>
     <body>
+            <script lang="JavaScript">
+                $(function () {
+                    $(document).scroll(function () {
+                        var $nav = $(".navbar-fixed-top");
+                        $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+                    });
+                });
+            </script>
+            
         <header class="Encabezado"> 
             <!-- <header style="position: -webkit-sticky;  position: sticky; top: 0;">-->
- 
-            <nav class="navbar navbar-expand-lg navbar-light">
+            
+            <nav id="navigation" class="navbar navbar-expand-lg navbar-light" style="position: fixed; z-index: 999; width: 100%;">
                 <div class="container-fluid">
                     <img class="logo" src="{{ asset('images/Logo.png')}}" onclick="window.location='{{url("/") }}'">
 
