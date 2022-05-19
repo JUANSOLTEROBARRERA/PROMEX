@@ -57,34 +57,34 @@
                                                                 <h2 class="card-title" style="color: rgb(74, 133, 34);">Tabla de denuncias</h2>
                                                                 <select class="form-field animation a3 form-select-sm" name="sexo_agredido" id="sexo_agredido" placeholder="sexo_agredido">
                                                                         <option>- Sexo agredido -</option>
-                                                                        <option>Hombre</option>
-                                                                        <option>Mujer</option>
+                                                                        <option <?php if($combos["agredido"] == "Hombre") echo "selected='selected'";?>>Hombre</option>
+                                                                        <option <?php if($combos["agredido"] == "Mujer") echo "selected='selected'";?>>Mujer</option>
                                                                 </select>
                                                                 <select class="form-field animation a3 form-select-sm" name="sexo_agresor" id="sexo_agresor" placeholder="sexo_agresor">
                                                                         <option>- Sexo agresor -</option>
-                                                                        <option>Hombre</option>
-                                                                        <option>Mujer</option>
+                                                                        <option <?php if($combos["agresor"] == "Hombre") echo "selected='selected'";?>>Hombre</option>
+                                                                        <option <?php if($combos["agresor"] == "Mujer") echo "selected='selected'";?>>Mujer</option>
                                                                 </select>
                                                                 <select class="form-field animation a3 form-select-sm" name="tipo_violencia" id="tipo_violencia" placeholder="tipo_violencia">
                                                                         <option>- Tipo violencia -</option>
                                                                         @foreach ($violencias as $violencia)
-                                                                                <option value="{{$violencia->nombre_violencia}}">{{$violencia->nombre_violencia}}</option-->
+                                                                                <option value="{{$violencia->nombre_violencia}}" <?php if($combos["violencia"] == $violencia->nombre_violencia) echo "selected='selected'";?>>{{$violencia->nombre_violencia}}</option-->
                                                                         @endforeach
                                                                 </select>
                                                                 <select class="form-field animation a3 form-select-sm" name="institucion" id="institucion" placeholder="institucion">
                                                                         <option>- Institución -</option>
                                                                         @foreach ($instituciones as $institucion)
-                                                                                <option value="{{$institucion->nombre_institucion}}">{{$institucion->nombre_institucion}}</option-->
+                                                                        <option value="{{$institucion->nombre_institucion}}" <?php if($combos["institucion"] == $institucion->nombre_institucion) echo "selected='selected'";?>>{{$institucion->nombre_institucion}}</option-->      
                                                                         @endforeach
                                                                 </select>
                                                                 <select class="form-field animation a3 form-select-sm" name="lugar" id="lugar" placeholder="lugar">
                                                                         <option>- Lugar -</option>
-                                                                        <option>Dentro del aula</option>
-                                                                        <option>En una oficina o privado</option>
-                                                                        <option>Áreas comunes</option>
-                                                                        <option>Baños</option>
-                                                                        <option>Fuera del plantel realizando una actividad académica</option>
-                                                                        <option>Fuera del plantel realizando otra actividad</option>
+                                                                        <option <?php if($combos["lugar"] == "Dentro del aula") echo "selected='selected'";?>>Dentro del aula</option>
+                                                                        <option <?php if($combos["lugar"] == "En una oficina o privado") echo "selected='selected'";?>>En una oficina o privado</option>
+                                                                        <option <?php if($combos["lugar"] == "Áreas comunes") echo "selected='selected'";?>>Áreas comunes</option>
+                                                                        <option <?php if($combos["lugar"] == "Baños") echo "selected='selected'";?>>Baños</option>
+                                                                        <option <?php if($combos["lugar"] == "Fuera del plantel realizando una actividad académica") echo "selected='selected'";?>>Fuera del plantel realizando una actividad académica</option>
+                                                                        <option <?php if($combos["lugar"] == "Fuera del plantel realizando otra actividad") echo "selected='selected'";?>>Fuera del plantel realizando otra actividad</option>
                                                                 </select>
                                                                 <br>
                                                                 <div style="margin-top: 10px;">

@@ -31,6 +31,14 @@ class ReporteController extends Controller
         $sexo_agresor=trim($request->get('sexo_agresor'));
         $tipo_violencia=trim($request->get('tipo_violencia'));
         $guion = "-";
+
+        $combos = [
+            "agredido" => $sexo_agredido,
+            "agresor" => $sexo_agresor,
+            "violencia" => $tipo_violencia,
+            "institucion" => $institucion,
+            "lugar" => $lugar
+        ];
         
         //Select base sin ningún where
         $denuncias=DB::table('denuncia')
@@ -70,13 +78,13 @@ class ReporteController extends Controller
         $denuncias=$denuncias->get();
         $denuncias_cuenta=$denuncias_cuenta->count();
         if($consultar != null){
-            return view('consultoria.consultoria',compact('instituciones','violencias','denuncias','denuncias_cuenta'));
+            return view('consultoria.consultoria',compact('instituciones','violencias','denuncias','denuncias_cuenta', 'combos'));
         }
         if($generar != null){
             $pdf = PDF::loadView('consultoria.pdf',compact('violencias','instituciones','denuncias','denuncias_cuenta'))->setPaper('a4','landscape');
             return $pdf->Stream();
         }if($generar == null && $consultar == null){
-            return view('consultoria.consultoria',compact('instituciones','violencias','denuncias','denuncias_cuenta'));
+            return view('consultoria.consultoria',compact('instituciones','violencias','denuncias','denuncias_cuenta', 'combos'));
         }
     }
 
