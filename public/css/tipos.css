@@ -3,6 +3,24 @@
     color: rgb(74, 133, 34);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
 }
+.Titulo{
+	width: 500px;
+	font: 30px Arial Black;
+	color:rgb(129, 203, 71);
+	text-decoration: none;
+	margin-left: 50px;
+}
+.Titulo:hover{
+	color:rgb(129, 203, 71);
+	cursor:default;
+}
+.Titulo2{
+	width: 500px;
+	font: 20px Georgia;
+	color:rgb(79, 79, 79);
+	text-decoration: none;
+	margin-left: 50px;
+}
 .logo{
 	margin-top: 2px;
 	margin-bottom: 10px;
@@ -57,6 +75,10 @@
 	text-decoration: none;
 	color: rgb(74, 133, 34);
 }
+#Cuerpo{
+	background-color: rgb(51, 51, 51);
+	height: 200px;
+}
 #Cuerpo2{
 	background-color: rgb(255, 255, 255);
 	height: 100%;
@@ -66,10 +88,6 @@ body {
     font-family: 'Rubik', sans-serif;
     overflow-x: hidden;
     margin-top:30px;
-}
-.container {
-    display: flex;
-    height: 210vh;
 }
 
 /* Latest compiled and minified CSS included as External Resource*/
@@ -113,8 +131,8 @@ body {
     position: relative;
 }
 .btn-circle {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     text-align: center;
     padding: 6px 0;
     font-size: 12px;

@@ -93,8 +93,6 @@
                                             <br><br>
                                             <p class="Titulo4">Somos un equipo multidisciplinario, multicultural; siendo conformada mayoritariamente por mujeres, jóvenes de diversas disciplinas de las áreas sociales; con una amplia experiencia en el trabajo de capacitación, gestión, desarrollo y ejecución de proyectos dentro del ámbito público y social.</p>
                                             <br>
-                                            <img src="{{ asset('images/mascota.png')}}" height=350px width=170px
-                                            style="top:656px; left:1000px; position:absolute" alt="...">
                                         </div>
                                     </div>
                                 </div>
