@@ -6,6 +6,14 @@ body {
 	background-color: black;
 	overflow-x: hidden;
   }
+  .navbar-fixed-top.scrolled {
+	background-color: #fff !important;
+	transition: background-color 200ms linear;
+  }
+  
+  .navbar-fixed-top.scrolled.oda {
+	color:#555;
+  }
 /*Encabezado*/
 div.sticky {
 	position: -webkit-sticky;
