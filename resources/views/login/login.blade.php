@@ -16,10 +16,10 @@
 
                             <div class="d-flex flex-row-reverse">
                                 <ul class="menu"  data-animation="bonus">
-                                <li><a class="oda" onclick="window.location='{{url("Test") }}'">TEST DE VIOLENCIA</a></li>
-                                <li><a class="oda" onclick="window.location='{{url("TiposViolencia") }}'">TIPOS DE VIOLENCIA</a></li>
+                                <!-- <li><a class="oda" onclick="window.location='{{url("Test") }}'">TEST DE VIOLENCIA</a></li>
+                                <li><a class="oda" onclick="window.location='{{url("TiposViolencia") }}'">TIPOS DE VIOLENCIA</a></li> -->
                                 
-                                    <li><a class="oda" onclick="window.location='{{url("denuncia") }}'">REALIZA TU DENUNCIA</a></li>
+                                    
                                     @auth    
                                     <li><a class="oda" onclick="window.location='{{url("Consultoria") }}'">CONSULTAC</a></li>
                                     <li><form action="/post-logout" method="POST">
@@ -27,6 +27,9 @@
                                     <a class="oda" href="#" onclick="this.closest('form').submit()">CERRAR SESIÓN</a>
                                     </form></li>
                                     @else
+                                    <li><a class="oda" onclick="window.location='{{url("Test") }}'">TEST DE VIOLENCIA</a></li>
+                                    <li><a class="oda" onclick="window.location='{{url("TiposViolencia") }}'">TIPOS DE VIOLENCIA</a></li>
+                                    <li><a class="oda" onclick="window.location='{{url("denuncia") }}'">REALIZA TU DENUNCIA</a></li>
                                     <li><a class="oda" onclick="window.location='{{url("Login") }}'">INICIAR DE SESIÓN</a></li>
                                     @endauth
                                 </ul>
