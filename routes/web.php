@@ -33,12 +33,18 @@ Route::get('/Consultoria', function () {
 Route::get('/Test', function () {
     return view('test/test');
 });
+
 Route::get('/TiposViolencia', function () {
     return view('tipos/tipos');
 });
 Route::get('/Denuncia', function () {
     return view('denuncia/denuncia');
 });
+
+Route::get('/confirmacion', function () {
+    return view('denuncia/confirma');
+});
+
 Route::get('/Login', function () {
     return view('login/login');
 })->middleware('guest');

@@ -300,7 +300,7 @@ class DenunciaController extends Controller
              <header class='Encabezado'>
                  <nav class='navbar navbar-expand-lg navbar-light'>
                      <div class='container-fluid'>
-                         <img class='logo' src='../../../public/images/Logo.png' href='/' }}''>
+                         <img class='logo' src='images/Logo.png' href='/' }}''>
      
                                  <div class='d-flex flex-row-reverse'>
                                      <ul class='menu'  data-animation='bonus'>
