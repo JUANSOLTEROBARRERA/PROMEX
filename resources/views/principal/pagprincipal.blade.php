@@ -39,7 +39,7 @@
                                 <li><a class="oda" onclick="window.location='{{url("Test") }}'">TEST DE VIOLENCIA</a></li>
                                 <li><a class="oda" onclick="window.location='{{url("TiposViolencia") }}'">TIPOS DE VIOLENCIA</a></li>
                                 <li><a class="oda" onclick="window.location='{{url("denuncia") }}'">REALIZA TU DENUNCIA</a></li>
-                                <li><a class="oda" onclick="window.location='{{url("Login") }}'">INICIAR DE SESIÓN</a></li>
+                                <li><a class="oda" onclick="window.location='{{url("Login") }}'">INICIAR SESIÓN</a></li>
                                 @endauth
                                 </ul>
                             </div>

@@ -34,7 +34,7 @@
                             <li><a class="oda" onclick="window.location='{{url("Test") }}'">TEST DE VIOLENCIA</a></li>
                             <li><a class="oda" onclick="window.location='{{url("TiposViolencia") }}'">TIPOS DE VIOLENCIA</a></li>
                             <li><a class="oda" onclick="window.location='{{url("denuncia") }}'">REALIZA TU DENUNCIA</a></li>
-                            <li><a class="oda" onclick="window.location='{{url("Login") }}'">INICIAR DE SESIÓN</a></li>
+                            <li><a class="oda" onclick="window.location='{{url("Login") }}'">INICIAR SESIÓN</a></li>
                             @endauth
                         </ul>
                     </div>
@@ -62,8 +62,8 @@
 
                                 <label class="animation a3" for="Preparatoria" style="position:absolute;">Nivel educativo: </label>
                                 <select class="form-field animation a3" name="Preparatoria" id="Preparatoria" placeholder="Preparatoria" style="width: 285px;">
-                                    <option>Preparatoria</option>
-                                    <option>Universidad</option>
+                                    <option>Superior</option>
+                                    <option>Medio Superior</option>
                                 </select>
                                 <div>
                                     <label class="animation a4" for="nombreinstitucion" style="position:absolute;">Institución: </label>
