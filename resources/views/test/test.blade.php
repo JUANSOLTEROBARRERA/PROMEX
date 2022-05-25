@@ -142,9 +142,9 @@
                                                         <th scope="col">
                                                             <h5 class="card-title" style="color:rgb(129, 203, 71);">Verbal o Psicológica</h5>
                                                         </th>
-                                                        <th style="color:aliceblue;" scope="col">Nunca<br>1</th>
-                                                        <th style="color:aliceblue;" scope="col">A veces<br>2</th>
-                                                        <th style="color:aliceblue;" scope="col">Muchas Veces<br>3</th>
+                                                        <th style="color:aliceblue;" scope="col">Nunca<br></th>
+                                                        <th style="color:aliceblue;" scope="col">A veces<br></th>
+                                                        <th style="color:aliceblue;" scope="col">Muchas Veces<br></th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
@@ -392,9 +392,9 @@
                                             <th scope="col">
                                                 <h5 class="card-title" style="color:rgb(129, 203, 71);">Patrimonial</h5>
                                             </th>
-                                            <th style="color:aliceblue;" scope="col">Nunca<br>1</th>
-                                            <th style="color:aliceblue;" scope="col">A veces<br>2</th>
-                                            <th style="color:aliceblue;" scope="col">Muchas Veces<br>3</th>
+                                            <th style="color:aliceblue;" scope="col">Nunca<br></th>
+                                            <th style="color:aliceblue;" scope="col">A veces<br></th>
+                                            <th style="color:aliceblue;" scope="col">Muchas Veces<br></th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -539,9 +539,9 @@
                                             <th scope="col">
                                                 <h5 class="card-title" style="color:rgb(129, 203, 71);">Física</h5>
                                             </th>
-                                            <th style="color:aliceblue;" scope="col">Nunca<br>1</th>
-                                            <th style="color:aliceblue;" scope="col">A veces<br>2</th>
-                                            <th style="color:aliceblue;" scope="col">Muchas Veces<br>3</th>
+                                            <th style="color:aliceblue;" scope="col">Nunca<br></th>
+                                            <th style="color:aliceblue;" scope="col">A veces<br></th>
+                                            <th style="color:aliceblue;" scope="col">Muchas Veces<br></th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -750,9 +750,9 @@
                                             <th scope="col">
                                                 <h5 class="card-title" style="color:rgb(129, 203, 71);">Sexual</h5>
                                             </th>
-                                            <th style="color:aliceblue;" scope="col">Nunca<br>1</th>
-                                            <th style="color:aliceblue;" scope="col">A veces<br>2</th>
-                                            <th style="color:aliceblue;" scope="col">Muchas Veces<br>3</th>
+                                            <th style="color:aliceblue;" scope="col">Nunca<br></th>
+                                            <th style="color:aliceblue;" scope="col">A veces<br></th>
+                                            <th style="color:aliceblue;" scope="col">Muchas Veces<br></th>
                                         </tr>
                                     </thead>
                                     <tbody>
