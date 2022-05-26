@@ -9,7 +9,7 @@
 <body>
 <table class="table">
     <thead>
-        <tr style="background-color: #4A8522; color:#FFFFFF;">
+        <tr style="background-color: rgb(0,143,86);">
             <th style=" text-align: center;"> Sexo agredido </th>
             <th style=" text-align: center;"> Nombre agresor </th>
             <th style=" text-align: center;"> Sexo agresor </th>
@@ -27,7 +27,7 @@
     </thead>
     <tbody>
     @foreach($denuncias as $denuncia)
-        <tr style="background-color: #DCFFE5; color:#000000;">
+        <tr style="background-color: rgb(236, 240, 241 );">
             <td >{{$denuncia->sexo_agredido}}</td>
             <td >{{$denuncia->nombre_agresor}}</td>
             <td >{{$denuncia->sexo_agresor}}</td>
@@ -42,7 +42,7 @@
             <td >{{$denuncia->correo}}</td>
         </tr>
         @endforeach
-        <tr style="background-color: #4A8522; color:#FFFFFF; font-weight: bold;">
+        <tr style="background-color: rgb(0,143,86); font-weight: bold;">
             <td colspan="11">Total de denuncias con estos parametros</td>
             <td style="text-align: center; ">{{$denuncias_cuenta}}</td>
         </tr>

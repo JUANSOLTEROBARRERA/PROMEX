@@ -47,14 +47,14 @@
                 <div class="container-fluid mt-4">
                         <div class="col-13">
                                 <div class="row">
-                                        <div class="col-18 grid-margin">
+                                        <div class="col-18 grid-margin" >
 
                                                 <!-- <div style="text-align: right;">
                                                         <button type="button" class="btn btn-danger" style="background-color: #00695c;color:#ffffffff; ">Genera reporte</button>
                                                 </div> -->
                                                 <form action="{{route('Consultoria.index')}}" method="get">
                                                                 @csrf
-                                                <div class="card">
+                                                <div class="card" style="background-color: rgb(47, 47, 47); border-radius: 25px;">
                                                         <div class="card-body">
                                                                 <!-- style="background-color: rgb(47, 47, 47);" -->
                                                                 <h2 class="card-title" style="color: rgb(74, 133, 34);">Tabla de denuncias</h2>
@@ -90,16 +90,18 @@
                                                                         <option <?php if($combos["lugar"] == "Fuera del plantel realizando otra actividad") echo "selected='selected'";?>>Fuera del plantel realizando otra actividad</option>
                                                                 </select>
                                                                 <br>
+                                                                <hr style="border: 1px solid white;"/>
                                                                 <div style="margin-top: 10px;">
                                                                 <input type="submit" class="btn btn-sm" value="Consultar" name="consultar" style="background-color: #4A8522; color: white;">
                                                                 <input type="submit" class="btn btn-sm" value="Generar Reporte" name="generar" style="background-color: #4A8522; color: white;">
-                                                        </form>        
+                                                        </form>
+                                                        <hr style="border: 1px solid white;"/>        
                                                         </div>
                                                                 <br>
-                                                                <div class="table-responsive">
-                                                                        <table class="table">
+                                                                <div class="table-responsive" style="border-radius: 15px;">
+                                                                        <table class="table table-hover">
                                                                                 <thead>
-                                                                                        <tr style="background-color: #4A8522; color:#FFFFFF;">
+                                                                                        <tr style="background-color: rgb(0,143,86);">
                                                                                                 <th style=" text-align: center;"> Sexo agredido </th>
                                                                                                 <th style=" text-align: center;"> Nombre agresor </th>
                                                                                                 <th style=" text-align: center;"> Sexo agresor </th>
@@ -118,7 +120,7 @@
                                                                                 </thead>
                                                                                 <tbody>
                                                                                         @foreach($denuncias as $denuncia)
-                                                                                        <tr style="background-color: #DCFFE5; color:#000000;">
+                                                                                        <tr style="background-color: rgb(236, 240, 241 );">
                                                                                                 <td >{{$denuncia->sexo_agredido}}</td>
                                                                                                 <td >{{$denuncia->nombre_agresor}}</td>
                                                                                                 <td >{{$denuncia->sexo_agresor}}</td>
@@ -136,7 +138,7 @@
                                                                                         </tbody>
                                                                         </table>
                                                                         <table style="width: 100%;">
-                                                                                <tr style="background-color: #4A8522; color:#FFFFFF; font-weight: bold;">
+                                                                                <tr style="background-color: rgb(0,143,86); font-weight: bold;">
                                                                                         <td >Total de denuncias con estos parametros </td>
                                                                                         <td style="text-align: center;">{{$denuncias_cuenta}}</td>
                                                                                 </tr>
