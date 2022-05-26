@@ -89,21 +89,29 @@ class DenunciaController extends Controller
     //try{
        // $existe= BD::select('SELECT nombre_agresor FROM agresor WHERE nombre_agresor=$agresor');
       //  if($existe==NULL){
-
         
+        
+        $agresor->nombreagresor=$request->input('nombre_agresor');
+        $nombre=$agresor['nombre_agresor'];
 
-        $agresor = Agresor::updateOrCreate(
-            ['nombre_agresor' => $request->input('nombre_agresor') ],
-            ['relacion_agresor' => $request->input('relacion_agresor'),'sexo_agresor' => $request->input('sexo_agresor')]
-        );
-        print_r(" "); //dejen el print por fa, sino se pone sus moños (de por sí) y no quiere jalar
-    /*  $agresor->nombre_agresor=$request->input('nombre_agresor');
+        $nombreagresor=$request->input('nombre_agresor');
+            
         $agresor->relacion_agresor=$request->input('relacion_agresor');
-        $agresor->sexo_agresor=$request->input('sexo_agresor'); 
-    */
-     //  $agresor->save();
-   // }
+        $relacion=$agresor['relacion_agresor'];
+
+        $agresor->sexo_agresor=$request->input('sexo_agresor');
+        $sexo=$agresor['sexo_agresor'];
         
+       Agresor::where('nombre_agresor', $nombreagresor)
+        ->update([
+           'relacion_agresor' => $relacion,
+           "sexo_agresor"=> $sexo
+         ]);
+        Agresor::updateOrCreate(
+            ['nombre_agresor' =>request()->nombre_agresor],
+            ['relacion_agresor' => $relacion, 'sexo_agresor' => $sexo]
+        );
+      
        $denuncia->save();
   //  }catch(QueryException $e){
 
